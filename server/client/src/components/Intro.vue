@@ -1,56 +1,24 @@
 <template>
-  <section>
-    <div id="intro" class="intro content">
-      <h1 class="intro-title">Welcome to Steps to Podium!</h1>
-      <p>
-        I'm Luís Peixoto, a Mechanical Engineer and an Enduro lover. I started
-        riding as a complete newbie, hoping to become a great rider. I don't
-        know if that will happen but, along the way, I'm sharing everything I
-        learn with the Offroad Community. In Steps to Podium you can follow my
-        evolution, learn some tips and discover the Engineering behind our
-        sport. Join the ride!
-      </p>
-      <b-container class="embed">
-        <b-row>
-          <b-col data-aos="fade-up" data-aos-duration="1000" class="module"
-            ><h4>Offroad Engineered</h4>
-            <b-row>
-              <b-col cols="12"
-                ><b-embed
-                  type="iframe"
-                  aspect="16by9"
-                  src="https://www.youtube.com/embed/_v9gnC5PiWk"
-                  allowfullscreens
-                ></b-embed
-              ></b-col> </b-row
-          ></b-col>
-          <b-col data-aos="fade-up" data-aos-duration="1000" class="module"
-            ><h4>How-to's</h4>
-            <b-row>
-              <b-col cols="12"
-                ><b-embed
-                  type="iframe"
-                  aspect="16by9"
-                  src="https://www.youtube.com/embed/KPWzyBh6iN4"
-                  allowfullscreens
-                ></b-embed
-              ></b-col> </b-row
-          ></b-col>
-          <b-col data-aos="fade-up" data-aos-duration="1000" class="module"
-            ><h4>Races</h4>
-            <b-row>
-              <b-col cols="12"
-                ><b-embed
-                  type="iframe"
-                  aspect="16by9"
-                  src="https://www.youtube.com/embed/tDuQlEj32C4"
-                  allowfullscreens
-                ></b-embed
-              ></b-col> </b-row
-          ></b-col>
-        </b-row>
-      </b-container>
-    </div>
+  <section class="intro">
+    <b-container>
+      <b-row class="my-md-5">
+        <b-col md="6" class="d-flex align-items-center justify-content-center">
+          <h1 class="intro-title">What is Steps to Podium?</h1>
+        </b-col>
+        <b-col md="6">
+          <p>
+            Steps to Podium creates unique, inspiring and educational content
+            about the 2-wheeled Offroad world.<br />
+            With Steps to Podium you can learn how to improve your riding or
+            take care of your bike, you can access bikes and gear reviews or
+            even discover the engineering behind our wonderful and complex
+            sport. All of this, while following Luis’ evolution as an amateur
+            rider, by experiencing his trainings or adventures in the craziest
+            of races! Ready to join the ride?
+          </p>
+        </b-col>
+      </b-row>
+    </b-container>
   </section>
 </template>
 
@@ -59,3 +27,36 @@ export default {
   name: "Intro"
 };
 </script>
+<style lang="scss" scoped>
+section {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+h1 {
+  text-align: left;
+  padding-top: auto;
+  padding-bottom: auto;
+  font-size: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+h4 {
+  font-family: "Open-sans", sans-serif;
+  font-weight: 500;
+}
+
+p {
+  font-size: 1.2em;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  justify-content: center;
+}
+</style>

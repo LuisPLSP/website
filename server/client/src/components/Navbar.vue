@@ -1,19 +1,19 @@
 <template>
-  <div fluid>
-    <b-navbar id="navbar">
-      <b-navbar-nav class="mx-auto">
-        <b-nav-item class="navbar-item" href="#">
-          <img id="logo" src="./assets/S2Plogo.png" alt="S2Plogo" />
-        </b-nav-item>
-        <b-nav-item class="navbar-item" href="#about" v-on:click="show"
+  <b-container fluid>
+    <b-navbar id="navbar" type="light">
+      <b-navbar-brand>
+        <img id="logo" src="../assets/S2Plogo.png" alt="S2Plogo" />
+      </b-navbar-brand>
+      <b-navbar-nav id="navbar" align="end" class="ml-auto">
+        <b-nav-item size="sm" class="navbar-item" href="#about"
           >About</b-nav-item
         >
-        <b-nav-item class="navbar-item" href="#contact-us"
+        <b-nav-item size="sm" class="navbar-item" href="#contact-us"
           >Contact us</b-nav-item
         >
       </b-navbar-nav>
     </b-navbar>
-  </div>
+  </b-container>
 </template>
 
 <script>
@@ -30,13 +30,15 @@ export default {
   width: 100%;
   height: 50px;
   display: flex;
-  background: rgb(196, 196, 196);
-  font-family: "Montserrat", sans-serif;
+  background: white;
 }
 .navbar-item {
-  font-size: x-large;
-  margin-left: 40px;
-  margin-right: 40px;
+  font-size: medium;
+  margin-top: auto;
+  margin-bottom: auto;
   display: flex;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
 }
 </style>

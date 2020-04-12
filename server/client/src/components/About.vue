@@ -1,62 +1,29 @@
 <template>
-  <section>
-    <div id="about" class="about content">
-      <h1 class="about-title">About Us</h1>
-      <p data-aos="fade-up" data-aos-duration="1000" class="about-text module">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quis
-        veritatis voluptas, doloribus voluptates in vero deserunt! Sapiente
-        commodi similique fugiat consequatur quasi facere dignissimos adipisci
-        quisquam fuga officia rerum, tenetur minus quaerat id quo qui corrupti!
-        Accusamus esse quibusdam rem praesentium quasi, commodi amet voluptate
-        dolore optio? Necessitatibus cum quia reiciendis ad! Iure laudantium
-        quas voluptates fuga quam enim, iste, dolorum eum nemo inventore totam
-        accusantium! Sit corporis ab officiis non, voluptates dolorem ducimus
-        deserunt ratione iusto fuga, mollitia adipisci expedita saepe numquam
-        rem omnis reiciendis reprehenderit tenetur praesentium sunt! Hic unde
-        inventore ipsum vero velit earum eos veniam!
-      </p>
-      <b-container fluid="md">
-        <b-row no-gutters>
-          <b-col
-            data-aos="fade-right"
+  <section class="about">
+    <b-container>
+      <b-row class="my-md-5">
+        <b-col md="6" class="d-flex align-items-center justify-content-center">
+          <h1 class="about-title">About Us</h1>
+        </b-col>
+        <b-col md="6">
+          <p
+            data-aos="fade-up"
             data-aos-duration="1000"
-            class="about-me container module"
-            cols="6"
+            class="about-text module"
           >
-            <img
-              class="photo floated"
-              src="./assets/S2Plogo.png"
-              alt="S2Plogo"
-            />
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-              soluta asperiores facere iste fugiat. Ad, tempore debitis
-              temporibus veritatis culpa velit consequuntur officia sit?
-              Obcaecati dolor voluptate dolores harum ea!
-            </p>
-          </b-col>
-
-          <b-col
-            data-aos="fade-left"
-            data-aos-duration="1000"
-            class="about-me container"
-            cols="6"
-          >
-            <img
-              class="photo floated"
-              src="./assets/S2Plogo.png"
-              alt="S2Plogo"
-            />
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-              soluta asperiores facere iste fugiat. Ad, tempore debitis
-              temporibus veritatis culpa velit consequuntur officia sit?
-              Obcaecati dolor voluptate dolores harum ea!
-            </p>
-          </b-col>
-        </b-row>
-      </b-container>
-    </div>
+            The idea of creating Steps to Podium was born during Luis’ Erasmus
+            semester in Germany. Being deprived of riding dirt bikes, he
+            realized how important the sport was to him. At that time he was
+            also watching a lot of YouTube videos to overcome it… so he
+            understood that there was a gap of educational content made
+            specifically for the Offroad community. That was how Steps to Podium
+            was born. In a funny, simple, independent and straightforward way,
+            without any kind of interests or endorsement, Steps to Podium wants
+            to inspire, teach and help amateurs riders from around the globe.
+          </p>
+        </b-col>
+      </b-row>
+    </b-container>
   </section>
 </template>
 
@@ -65,3 +32,30 @@ export default {
   name: "About"
 };
 </script>
+<style lang="scss" scoped>
+section {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+h1 {
+  text-align: left;
+  padding-top: auto;
+  padding-bottom: auto;
+  font-size: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+p {
+  font-size: 1.2em;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  justify-content: center;
+}
+</style>
