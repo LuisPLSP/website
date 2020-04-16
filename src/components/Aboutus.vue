@@ -6,7 +6,7 @@
           lg="6"
           data-aos="fade"
           data-aos-duration="1500"
-          class="about-me container module"
+          class="mb-3 about-me container module"
         >
           <img
             class="photo floated"

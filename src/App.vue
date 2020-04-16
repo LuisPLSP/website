@@ -31,10 +31,10 @@
         <b-row class="my-md-5">
           <b-col
             id="contact-us"
-            class="d-flex align-items-center justify-content-center"
+            class="my-3 d-flex align-items-center justify-content-center"
             md="6"
           >
-            <h1 class="contact-title">Contact Us</h1>
+            <h1 class="mb-5 contact-title">Contact Us</h1>
           </b-col>
           <b-col class="contact-form" md="6">
             <b-form @submit="checkForm">

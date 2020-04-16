@@ -3,9 +3,9 @@
     <b-container>
       <b-row class="my-md-5">
         <b-col md="6" class="d-flex align-items-center justify-content-center">
-          <h1 class="about-title">About Us</h1>
+          <h1 class="my-5 about-title">About Us</h1>
         </b-col>
-        <b-col md="6">
+        <b-col md="6" class="mb-2">
           <p
             data-aos="fade-up"
             data-aos-duration="1000"

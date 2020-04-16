@@ -1,9 +1,9 @@
 <template>
   <section class="intro">
     <b-container>
-      <b-row class="my-md-5">
+      <b-row class="my-md-3">
         <b-col md="6" class="d-flex align-items-center justify-content-center">
-          <h1 class="intro-title">What is Steps to Podium?</h1>
+          <h1 class="mb-5 intro-title">What is Steps to Podium?</h1>
         </b-col>
         <b-col md="6">
           <p>
