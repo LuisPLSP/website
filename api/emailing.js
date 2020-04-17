@@ -4,6 +4,8 @@ var router = express.Router();
 const nodemailer = require("nodemailer");
 
 module.exports = (req, res) => {
+
+  router.post("/sendEmail", (req, res) => {
     const data = req.body;
 
   const output = `
@@ -31,4 +33,5 @@ module.exports = (req, res) => {
     .then(() => {
       res.send({msg: "Your email has been sent. We'll get back to you has soon as possible!"});
       });
-  }
+  })
+}
