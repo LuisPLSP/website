@@ -145,7 +145,7 @@ export default {
         return true;
       }
       e.preventDefault();
-      console.log("Sending request...");
+      //console.log("Sending request...");
       Vue.axios
         .post("http://localhost:3000/sendEmail", {
           email: this.form.email,
