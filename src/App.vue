@@ -102,7 +102,7 @@ export default {
     Videos,
     About,
     Aboutus,
-    Bottom,
+    Bottom
     //Contact
   },
 
@@ -112,17 +112,17 @@ export default {
       form: {
         email: "",
         subject: null,
-        message: "",
+        message: ""
       },
       subject: [
         { text: "--Select One--", value: null },
         "Collaboration",
         "Business Inquire",
         "Social Media",
-        "Other",
+        "Other"
       ],
       msg: "",
-      show: true,
+      show: true
     };
   },
   watch: {
@@ -130,7 +130,7 @@ export default {
       // binding this to the data value in the email input
       this.email = value;
       this.validateEmail(value);
-    },
+    }
   },
   methods: {
     validateEmail(value) {
@@ -146,44 +146,48 @@ export default {
       }
       e.preventDefault();
       //console.log("Sending request...");                comentado por dar erro com o ESLint
-      Vue.axios;
+      Vue.axios                                        
       //comentado por ser substituido por SendGrid -- usar isto caso se use Node.js backend
-      //   .post("http://localhost:3000/sendEmail", {
-      const sgMail = require("@sendgrid/mail");
-      sgMail.setApiKey(process.env.STEPS_TO_PODIUM);
-
-      const msg = {
-        to: "stepstopodium@gmail.com",
-        from: this.form.email,
-        subject: this.form.subject,
-        message: this.form.message,
-        html: `
-    <p>You have a new contact request!</p>
-    <h3>Contact details</h3>
-    <p>Email: ${this.form.email}</p>
-    <h3>Message</h3>
-    <p>${this.form.message}</p>
-    `,
-      };
-      sgMail.send(msg)
-      .then((res) => {
-        //this.msg = res.data.msg;                      comentado por ser outra maneira de mostrar toast com menos codigo e menos opções
-        //this.$bvToast.toast(res.data.msg);
-        this.makeToast(res.data.msg, {
-          autoHideDelay: 10000,
-          title: "Email confirmation",
-          variant: "success",
-          solid: true,
-        });
-        this.form.email = "";
-        this.form.subject = null;
-        this.form.message = "";
-      });
+      .post("http://localhost:3000/sendEmail", {
+        email: this.form.email,
+          subject: this.form.subject,
+          message: this.form.message
+        })
+        .then(res => {
+          //this.msg = res.data.msg;
+          //this.$bvToast.toast(res.data.msg);
+          this.makeToast(res.data.msg, {
+            autoHideDelay: 10000,
+            title: "Email confirmation",
+            variant: "success",
+            solid: true
+          });
+          this.form.email = "";
+          this.form.subject = null;
+          this.form.message = "";
+        }),
     },
     makeToast(message, options) {
       this.$bvToast.toast(message, options);
-    },
-  },
+    }
+  
+  // const sgMail = require("@sendgrid/mail");
+  //     sgMail.setApiKey(process.env.STEPS_TO_PODIUM);
+
+  //     const msg = {
+  //       to: "stepstopodium@gmail.com",
+  //       from: this.form.email,
+  //       subject: this.form.subject,
+  //       message: this.form.message,
+  //       html: `
+  //   <p>You have a new contact request!</p>
+  //   <h3>Contact details</h3>
+  //   <p>Email: ${this.form.email}</p>
+  //   <h3>Message</h3>
+  //   <p>${this.form.message}</p>
+  //   `,
+  //     };
+  //     sgMail.send(msg)
 };
 </script>
 
