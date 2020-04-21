@@ -147,7 +147,7 @@ export default {
       e.preventDefault();
       //console.log("Sending request...");                comentado por dar erro com o ESLint
       Vue.axios                                        
-      //comentado por ser substituido por SendGrid -- usar isto caso se use Node.js backend
+      // comentado por ser substituido por SendGrid -- usar isto caso se use Node.js backend
       .post("http://localhost:3000/sendEmail", {
         email: this.form.email,
           subject: this.form.subject,
