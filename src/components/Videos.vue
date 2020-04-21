@@ -16,7 +16,11 @@
               the sport itself.
             </b-card-text>
 
-            <b-button href="#" variant="primary">Watch more</b-button>
+            <b-button
+              href="https://www.youtube.com/watch?v=p88nLIZ4QYg&list=PLHSgGy8X-DgWVWBw-yR10u0tFgi8qQAG8"
+              variant="primary"
+              >Watch more</b-button
+            >
           </b-card>
         </b-col>
         <b-col md="6" data-aos="fade-up" data-aos-duration="1500" class="module"
@@ -33,7 +37,11 @@
               become a better rider.
             </b-card-text>
 
-            <b-button href="#" variant="primary">Watch more</b-button>
+            <b-button
+              href="https://www.youtube.com/watch?v=Tqg4juGzrPo&list=PLHSgGy8X-DgWDosqmcL1MrC9GHl8FUvBU"
+              variant="primary"
+              >Watch more</b-button
+            >
           </b-card>
         </b-col>
       </b-row>
@@ -52,7 +60,11 @@
               well-though and informed purchase.
             </b-card-text>
 
-            <b-button href="#" variant="primary">Watch more</b-button>
+            <b-button
+              href="https://www.youtube.com/watch?v=UkVHY90Ast4&list=PLHSgGy8X-DgXb9ikFBfyijEyjTP5ZvTSL"
+              variant="primary"
+              >Watch more</b-button
+            >
           </b-card>
         </b-col>
         <b-col md="6" data-aos="fade-up" data-aos-duration="1500" class="module"
@@ -69,7 +81,11 @@
               racing environment!
             </b-card-text>
 
-            <b-button href="#" variant="primary">Watch more</b-button>
+            <b-button
+              href="https://www.youtube.com/watch?v=KJhGZ5AnAxA&list=PLHSgGy8X-DgXrFE_SCm3WuAN-y9FDysOl"
+              variant="primary"
+              >Watch more</b-button
+            >
           </b-card>
         </b-col>
       </b-row>
@@ -78,7 +94,7 @@
 </template>
 <script>
 export default {
-  name: "Videos"
+  name: "Videos",
 };
 </script>
 <style lang="scss" scoped>

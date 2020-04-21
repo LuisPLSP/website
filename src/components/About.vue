@@ -1,7 +1,7 @@
 <template>
   <section class="about">
     <b-container>
-      <b-row class="my-md-5">
+      <b-row id="about" class="my-md-5">
         <b-col md="6" class="d-flex align-items-center justify-content-center">
           <h1 class="my-5 about-title">About Us</h1>
         </b-col>
