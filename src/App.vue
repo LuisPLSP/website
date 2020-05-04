@@ -165,7 +165,7 @@ export default {
           this.form.email = "";
           this.form.subject = null;
           this.form.message = "";
-        }),
+        })
     },
     makeToast(message, options) {
       this.$bvToast.toast(message, options);
@@ -188,7 +188,7 @@ export default {
   //   `,
   //     };
   //     sgMail.send(msg)
-};
+}}
 </script>
 
 <style lang="scss" scoped>
