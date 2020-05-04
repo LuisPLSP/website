@@ -156,7 +156,8 @@ export default {
         .then((res) => {
           //this.msg = res.data.msg;
           //this.$bvToast.toast(res.data.msg);
-          this.makeToast(res.data.msg, {
+          //this.makeToast(res.data.msg, {
+          this.makeToast(res.msg, {
             autoHideDelay: 10000,
             title: "Email confirmation",
             variant: "success",
