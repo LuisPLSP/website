@@ -1,5 +1,5 @@
 <template>
-  <section class="videos">
+  <section id="videos" class="videos">
     <b-container class="embed">
       <b-row class="my-md-5">
         <b-col md="6" data-aos="fade-up" data-aos-duration="1000" class="module"

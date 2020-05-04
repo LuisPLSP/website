@@ -1,11 +1,11 @@
 require("dotenv").config()
-var express = require("express");
-var router = express.Router();
 const nodemailer = require("nodemailer");
+
+
+const app = express();
 
 module.exports = (req, res) => {
 
-  router.post("/sendEmail", (req, res) => {
     const data = req.body;
 
   const output = `
@@ -31,7 +31,6 @@ module.exports = (req, res) => {
       html: output // plain text body
     })
     .then(() => {
-      res.send({msg: "Your email has been sent. We'll get back to you has soon as possible!"});
+      res.json({msg: "Your email has been sent. We'll get back to you has soon as possible!"});
       });
-  })
-}
+  }
