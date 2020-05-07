@@ -14,14 +14,15 @@ module.exports = (req, res) => {
     `;
 
   sgMail.setApiKey(process.env.SENDGRID_API_KEY);
-  const msg = {
+  const content = {
     to: "stepstopodium@gmail.com",
     from: '"S2P Website" <stepstopodium@gmail.com>',
     subject: `${data.subject}`,
     html: output
   };
   try {
-  await sgMail.send({msg: "Your email has been sent. We'll get back to you has soon as possible!"});}
+  await sgMail.send(content)
+  res.status(200).send({msg: "Your email has been sent. We'll get back to you has soon as possible!"})}
   catch (error) {
     console.log('ERROR', error)
     res.status(400).send('Message not sent.')
