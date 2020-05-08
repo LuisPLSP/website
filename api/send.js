@@ -2,7 +2,7 @@ require("dotenv").config()
 const sgMail = require('@sendgrid/mail');
 
 module.exports = (req, res) => {
-
+  sgMail.setApiKey(process.env.SENDGRID_API_KEY);
   const data = req.body;
 
   const output = `
@@ -13,7 +13,6 @@ module.exports = (req, res) => {
     <p>${data.message}</p>
     `;
 
-  sgMail.setApiKey(process.env.SENDGRID_API_KEY);
   const content = {
     to: "stepstopodium@gmail.com",
     from: '"S2P Website" <stepstopodium@gmail.com>',
@@ -21,7 +20,7 @@ module.exports = (req, res) => {
     html: output
   };
   try {
-  await sgMail.send(content)
+   sgMail.send(content)
   res.status(200).send({msg: "Your email has been sent. We'll get back to you has soon as possible!"})}
   catch (error) {
     console.log('ERROR', error)

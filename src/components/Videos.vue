@@ -11,7 +11,7 @@
               allowfullscreens
             ></b-embed>
             <b-card-text style="margin-top: 10px;">
-              A series of educational videos that explain, in a simple and
+              A series of educational and informative videos that explain in a simple and
               animated way, the engineering behind the dirt bikes we ride and
               the sport itself.
             </b-card-text>

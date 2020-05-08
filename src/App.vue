@@ -148,7 +148,7 @@ export default {
       //console.log("Sending request...");                comentado por dar erro com o ESLint
       Vue.axios
         // comentado por ser substituido por SendGrid -- usar isto caso se use Node.js backend
-        .post("http://localhost:3000/api/sendEmail", {
+        .post("http://localhost:8080/api/send", {
           email: this.form.email,
           subject: this.form.subject,
           message: this.form.message,
@@ -171,24 +171,6 @@ export default {
     makeToast(message, options) {
       this.$bvToast.toast(message, options);
     },
-
-    // const sgMail = require("@sendgrid/mail");
-    //     sgMail.setApiKey(process.env.STEPS_TO_PODIUM);
-
-    //     const msg = {
-    //       to: "stepstopodium@gmail.com",
-    //       from: this.form.email,
-    //       subject: this.form.subject,
-    //       message: this.form.message,
-    //       html: `
-    //   <p>You have a new contact request!</p>
-    //   <h3>Contact details</h3>
-    //   <p>Email: ${this.form.email}</p>
-    //   <h3>Message</h3>
-    //   <p>${this.form.message}</p>
-    //   `,
-    //     };
-    //     sgMail.send(msg)
   },
 };
 </script>
