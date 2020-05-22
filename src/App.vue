@@ -117,7 +117,7 @@ export default {
       subject: [
         { text: "--Select One--", value: null },
         "Collaboration",
-        "Business Inquire",
+        "Business Inquiry",
         "Social Media",
         "Other",
       ],
@@ -147,13 +147,16 @@ export default {
       e.preventDefault();
       //console.log("Sending request...");                comentado por dar erro com o ESLint
       Vue.axios
-        // comentado por ser substituido por SendGrid -- usar isto caso se use Node.js backend
-        .post("http://localhost:8080/api/send", {
-          email: this.form.email,
-          subject: this.form.subject,
-          message: this.form.message,
-        })
+        .post(
+          "https://us-central1-steps-to-podium-website-d4f43.cloudfunctions.net/emailMessage",
+          {
+            email: this.form.email,
+            subject: this.form.subject,
+            message: this.form.message,
+          }
+        )
         .then((res) => {
+          //console.log(res);
           //this.msg = res.data.msg;
           //this.$bvToast.toast(res.data.msg);
           //this.makeToast(res.data.msg, {
@@ -166,7 +169,8 @@ export default {
           this.form.email = "";
           this.form.subject = null;
           this.form.message = "";
-        });
+        })
+        ;
     },
     makeToast(message, options) {
       this.$bvToast.toast(message, options);
