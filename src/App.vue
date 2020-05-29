@@ -145,7 +145,6 @@ export default {
         return true;
       }
       e.preventDefault();
-      //console.log("Sending request...");                comentado por dar erro com o ESLint
       Vue.axios
         .post(
           "https://us-central1-steps-to-podium-website-d4f43.cloudfunctions.net/emailMessage",
@@ -154,27 +153,34 @@ export default {
             subject: this.form.subject,
             message: this.form.message,
           }
-        )
-        .then((res) => {
+        ).then(
+          //res => {
           //console.log(res);
-          //this.msg = res.data.msg;
-          //this.$bvToast.toast(res.data.msg);
-          //this.makeToast(res.data.msg, {
-          this.makeToast(res.msg, {
+          this.makeToast("Your email has been sent!", {
             autoHideDelay: 10000,
             title: "Email confirmation",
             variant: "success",
             solid: true,
-          });
-          this.form.email = "";
-          this.form.subject = null;
-          this.form.message = "";
-        })
-        ;
+          }),
+          this.form.email = "",
+          this.form.subject = null,
+          this.form.message = ""
+          //}
+        )
+        // .catch(
+        //   error => {
+        //   this.makeToast("Try again later, please!", {
+        //     autoHideDelay: 10000,
+        //     title: "An error occurred",
+        //     variant: "warning",
+        //     solid: true
+        //   })
+        //   }
+        //   );
     },
     makeToast(message, options) {
       this.$bvToast.toast(message, options);
-    },
+    }
   },
 };
 </script>

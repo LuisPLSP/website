@@ -11,13 +11,14 @@
               allowfullscreens
             ></b-embed>
             <b-card-text style="margin-top: 10px;">
-              A series of educational and informative videos that explain in a simple and
-              animated way, the engineering behind the dirt bikes we ride and
-              the sport itself.
+              A series of educational and informative videos that explain in a
+              simple and animated way, the engineering behind the dirt bikes we
+              ride and the sport itself.
             </b-card-text>
 
             <b-button
               href="https://www.youtube.com/watch?v=p88nLIZ4QYg&list=PLHSgGy8X-DgWVWBw-yR10u0tFgi8qQAG8"
+              target="_blank"
               variant="primary"
               >Watch more</b-button
             >
@@ -39,6 +40,7 @@
 
             <b-button
               href="https://www.youtube.com/watch?v=Tqg4juGzrPo&list=PLHSgGy8X-DgWDosqmcL1MrC9GHl8FUvBU"
+              target="_blank"
               variant="primary"
               >Watch more</b-button
             >
@@ -62,6 +64,7 @@
 
             <b-button
               href="https://www.youtube.com/watch?v=UkVHY90Ast4&list=PLHSgGy8X-DgXb9ikFBfyijEyjTP5ZvTSL"
+              target="_blank"
               variant="primary"
               >Watch more</b-button
             >
@@ -83,10 +86,70 @@
 
             <b-button
               href="https://www.youtube.com/watch?v=KJhGZ5AnAxA&list=PLHSgGy8X-DgXrFE_SCm3WuAN-y9FDysOl"
+              target="_blank"
               variant="primary"
               >Watch more</b-button
             >
           </b-card>
+        </b-col>
+      </b-row>
+      <b-row class="my-md-5" v-show="!isHidden">
+        <b-col md="6" class="module" data-aos="fade-up" data-aos-duration="1000">
+          <b-card class="shadow-lg" title="Behind the Scenes">
+            <b-embed
+              type="iframe"
+              aspect="16by9"
+              src="https://www.youtube.com/embed/qcBd63dva1Y"
+              allowfullscreens
+            ></b-embed>
+            <b-card-text style="margin-top: 10px;">
+              In this segment, we'll tell you the story of your favorite Offroad
+              brands and where they are headed, by interviewing people from
+              inside the company.
+            </b-card-text>
+
+            <b-button
+              href="https://www.youtube.com/watch?v=qcBd63dva1Y&list=PLHSgGy8X-DgVHB44FAgFRCJbHn-19tgUk"
+              target="_blank"
+              variant="primary"
+              >Watch more</b-button
+            >
+          </b-card>
+        </b-col>
+        <b-col md="6" class="module" data-aos="fade-up" data-aos-duration="1500">
+          <b-card class="shadow-lg" title="Interviews">
+            <b-embed
+              type="iframe"
+              aspect="16by9"
+              src="https://www.youtube.com/embed/fSPpY9XHPWo"
+              allowfullscreens
+            ></b-embed>
+            <b-card-text style="margin-top: 10px;">
+              Steps to Podium allows Luis to have a deeper insight on the
+              Offroad world by having interesting chats and interviews with
+              key people from the Offroad community.
+            </b-card-text>
+
+            <b-button
+              href="https://www.youtube.com/watch?v=fSPpY9XHPWo&list=PLHSgGy8X-DgVTtxRqI3b7ODqV8rcHVy08"
+              target="_blank"
+              variant="primary"
+              >Watch more</b-button
+            >
+          </b-card>
+        </b-col>
+      </b-row>
+
+      <b-row v-if="isHidden" class="justify-content-center mt-5">
+        <b-col
+          md="6"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          class="d-flex align-items-center"
+        >
+          <b-button block v-on:click="isHidden = !isHidden" variant="outline-primary"
+            >Load more</b-button
+          >
         </b-col>
       </b-row>
     </b-container>
@@ -95,6 +158,11 @@
 <script>
 export default {
   name: "Videos",
+  data() {
+    return {
+      isHidden: true,
+    };
+  },
 };
 </script>
 <style lang="scss" scoped>

@@ -8,6 +8,9 @@
         <b-nav-item size="sm" class="navbar-item" href="#about"
           >About</b-nav-item
         >
+        <b-nav-item size="sm" class="navbar-item" href="https://teespring.com/stores/steps-to-podiums-store" target="_blank"
+          >Merchandise</b-nav-item
+        >
         <b-nav-item size="sm" class="navbar-item" href="#contact-us"
           >Contact us</b-nav-item
         >
@@ -25,6 +28,9 @@ export default {
 <style lang="scss" scoped>
 #logo {
   height: 30px;
+  @media only screen and (max-width: 375px) {
+  height: 20px;
+}
 }
 #navbar {
   width: 100%;
@@ -40,5 +46,7 @@ export default {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-}
+  @media only screen and (max-width: 375px) {
+  font-size: smaller;
+}}
 </style>
