@@ -15,14 +15,17 @@
             alt="S2Plogo"
           />
           <p>
-            Luís is a Mechanical Engineer that works in Software Development,
+            {{ $t("aboutus.luis") }}
+            <!-- Luís is a Mechanical Engineer that works in Software Development,
             and most important, is a dirt bike fanatic by heart. Luís’ love for
             the sport makes him seek nothing else but the complete understanding
             of the sport, whether it’s on the bike, off the bike or about the
-            bike. <b-link
-                style="color: light-blue;"
-                href="https://www.linkedin.com/in/luis-peixoto-1969aa6a/"
-                ><i class="fab fa-linkedin"></i></b-link>
+            bike. -->
+            <b-link
+              style="color: light-blue;"
+              href="https://www.linkedin.com/in/luis-peixoto-1969aa6a/"
+              ><i class="fab fa-linkedin"></i
+            ></b-link>
           </p>
         </b-col>
 
@@ -33,20 +36,21 @@
           class="about-me container"
         >
           <img
-            class="photo floated"
+            class="photo-lili floated"
             style="padding-top: 0.5em;"
-            src="../assets/S2Plogo.png"
+            src="../assets/foto-Lili-website.jpg"
             alt="S2Plogo"
           />
-          <p>
-            Lili is a Marketing expert that fell in love with the project (and
+          <p>{{ $t("aboutus.lili") }}
+            <!-- Lili is a Marketing expert that fell in love with the project (and
             probably Luis) and decided to help the brand grow and become global.
             She’s part of the team since the beginning, so she already knows a
-            thing or two about dirt bikes, but don’t ask her too many questions.
-             <b-link
-                style="color: light-blue;"
-                href="https://www.linkedin.com/in/lilianammpinho/"
-                ><i class="fab fa-linkedin"></i></b-link>
+            thing or two about dirt bikes, but don’t ask her too many questions. -->
+            <b-link
+              style="color: light-blue;"
+              href="https://www.linkedin.com/in/lilianammpinho/"
+              ><i class="fab fa-linkedin"></i
+            ></b-link>
           </p>
         </b-col>
       </b-row>
@@ -82,16 +86,18 @@ section {
     justify-content: center;
   }
 }
-.photo {
-  height: 220px;
-  width: 210px;
-  padding-right: 1em;
-}
 .photo-luis {
   object-fit: cover;
   height: 220px;
   width: 210px;
   padding-right: 1em;
   object-position: 75% 0;
+}
+.photo-lili {
+  object-fit: cover;
+  height: 220px;
+  width: 210px;
+  padding-right: 1em;
+  object-position: 60% 0;
 }
 </style>

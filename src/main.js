@@ -15,7 +15,8 @@ require("typeface-montserrat");
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import VueI18n from 'vue-i18n';
+import VueI18n from "vue-i18n";
+import i18n from "./i18n";
 
 Vue.use(VueI18n);
 
@@ -34,5 +35,6 @@ new Vue({
   },
 
   router,
+  i18n,
   render: h => h(App)
 }).$mount("#app");

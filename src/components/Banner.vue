@@ -1,6 +1,11 @@
 <template>
   <div class="banner">
-    <img id="banner" src="../assets/youtubecover-2018-no-text.png" fluid alt="banner" />
+    <img
+      id="banner"
+      src="../assets/youtubecover-2018-no-text.png"
+      fluid
+      alt="banner"
+    />
   </div>
 </template>
 <script>

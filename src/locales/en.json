@@ -1,0 +1,63 @@
+{
+  "nav": {
+        "about": "About",
+        "merchandise": "Merchandise",
+        "contactus": "Contact us",
+        "english": "English",
+        "portuguese": "Português"
+  },
+  "intro": {
+    "title": "What is Steps to Podium?",
+    "text1": "Steps to Podium creates unique, inspiring and educational content about the 2-wheeled Offroad world.",
+    "text2": "With Steps to Podium you can learn how to improve your riding or take care of your bike, you can access bikes and gear reviews or even discover the engineering behind our wonderful and complex sport. All of this, while following Luis’ evolution as an amateur rider, by experiencing his trainings or adventures in the craziest of races! Ready to join the ride?"
+},
+"videos": {
+  "offroadengineered":
+  {"title": "Offroad Engineered",
+  "text": "A series of educational and informative videos that explain in a simple and animated way, the engineering behind the dirt bikes we ride and the sport itself."},
+  "how-tos":
+  {"title": "How-to's",
+  "text": "Not everything needs to be complex. We have some very simple tips and tricks on how to take care of your bike or even for you to become a better rider."},
+  "reviews":
+  {"title": "Reviews",
+  "text": "Looking for to buy new gear or parts? Here you’ll find a down-to-earth perspective on a bunch of products, so you can do a well-though and informed purchase."},
+  "races":
+  {"title": "Races",
+  "text": "One of the best things about riding… is racing. You can follow the adventures of the S2P team and discover more about the Portuguese racing environment!"},
+  "behindthescenes":
+  {"title": "Behind the Scenes",
+  "text": "In this segment, we'll tell you the story of your favorite Offroad brands and where they are headed, by interviewing people from inside the company."},
+  "interviews":
+  {"title": "Interviews",
+  "text": "Steps to Podium allows Luis to have a deeper insight on the Offroad world by having interesting chats and interviews with key people from the Offroad community."},
+  "watchmore": "Watch more",
+  "loadmore": "Load more"
+},
+"about": {
+  "title": "About Us",
+  "text": "The idea of creating Steps to Podium was born during Luis’ Erasmus semester in Germany. Being deprived of riding dirt bikes, he realized how important the sport was to him. At that time he was also watching a lot of YouTube videos to overcome it… so he understood that there was a gap in educational content made specifically for the Offroad community. That's how Steps to Podium was born. In a funny, simple, independent and straightforward way, without any kind of interests or endorsement, Steps to Podium wants to inspire, teach and help amateur riders from around the globe."
+},
+"aboutus": {
+  "luis": "Luís is a Mechanical Engineer that works in Software Development, and most important, is a dirt bike fanatic by heart. Luís’ love for the sport makes him seek nothing else but the complete understanding of the sport, whether it’s on the bike, off the bike or about the bike.",
+  "lili": "Lili is a Marketing expert that fell in love with the project (and probably Luis) and decided to help the brand grow and become global. She’s part of the team since the beginning, so she already knows a thing or two about dirt bikes, but don’t ask her too many questions."
+},
+"contact": {
+  "title": "Contact Us",
+  "email-title": "Email address:",
+  "email-placeholder": "Enter email",
+  "subject-title": "Subject",
+  "message-title": "Message:",
+  "message-placeholder": "Message",
+  "submit": "Submit"
+},
+"footer": {
+  "rightsreserved": "All Copyrights reserved",
+  "project": "The project",
+  "about": "About us",
+  "videos": "Videos",
+  "merchandise": "Merchandise",
+  "privacypolicy": "Privacy Policy",
+  "termsandconditions": "Terms & Conditions",
+  "follow": "Follow us"
+}
+}

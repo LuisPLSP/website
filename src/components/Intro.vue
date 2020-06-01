@@ -3,10 +3,14 @@
     <b-container>
       <b-row class="my-md-3">
         <b-col md="6" class="d-flex align-items-center justify-content-center">
-          <h1 class="mb-5 intro-title">What is Steps to Podium?</h1>
+          <h1 class="mb-5 intro-title">{{ $t("intro.title") }}</h1>
         </b-col>
         <b-col md="6">
           <p>
+            {{ $t("intro.text1") }}<br />
+            {{ $t("intro.text2") }}
+          </p>
+          <!-- <p>
             Steps to Podium creates unique, inspiring and educational content
             about the 2-wheeled Offroad world.<br />
             With Steps to Podium you can learn how to improve your riding or
@@ -15,7 +19,7 @@
             sport. All of this, while following Luis’ evolution as an amateur
             rider, by experiencing his trainings or adventures in the craziest
             of races! Ready to join the ride?
-          </p>
+          </p> -->
         </b-col>
       </b-row>
     </b-container>
@@ -24,7 +28,12 @@
 
 <script>
 export default {
-  name: "Intro"
+  name: "Intro",
+  methods: {
+    setLocale(locale) {
+      this.$i18n.locale = locale
+    }
+  }
 };
 </script>
 <style lang="scss" scoped>

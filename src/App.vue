@@ -34,7 +34,7 @@
             class="my-3 d-flex align-items-center justify-content-center"
             md="6"
           >
-            <h1 class="mb-5 contact-title">Contact Us</h1>
+            <h1 class="mb-5 contact-title">{{ $t("contact.title") }}</h1>
           </b-col>
           <b-col class="contact-form" md="6">
             <b-form @submit="checkForm">
@@ -68,7 +68,7 @@
                 style="margin-right: 10px;"
                 type="submit"
                 variant="success"
-                >Submit</b-button
+                >{{ $t("contact.submit") }}</b-button
               >
             </b-form>
           </b-col>
@@ -102,7 +102,7 @@ export default {
     Videos,
     About,
     Aboutus,
-    Bottom,
+    Bottom
     //Contact
   },
 
@@ -112,17 +112,17 @@ export default {
       form: {
         email: "",
         subject: null,
-        message: "",
+        message: ""
       },
       subject: [
         { text: "--Select One--", value: null },
         "Collaboration",
         "Business Inquiry",
         "Social Media",
-        "Other",
+        "Other"
       ],
       msg: "",
-      show: true,
+      show: true
     };
   },
   watch: {
@@ -130,9 +130,14 @@ export default {
       // binding this to the data value in the email input
       this.email = value;
       this.validateEmail(value);
-    },
+    }
   },
   methods: {
+    methods: {
+    setLocale(locale) {
+      this.$i18n.locale = locale
+    }
+  },
     validateEmail(value) {
       if (/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(value)) {
         this.alert["email"] = "";
@@ -151,37 +156,38 @@ export default {
           {
             email: this.form.email,
             subject: this.form.subject,
-            message: this.form.message,
+            message: this.form.message
           }
-        ).then(
+        )
+        .then(
           //res => {
           //console.log(res);
           this.makeToast("Your email has been sent!", {
             autoHideDelay: 10000,
             title: "Email confirmation",
             variant: "success",
-            solid: true,
+            solid: true
           }),
-          this.form.email = "",
-          this.form.subject = null,
-          this.form.message = ""
+          (this.form.email = ""),
+          (this.form.subject = null),
+          (this.form.message = "")
           //}
-        )
-        // .catch(
-        //   error => {
-        //   this.makeToast("Try again later, please!", {
-        //     autoHideDelay: 10000,
-        //     title: "An error occurred",
-        //     variant: "warning",
-        //     solid: true
-        //   })
-        //   }
-        //   );
+        );
+      // .catch(
+      //   error => {
+      //   this.makeToast("Try again later, please!", {
+      //     autoHideDelay: 10000,
+      //     title: "An error occurred",
+      //     variant: "warning",
+      //     solid: true
+      //   })
+      //   }
+      //   );
     },
     makeToast(message, options) {
       this.$bvToast.toast(message, options);
     }
-  },
+  }
 };
 </script>
 

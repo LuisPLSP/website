@@ -6,19 +6,25 @@
       </b-navbar-brand>
       <b-navbar-nav id="navbar" align="end" class="ml-auto">
         <b-nav-item size="sm" class="navbar-item" href="#about"
-          >About</b-nav-item
+          >{{ $t("nav.about") }}</b-nav-item
         >
         <b-nav-item
           size="sm"
           class="navbar-item"
           href="https://teespring.com/stores/steps-to-podiums-store"
           target="_blank"
-          >Merchandise</b-nav-item
+          >{{ $t("nav.merchandise") }}</b-nav-item
         >
         <b-nav-item size="sm" class="navbar-item" href="#contact-us"
-          >Contact us</b-nav-item
+          >{{ $t("nav.contactus") }}</b-nav-item
         >
+        <select v-model="$i18n.locale" class="navbar-item-language">
+      <option value="en">English</option>
+      <option value="pt">Português</option>
+    </select>
+        
         <!-- <b-nav-item
+        {{$i18n.locale}
           size="sm"
           class="navbar-item"
           v-for="(lang, i) in langs"
@@ -32,11 +38,9 @@
 </template>
 
 <script>
+
 export default {
-  name: "Navbar",
-  // data() {
-  //   return { langs: ["EN", "PT"] };
-  // },
+  name: "Navbar"
 };
 </script>
 
@@ -61,6 +65,22 @@ export default {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
+  @media only screen and (max-width: 430px) {
+    font-size: x-small;
+  }
+}
+.navbar-item-language {
+  font-size: medium;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  border: none;
+  text-decoration: none;
+  background-color: white;
+  opacity: 0.5;
   @media only screen and (max-width: 430px) {
     font-size: x-small;
   }

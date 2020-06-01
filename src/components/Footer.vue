@@ -11,16 +11,16 @@
             alt="S2Plogo"
           />
           <p style="font-size: 0.65em;">
-            All Copyrights reserved
+            {{ $t("footer.rightsreserved") }}
           </p>
         </b-col>
         <b-col md="2">
           <b-nav vertical>
             <a class="adjust" style="color: white;" href="#banner"
-              >The project</a
+              >{{ $t("footer.project") }}</a
             >
-            <a class="adjust" style="color: white;" href="#videos">Videos</a>
-            <a class="adjust" style="color: white;" href="#about">About us</a>
+            <a class="adjust" style="color: white;" href="#videos">{{ $t("footer.videos") }}</a>
+            <a class="adjust" style="color: white;" href="#about">{{ $t("footer.about") }}</a>
           </b-nav>
         </b-col>
         <b-col md="3">
@@ -30,13 +30,13 @@
               style="color: white;"
               href="https://teespring.com/stores/steps-to-podiums-store"
               target="_blank"
-              >Merchandise</a
+              >{{ $t("footer.merchandise") }}</a
             >
             <a class="adjust" style="color: white;" v-b-modal.privacy
-              >Privacy Policy</a
+              >{{ $t("footer.privacypolicy") }}</a
             >
             <a class="adjust" style="color: white;" v-b-modal.terms
-              >Terms and Conditions</a
+              >{{ $t("footer.termsandconditions") }}</a
             >
             <b-modal ok-only size="lg" id="privacy" title="Privacy Policy">
               <h1>Privacy Policy for Steps to Podium</h1>
@@ -96,9 +96,9 @@
               </p>
 
               <ul>
-                <li>Provide, operate, and maintain our webste</li>
-                <li>Improve, personalize, and expand our webste</li>
-                <li>Understand and analyze how you use our webste</li>
+                <li>Provide, operate, and maintain our website</li>
+                <li>Improve, personalize, and expand our website</li>
+                <li>Understand and analyze how you use our website</li>
                 <li>
                   Develop new products, services, features, and functionality
                 </li>
@@ -606,7 +606,7 @@
         <b-col md="2">
           <b-row>
             <b-col class="text-md-left">
-              <a style="font-weight: bold;">Follow us</a>
+              <a style="font-weight: bold;">{{ $t("footer.follow") }}</a>
             </b-col>
           </b-row>
           <b-row>
@@ -645,7 +645,7 @@
 </template>
 <script>
 export default {
-  name: "Bottom",
+  name: "Bottom"
 };
 </script>
 <style lang="scss" scoped>

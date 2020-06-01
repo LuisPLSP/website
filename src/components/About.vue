@@ -3,7 +3,7 @@
     <b-container>
       <b-row id="about" class="my-md-5">
         <b-col md="6" class="d-flex align-items-center justify-content-center">
-          <h1 class="my-5 about-title">About Us</h1>
+          <h1 class="my-5 about-title">{{ $t("about.title") }}</h1>
         </b-col>
         <b-col md="6" class="mb-2">
           <p
@@ -11,7 +11,8 @@
             data-aos-duration="1000"
             class="about-text module"
           >
-            The idea of creating Steps to Podium was born during Luis’ Erasmus
+          {{ $t("about.text") }}
+            <!-- The idea of creating Steps to Podium was born during Luis’ Erasmus
             semester in Germany. Being deprived of riding dirt bikes, he
             realized how important the sport was to him. At that time he was
             also watching a lot of YouTube videos to overcome it… so he
@@ -19,7 +20,7 @@
             specifically for the Offroad community. That's how Steps to Podium
             was born. In a funny, simple, independent and straightforward way,
             without any kind of interests or endorsement, Steps to Podium wants
-            to inspire, teach and help amateur riders from around the globe.
+            to inspire, teach and help amateur riders from around the globe. -->
           </p>
         </b-col>
       </b-row>
@@ -29,7 +30,12 @@
 
 <script>
 export default {
-  name: "About"
+  name: "About",
+  methods: {
+    setLocale(locale) {
+      this.$i18n.locale = locale
+    }
+  }
 };
 </script>
 <style lang="scss" scoped>
