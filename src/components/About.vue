@@ -15,11 +15,11 @@
             semester in Germany. Being deprived of riding dirt bikes, he
             realized how important the sport was to him. At that time he was
             also watching a lot of YouTube videos to overcome it… so he
-            understood that there was a gap of educational content made
-            specifically for the Offroad community. That was how Steps to Podium
+            understood that there was a gap in educational content made
+            specifically for the Offroad community. That's how Steps to Podium
             was born. In a funny, simple, independent and straightforward way,
             without any kind of interests or endorsement, Steps to Podium wants
-            to inspire, teach and help amateurs riders from around the globe.
+            to inspire, teach and help amateur riders from around the globe.
           </p>
         </b-col>
       </b-row>

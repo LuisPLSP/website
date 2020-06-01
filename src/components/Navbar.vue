@@ -8,12 +8,24 @@
         <b-nav-item size="sm" class="navbar-item" href="#about"
           >About</b-nav-item
         >
-        <b-nav-item size="sm" class="navbar-item" href="https://teespring.com/stores/steps-to-podiums-store" target="_blank"
+        <b-nav-item
+          size="sm"
+          class="navbar-item"
+          href="https://teespring.com/stores/steps-to-podiums-store"
+          target="_blank"
           >Merchandise</b-nav-item
         >
         <b-nav-item size="sm" class="navbar-item" href="#contact-us"
           >Contact us</b-nav-item
         >
+        <!-- <b-nav-item
+          size="sm"
+          class="navbar-item"
+          v-for="(lang, i) in langs"
+          :key="`lang-${i}`"
+          :value="lang"
+          >{{ lang }}</b-nav-item
+        > -->
       </b-navbar-nav>
     </b-navbar>
   </b-container>
@@ -21,7 +33,10 @@
 
 <script>
 export default {
-  name: "Navbar"
+  name: "Navbar",
+  // data() {
+  //   return { langs: ["EN", "PT"] };
+  // },
 };
 </script>
 
@@ -29,8 +44,8 @@ export default {
 #logo {
   height: 30px;
   @media only screen and (max-width: 375px) {
-  height: 20px;
-}
+    height: 20px;
+  }
 }
 #navbar {
   width: 100%;
@@ -46,7 +61,8 @@ export default {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  @media only screen and (max-width: 375px) {
-  font-size: smaller;
-}}
+  @media only screen and (max-width: 430px) {
+    font-size: x-small;
+  }
+}
 </style>
