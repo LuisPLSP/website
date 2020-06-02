@@ -38,33 +38,31 @@
           </b-col>
           <b-col class="contact-form" md="6">
             <b-form @submit="checkForm">
-              <b-form-group id="email" label="Email address:" label-for="email">
-                <b-form-input
-                  id="email"
-                  v-model.trim="form.email"
-                  type="email"
-                  required
-                  placeholder="Enter email"
-                ></b-form-input>
-              </b-form-group>
-              <b-form-group id="subject" label="Subject:" label-for="subject">
-                <b-form-select
-                  id="subject"
-                  v-model="form.subject"
-                  :options="subject"
-                  required
-                ></b-form-select>
-              </b-form-group>
+              <div class="form">{{ $t("contact.emailtitle") }}</div>
+              <b-form-input
+                id="email"
+                v-model.trim="form.email"
+                type="email"
+                required
+                placeholder="Email"
+              ></b-form-input>
+              <div class="form">{{ $t("contact.subjecttitle") }}</div>
+              <b-form-select
+                id="subject"
+                v-model="form.subject"
+                :options="subject"
+                required
+              ></b-form-select>
 
-              <b-form-group id="message" label="Message:" label-for="message">
-                <b-form-textarea
-                  id="message"
-                  v-model.trim="form.message"
-                  required
-                  placeholder="Message"
-                ></b-form-textarea>
-              </b-form-group>
+              <div class="form">{{ $t("contact.messagetitle") }}</div>
+              <b-form-textarea
+                id="message"
+                v-model.trim="form.message"
+                required
+                placeholder="Message"
+              ></b-form-textarea>
               <b-button
+                class="form"
                 style="margin-right: 10px;"
                 type="submit"
                 variant="success"
@@ -92,6 +90,7 @@ import About from "./components/About.vue";
 import Aboutus from "./components/Aboutus.vue";
 //import Contact from "./components/Contact.vue";
 import Bottom from "./components/Footer.vue";
+//import i18n from "@/i18n";
 
 export default {
   name: "App",
@@ -102,42 +101,42 @@ export default {
     Videos,
     About,
     Aboutus,
-    Bottom
+    Bottom,
     //Contact
   },
-
   data() {
     return {
       errors: [],
       form: {
         email: "",
         subject: null,
-        message: ""
+        message: "",
       },
-      subject: [
-        { text: "--Select One--", value: null },
-        "Collaboration",
-        "Business Inquiry",
-        "Social Media",
-        "Other"
-      ],
       msg: "",
-      show: true
+      show: true,
     };
+  },
+  computed: {
+    subject() {
+      return [
+        { text: this.$t("contact.subjectoption"), value: null },
+        this.$t("contact.subjectoption1"),
+        this.$t("contact.subjectoption2"),
+        this.$t("contact.subjectoption3"),
+        this.$t("contact.subjectoption4")
+      ]
+    }
   },
   watch: {
     email(value) {
-      // binding this to the data value in the email input
       this.email = value;
       this.validateEmail(value);
-    }
+    },
   },
   methods: {
-    methods: {
     setLocale(locale) {
-      this.$i18n.locale = locale
-    }
-  },
+      this.$i18n.locale = locale;
+    },
     validateEmail(value) {
       if (/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(value)) {
         this.alert["email"] = "";
@@ -156,7 +155,7 @@ export default {
           {
             email: this.form.email,
             subject: this.form.subject,
-            message: this.form.message
+            message: this.form.message,
           }
         )
         .then(
@@ -166,7 +165,7 @@ export default {
             autoHideDelay: 10000,
             title: "Email confirmation",
             variant: "success",
-            solid: true
+            solid: true,
           }),
           (this.form.email = ""),
           (this.form.subject = null),
@@ -186,8 +185,8 @@ export default {
     },
     makeToast(message, options) {
       this.$bvToast.toast(message, options);
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -210,5 +209,9 @@ h1 {
   font-size: 2em;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+}
+.form {
+  margin-bottom: 0.3em;
+  margin-top: 0.75em;
 }
 </style>

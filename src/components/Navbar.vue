@@ -1,59 +1,88 @@
 <template>
   <b-container fluid>
-    <b-navbar id="navbar" type="light">
+    <b-navbar toggleable="sm" id="navbar" type="light">
       <b-navbar-brand>
         <img id="logo" src="../assets/S2Plogo.png" alt="S2Plogo" />
       </b-navbar-brand>
-      <b-navbar-nav id="navbar" align="end" class="ml-auto">
-        <b-nav-item size="sm" class="navbar-item" href="#about"
-          >{{ $t("nav.about") }}</b-nav-item
-        >
-        <b-nav-item
-          size="sm"
-          class="navbar-item"
-          href="https://teespring.com/stores/steps-to-podiums-store"
-          target="_blank"
-          >{{ $t("nav.merchandise") }}</b-nav-item
-        >
-        <b-nav-item size="sm" class="navbar-item" href="#contact-us"
-          >{{ $t("nav.contactus") }}</b-nav-item
-        >
-        <select v-model="$i18n.locale" class="navbar-item-language">
-      <option value="en">English</option>
-      <option value="pt">Português</option>
-    </select>
-        
-        <!-- <b-nav-item
-        {{$i18n.locale}
-          size="sm"
-          class="navbar-item"
-          v-for="(lang, i) in langs"
-          :key="`lang-${i}`"
-          :value="lang"
-          >{{ lang }}</b-nav-item
-        > -->
-      </b-navbar-nav>
+
+      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+
+      <b-collapse id="nav-collapse" class="collapse" is-nav>
+        <b-navbar-nav align="end" class=" ml-auto">
+          <b-nav-item size="sm" class="navbar-item" href="#about">{{
+            $t("nav.about")
+          }}</b-nav-item>
+          <b-nav-item
+            size="sm"
+            class="navbar-item"
+            href="https://teespring.com/stores/steps-to-podiums-store"
+            target="_blank"
+            >{{ $t("nav.merchandise") }}</b-nav-item
+          >
+          <b-nav-item size="sm" class="navbar-item" href="#contact-us">{{
+            $t("nav.contactus")
+          }}</b-nav-item>
+          <b-nav-item
+            size="sm"
+            v-on:click="switchLocale()"
+            class="navbar-item"
+            >{{ displayLocale }}</b-nav-item
+          >
+
+          <!-- <select v-model="$i18n.locale" class="navbar-item-language">
+            <option value="en">{{ $t("nav.english") }}</option>
+            <option value="pt">{{ $t("nav.portuguese") }}</option>
+          </select> -->
+        </b-navbar-nav>
+      </b-collapse>
     </b-navbar>
   </b-container>
 </template>
 
 <script>
-
 export default {
-  name: "Navbar"
+  name: "Navbar",
+
+  computed: {
+    subject() {
+      return [
+        { text: this.$t("contact.subjectoption"), value: null },
+        this.$t("contact.subjectoption1"),
+        this.$t("contact.subjectoption2"),
+        this.$t("contact.subjectoption3"),
+        this.$t("contact.subjectoption4"),
+      ];
+    },
+    displayLocale() {
+      let other = "PT";
+      if (this.$i18n.locale === "pt") {
+        other = "EN";
+      }
+      return other;
+    },
+  },
+  methods: {
+    setLocale(locale) {
+      this.$i18n.locale = locale;
+    },
+    switchLocale() {
+      if (this.$i18n.locale === "pt") {
+        this.$i18n.locale = "en";
+      } else {
+        this.$i18n.locale = "pt";
+      }
+    },
+  },
 };
 </script>
 
 <style lang="scss" scoped>
 #logo {
   height: 30px;
-  @media only screen and (max-width: 375px) {
-    height: 20px;
-  }
 }
 #navbar {
   width: 100%;
-  height: 50px;
+  height: auto;
   display: flex;
   background: white;
 }
@@ -65,9 +94,9 @@ export default {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  @media only screen and (max-width: 430px) {
-    font-size: x-small;
-  }
+  //   .collapse {
+  //   font-size: larger;
+  // }
 }
 .navbar-item-language {
   font-size: medium;
@@ -81,8 +110,12 @@ export default {
   text-decoration: none;
   background-color: white;
   opacity: 0.5;
-  @media only screen and (max-width: 430px) {
-    font-size: x-small;
-  }
+}
+.collapse {
+  background-color: white;
+  width: 100%;
+}
+.dropdown:hover > .dropdown-menu {
+  display: block;
 }
 </style>

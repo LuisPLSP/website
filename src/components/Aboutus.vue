@@ -16,11 +16,6 @@
           />
           <p>
             {{ $t("aboutus.luis") }}
-            <!-- Luís is a Mechanical Engineer that works in Software Development,
-            and most important, is a dirt bike fanatic by heart. Luís’ love for
-            the sport makes him seek nothing else but the complete understanding
-            of the sport, whether it’s on the bike, off the bike or about the
-            bike. -->
             <b-link
               style="color: light-blue;"
               href="https://www.linkedin.com/in/luis-peixoto-1969aa6a/"
@@ -42,10 +37,6 @@
             alt="S2Plogo"
           />
           <p>{{ $t("aboutus.lili") }}
-            <!-- Lili is a Marketing expert that fell in love with the project (and
-            probably Luis) and decided to help the brand grow and become global.
-            She’s part of the team since the beginning, so she already knows a
-            thing or two about dirt bikes, but don’t ask her too many questions. -->
             <b-link
               style="color: light-blue;"
               href="https://www.linkedin.com/in/lilianammpinho/"

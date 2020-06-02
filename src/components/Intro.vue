@@ -10,16 +10,6 @@
             {{ $t("intro.text1") }}<br />
             {{ $t("intro.text2") }}
           </p>
-          <!-- <p>
-            Steps to Podium creates unique, inspiring and educational content
-            about the 2-wheeled Offroad world.<br />
-            With Steps to Podium you can learn how to improve your riding or
-            take care of your bike, you can access bikes and gear reviews or
-            even discover the engineering behind our wonderful and complex
-            sport. All of this, while following Luis’ evolution as an amateur
-            rider, by experiencing his trainings or adventures in the craziest
-            of races! Ready to join the ride?
-          </p> -->
         </b-col>
       </b-row>
     </b-container>

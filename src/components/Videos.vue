@@ -12,9 +12,6 @@
             ></b-embed>
             <b-card-text style="margin-top: 10px;">
               {{ $t("videos.offroadengineered.text") }}
-              <!-- A series of educational and informative videos that explain in a
-              simple and animated way, the engineering behind the dirt bikes we
-              ride and the sport itself. -->
             </b-card-text>
 
             <b-button
@@ -35,9 +32,6 @@
             ></b-embed>
             <b-card-text style="margin-top: 10px;">
               {{ $t("videos.how-tos.text") }}
-              <!-- Not everything needs to be complex. We have some very simple tips
-              and tricks on how to take care of your bike or even for you to
-              become a better rider. -->
             </b-card-text>
 
             <b-button
@@ -60,9 +54,6 @@
             ></b-embed>
             <b-card-text style="margin-top: 10px;">
               {{ $t("videos.reviews.text") }}
-              <!-- Looking for to buy new gear or parts? Here you’ll find a
-              down-to-earth perspective on a bunch of products, so you can do a
-              well-though and informed purchase. -->
             </b-card-text>
 
             <b-button
@@ -83,9 +74,6 @@
             ></b-embed>
             <b-card-text style="margin-top: 10px;">
               {{ $t("videos.races.text") }}
-              <!-- One of the best things about riding… is racing. You can follow the
-              adventures of the S2P team and discover more about the Portuguese
-              racing environment! -->
             </b-card-text>
 
             <b-button
@@ -113,9 +101,6 @@
             ></b-embed>
             <b-card-text style="margin-top: 10px;">
               {{ $t("videos.behindthescenes.text") }}
-              <!-- In this segment, we'll tell you the story of your favorite Offroad
-              brands and where they are headed, by interviewing people from
-              inside the company. -->
             </b-card-text>
 
             <b-button
@@ -141,9 +126,6 @@
             ></b-embed>
             <b-card-text style="margin-top: 10px;">
               {{ $t("videos.interviews.text") }}
-              <!-- Steps to Podium allows Luis to have a deeper insight on the
-              Offroad world by having interesting chats and interviews with key
-              people from the Offroad community. -->
             </b-card-text>
 
             <b-button

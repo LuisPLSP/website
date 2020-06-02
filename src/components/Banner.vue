@@ -2,7 +2,7 @@
   <div class="banner">
     <img
       id="banner"
-      src="../assets/youtubecover-2018-no-text.png"
+      src="../assets/websitecover-2018.png"
       fluid
       alt="banner"
     />

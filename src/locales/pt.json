@@ -2,9 +2,9 @@
     "nav": {
           "about": "Sobre nós",
           "merchandise": "Merchandise",
-          "contactus": "Contacta-nos",
-          "english": "English",
-          "portuguese": "Português"
+          "contactus": "Contactos",
+          "english": "EN",
+          "portuguese": "PT"
     },
     "intro": {
       "title": "O que é o Steps to Podium?",
@@ -42,12 +42,17 @@
     "luis": "O Luís é um Engenheiro Mecânico que trabalha em Programação de Software, mas mais importante ainda, é um autêntico fanático por motas de todo-o-terreno. A sua paixão fá-lo procurar nada menos que a total compreensão do desporto, quer seja em cima, fora ou sobre a mota",
     "lili": "A Liliana é uma expert em Marketing, que se apaixonou pelo projecto (e provavelmente pelo Luís) e decidiu ajudar a crescer a marca e tornar-se global. Faz parte da equipa desde o início, por isso percebe uma coisa ou outra sobre motas, mas não faças muitas perguntas"},
   "contact": {
-    "title": "Contacta-nos",
-    "email-title": "Endereço de email:",
-    "email-placeholder": "Introduz o teu email",
-    "subject-title": "Assunto",
-    "message-title": "Mensagem:",
-    "message-placeholder": "Mensagem",
+    "title": "Contactos",
+    "emailtitle": "Endereço de email:",
+    "emailplaceholder": "Introduz aqui o teu email",
+    "subjecttitle": "Assunto:",
+    "subjectoption": "--Selecionar uma opção--",
+    "subjectoption1": "Colaboração",
+    "subjectoption2": "Parceria",
+    "subjectoption3": "Redes Sociais",
+    "subjectoption4": "Outro",
+    "messagetitle": "Mensagem:",
+    "messageplaceholder": "Introduz aqui a tua mensagem",
     "submit": "Submeter"
   },
   "footer": {
