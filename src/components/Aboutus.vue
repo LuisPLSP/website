@@ -19,6 +19,7 @@
             <b-link
               style="color: light-blue;"
               href="https://www.linkedin.com/in/luis-peixoto-1969aa6a/"
+              target="_blank"
               ><i class="fab fa-linkedin"></i
             ></b-link>
           </p>
@@ -41,6 +42,7 @@
             <b-link
               style="color: light-blue;"
               href="https://www.linkedin.com/in/lilianammpinho/"
+              target="_blank"
               ><i class="fab fa-linkedin"></i
             ></b-link>
           </p>
