@@ -27,7 +27,7 @@
         <b-col
           lg="6"
           data-aos="fade"
-          data-aos-duration="2000"
+          data-aos-duration="1500"
           class="about-me container"
         >
           <img
@@ -36,7 +36,8 @@
             src="../assets/foto-Lili-website.jpg"
             alt="S2Plogo"
           />
-          <p>{{ $t("aboutus.lili") }}
+          <p>
+            {{ $t("aboutus.lili") }}
             <b-link
               style="color: light-blue;"
               href="https://www.linkedin.com/in/lilianammpinho/"
@@ -50,7 +51,7 @@
 </template>
 <script>
 export default {
-  name: "Aboutus"
+  name: "Aboutus",
 };
 </script>
 <style lang="scss" scoped>

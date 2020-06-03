@@ -1,16 +1,11 @@
 <template>
   <div class="banner">
-    <img
-      id="banner"
-      src="../assets/websitecover-2018.png"
-      fluid
-      alt="banner"
-    />
+    <img id="banner" src="../assets/websitecover-2018.png" fluid alt="banner" />
   </div>
 </template>
 <script>
 export default {
-  name: "Banner"
+  name: "Banner",
 };
 </script>
 <style lang="scss" scoped>

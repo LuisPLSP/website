@@ -1,46 +1,52 @@
 {
-    "nav": {
-          "about": "Sobre nós",
-          "merchandise": "Merchandise",
-          "contactus": "Contactos",
-          "english": "EN",
-          "portuguese": "PT"
-    },
-    "intro": {
-      "title": "O que é o Steps to Podium?",
-      "text1": "O Steps to Podium cria conteúdo único, inspirador e educativo sobre o mundo do todo-o-terreno sobre duas rodas.",
-      "text2": "Com o Steps to Podium, podes aprender como melhorar a andar de mota ou como tratar da tua mota, tens acesso a reviews de motas e equipamento ou até descobrir a engenharia por detrás do nosso maravilhoso e complexo desporto. Tudo isto seguindo a evolução do Luis como atleta amador, vivenciando os seus treinos e aventuras nas corridas mais incríveis! Preparado para te juntares à aventura?"
+  "nav": {
+    "about": "Sobre nós",
+    "merchandise": "Merchandise",
+    "contactus": "Contactos",
+    "english": "EN",
+    "portuguese": "PT"
+  },
+  "intro": {
+    "title": "O que é o Steps to Podium?",
+    "text1": "O Steps to Podium cria conteúdo único, inspirador e educativo sobre o mundo do todo-o-terreno sobre duas rodas.",
+    "text2": "Com o Steps to Podium, podes aprender como melhorar a andar de mota ou como tratar da tua mota, tens acesso a reviews de motas e equipamento ou até descobrir a engenharia por detrás do nosso maravilhoso e complexo desporto. Tudo isto seguindo a evolução do Luis como atleta amador, vivenciando os seus treinos e aventuras nas corridas mais incríveis! Preparado para te juntares à aventura?"
   },
   "videos": {
-    "offroadengineered":
-    {"title": "Offroad Engineered",
-    "text": "Uma série de vídeos informativos e educativos, que explicam de um modo simples e com animações, a engenharia por detrás das motas e do nosso desporto."},
-    "how-tos":
-    {"title": "How-to's",
-    "text": "Nem tudo precisa de ser complicado. Temos dicas muito simples e alguns truques sobre como tratar da tua mota ou até como melhorares como piloto."},
-    "reviews":
-    {"title": "Reviews",
-    "text": "À procura de novo equipamento ou peças? Aqui encontras um ponto de vista terra-à-terra sobre vários produtos, para poderes fazes uma compra bem informada."},
-    "races":
-    {"title": "Corridas",
-    "text": "Uma das melhores coisas sobre andar de mota... é competir. Podes seguir as aventuras da equipa do S2P e descobrir mais sobre o mundo das corridas em Portugal!"},
-    "behindthescenes":
-    {"title": "Atrás dos Bastidores",
-    "text": "Neste segmento, contamos a história das tuas marcas preferidas do todo-o-terreno e para onde se dirigem, entrevistando pessoas dessas empresas."},
-    "interviews":
-    {"title": "Entrevistas",
-    "text": "O Steps to Podium permite ao Luis ter uma noção mais profunda do mundo do todo-o-terreno, através de conversas interessantes com pessoas-chave do todo-o-terreno."},
+    "offroadengineered": {
+      "title": "Offroad Engineered",
+      "text": "Uma série de vídeos informativos e educativos, que explicam de um modo simples e com animações, a engenharia por detrás das motas e do nosso desporto."
+    },
+    "how-tos": {
+      "title": "How-to's",
+      "text": "Nem tudo precisa de ser complicado. Temos dicas muito simples e alguns truques sobre como tratar da tua mota ou até como melhorares como piloto."
+    },
+    "reviews": {
+      "title": "Reviews",
+      "text": "À procura de novo equipamento ou peças? Aqui encontras um ponto de vista terra-à-terra sobre vários produtos, para poderes fazer uma compra bem informada."
+    },
+    "races": {
+      "title": "Corridas",
+      "text": "Uma das melhores coisas sobre andar de mota... é competir. Podes seguir as aventuras da equipa do S2P e descobrir mais sobre o mundo das corridas em Portugal!"
+    },
+    "behindthescenes": {
+      "title": "Atrás dos Bastidores",
+      "text": "Neste segmento, contamos a história das tuas marcas preferidas do todo-o-terreno e para onde se dirigem, entrevistando pessoas dessas empresas."
+    },
+    "interviews": {
+      "title": "Entrevistas",
+      "text": "O Steps to Podium permite ao Luis ter uma noção mais profunda do mundo do todo-o-terreno, através de conversas interessantes com pessoas-chave do todo-o-terreno."
+    },
     "watchmore": "Ver mais",
     "loadmore": "Carregar mais"
   },
   "about": {
     "title": "Sobre nós",
     "text": "A ideia de criar o Steps to Podium surgiu durante o semestre de Eramus do Luis, na Alemanha. Estar privado de andar de mota, fê-lo perceber o quão importante o desporto era para si. Nesse mesmo período, passava algum no YouTube de modo a ajudar a ultrapassar essa falta... e assim percebeu que havia uma lacuna em conteúdo educativo feito especificamente para a comunidade do todo-o-terreno. Foi assim que o Steps to Podium nasceu. De um modo engraçado, simples, independente e sem rodeios, sem qualquer tipo de interesse nem patrocínio, o Steps to Podium quer inspirar, ensinar e ajudar todos os pilotos amadores no mundo."
-  
-},
+  },
   "aboutus": {
     "luis": "O Luís é um Engenheiro Mecânico que trabalha em Programação de Software, mas mais importante ainda, é um autêntico fanático por motas de todo-o-terreno. A sua paixão fá-lo procurar nada menos que a total compreensão do desporto, quer seja em cima, fora ou sobre a mota",
-    "lili": "A Liliana é uma expert em Marketing, que se apaixonou pelo projecto (e provavelmente pelo Luís) e decidiu ajudar a crescer a marca e tornar-se global. Faz parte da equipa desde o início, por isso percebe uma coisa ou outra sobre motas, mas não faças muitas perguntas"},
+    "lili": "A Liliana é uma expert em Marketing, que se apaixonou pelo projecto (e provavelmente pelo Luís) e decidiu ajudar a crescer a marca e tornar-se global. Faz parte da equipa desde o início, por isso percebe uma coisa ou outra sobre motas, mas não faças muitas perguntas"
+  },
   "contact": {
     "title": "Contactos",
     "emailtitle": "Endereço de email:",
@@ -53,7 +59,9 @@
     "subjectoption4": "Outro",
     "messagetitle": "Mensagem:",
     "messageplaceholder": "Introduz aqui a tua mensagem",
-    "submit": "Submeter"
+    "submit": "Submeter",
+    "confirmation": "Confirmação de envio",
+    "confirmmessage": "O teu email foi enviado! Responderemos nas próximas 24 horas."
   },
   "footer": {
     "rightsreserved": "Todos os direitos reservados",
@@ -65,5 +73,4 @@
     "termsandconditions": "Termos & Condições",
     "follow": "Segue-nos"
   }
-  }
-  
+}

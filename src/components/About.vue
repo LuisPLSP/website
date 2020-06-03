@@ -1,17 +1,21 @@
 <template>
-  <section id="about" class="about">
+  <section class="about">
     <b-container>
-      <b-row class="my-md-5">
-        <b-col md="6" class="d-flex align-items-center justify-content-center">
+      <b-row class="my-5">
+        <b-col
+          id="about"
+          md="6"
+          class="mb-2 d-flex align-items-center justify-content-center"
+        >
           <h1 class="my-5 about-title">{{ $t("about.title") }}</h1>
         </b-col>
-        <b-col md="6" class="mb-2">
+        <b-col md="6">
           <p
             data-aos="fade-up"
             data-aos-duration="1000"
             class="about-text module"
           >
-          {{ $t("about.text") }}
+            {{ $t("about.text") }}
           </p>
         </b-col>
       </b-row>
@@ -24,9 +28,9 @@ export default {
   name: "About",
   methods: {
     setLocale(locale) {
-      this.$i18n.locale = locale
-    }
-  }
+      this.$i18n.locale = locale;
+    },
+  },
 };
 </script>
 <style lang="scss" scoped>

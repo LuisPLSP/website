@@ -16,11 +16,15 @@
         </b-col>
         <b-col md="2">
           <b-nav vertical>
-            <a class="adjust" style="color: white;" href="#banner"
-              >{{ $t("footer.project") }}</a
-            >
-            <a class="adjust" style="color: white;" href="#videos">{{ $t("footer.videos") }}</a>
-            <a class="adjust" style="color: white;" href="#about">{{ $t("footer.about") }}</a>
+            <a class="adjust" style="color: white;" href="#banner">{{
+              $t("footer.project")
+            }}</a>
+            <a class="adjust" style="color: white;" href="#videos">{{
+              $t("footer.videos")
+            }}</a>
+            <a class="adjust" style="color: white;" href="#about">{{
+              $t("footer.about")
+            }}</a>
           </b-nav>
         </b-col>
         <b-col md="3">
@@ -32,21 +36,20 @@
               target="_blank"
               >{{ $t("footer.merchandise") }}</a
             >
-            <a class="adjust" style="color: white;" v-b-modal.privacy
-              >{{ $t("footer.privacypolicy") }}</a
-            >
-            <a class="adjust" style="color: white;" v-b-modal.terms
-              >{{ $t("footer.termsandconditions") }}</a
-            >
+            <a class="adjust" style="color: white;" v-b-modal.privacy>{{
+              $t("footer.privacypolicy")
+            }}</a>
+            <a class="adjust" style="color: white;" v-b-modal.terms>{{
+              $t("footer.termsandconditions")
+            }}</a>
             <b-modal ok-only size="lg" id="privacy" title="Privacy Policy">
               <h1>Privacy Policy for Steps to Podium</h1>
 
               <p>
-                At Steps to Podium, accessible from
-                https://steps-to-podium-website-d4f43.web.app/, one of our main
-                priorities is the privacy of our visitors. This Privacy Policy
-                document contains types of information that is collected and
-                recorded by Steps to Podium and how we use it.
+                At Steps to Podium, accessible from https://stepstopodium.com,
+                one of our main priorities is the privacy of our visitors. This
+                Privacy Policy document contains types of information that is
+                collected and recorded by Steps to Podium and how we use it.
               </p>
 
               <p>
@@ -279,14 +282,14 @@
               </p>
             </b-modal>
             <b-modal ok-only size="lg" id="terms" title="Terms and Conditions">
-              <h2><strong>Terms and Conditions</strong></h2>
+              <h2><strong>Terms & Conditions</strong></h2>
 
               <p>Welcome to Steps to Podium!</p>
 
               <p>
                 These terms and conditions outline the rules and regulations for
                 the use of Steps to Podium's Website, located at
-                https://steps-to-podium-website-d4f43.web.app/.
+                https://stepstopodium.com.
               </p>
 
               <p>

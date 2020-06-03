@@ -1,9 +1,12 @@
 <template>
   <section id="videos" class="videos">
     <b-container class="embed">
-      <b-row class="my-md-5">
+      <b-row class="my-md-4">
         <b-col md="6" data-aos="fade-up" data-aos-duration="1000" class="module"
-          ><b-card class="shadow-lg" title="Offroad Engineered">
+          ><b-card
+            class="shadow-lg"
+            :title="$t('videos.offroadengineered.title')"
+          >
             <b-embed
               type="iframe"
               aspect="16by9"
@@ -23,7 +26,7 @@
           </b-card>
         </b-col>
         <b-col md="6" data-aos="fade-up" data-aos-duration="1500" class="module"
-          ><b-card class="shadow-lg" title="How-to's">
+          ><b-card class="shadow-lg" :title="$t('videos.how-tos.title')">
             <b-embed
               type="iframe"
               aspect="16by9"
@@ -45,7 +48,7 @@
       </b-row>
       <b-row>
         <b-col md="6" data-aos="fade-up" data-aos-duration="1000" class="module"
-          ><b-card class="shadow-lg" title="Reviews">
+          ><b-card class="shadow-lg" :title="$t('videos.reviews.title')">
             <b-embed
               type="iframe"
               aspect="16by9"
@@ -65,7 +68,7 @@
           </b-card>
         </b-col>
         <b-col md="6" data-aos="fade-up" data-aos-duration="1500" class="module"
-          ><b-card class="shadow-lg" title="Races">
+          ><b-card class="shadow-lg" :title="$t('videos.races.title')">
             <b-embed
               type="iframe"
               aspect="16by9"
@@ -92,7 +95,7 @@
           data-aos="fade-up"
           data-aos-duration="1000"
         >
-          <b-card class="shadow-lg" title="Behind the Scenes">
+          <b-card class="shadow-lg" :title="$t('videos.behindthescenes.title')">
             <b-embed
               type="iframe"
               aspect="16by9"
@@ -117,7 +120,7 @@
           data-aos="fade-up"
           data-aos-duration="1500"
         >
-          <b-card class="shadow-lg" title="Interviews">
+          <b-card class="shadow-lg" :title="$t('videos.interviews.title')">
             <b-embed
               type="iframe"
               aspect="16by9"

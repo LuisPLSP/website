@@ -28,7 +28,7 @@
     <!-- <contact></contact> -->
     <section class="contact">
       <b-container>
-        <b-row class="my-md-5">
+        <b-row class="my-5">
           <b-col
             id="contact-us"
             class="my-3 d-flex align-items-center justify-content-center"
@@ -44,7 +44,7 @@
                 v-model.trim="form.email"
                 type="email"
                 required
-                placeholder="Email"
+                :placeholder="$t('contact.emailplaceholder')"
               ></b-form-input>
               <div class="form">{{ $t("contact.subjecttitle") }}</div>
               <b-form-select
@@ -59,7 +59,7 @@
                 id="message"
                 v-model.trim="form.message"
                 required
-                placeholder="Message"
+                :placeholder="$t('contact.messageplaceholder')"
               ></b-form-textarea>
               <b-button
                 class="form"
@@ -123,9 +123,9 @@ export default {
         this.$t("contact.subjectoption1"),
         this.$t("contact.subjectoption2"),
         this.$t("contact.subjectoption3"),
-        this.$t("contact.subjectoption4")
-      ]
-    }
+        this.$t("contact.subjectoption4"),
+      ];
+    },
   },
   watch: {
     email(value) {
@@ -161,9 +161,9 @@ export default {
         .then(
           //res => {
           //console.log(res);
-          this.makeToast("Your email has been sent!", {
+          this.makeToast(this.$t("contact.confirmmessage"), {
             autoHideDelay: 10000,
-            title: "Email confirmation",
+            title: this.$t("contact.confirmation"),
             variant: "success",
             solid: true,
           }),

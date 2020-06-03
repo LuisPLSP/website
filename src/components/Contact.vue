@@ -59,17 +59,17 @@ export default {
       form: {
         email: "",
         subject: null,
-        message: ""
+        message: "",
       },
       subject: [
         { text: "--Select One--", value: null },
         "Collaboration",
         "Business Inquire",
         "Social Media",
-        "Other"
+        "Other",
       ],
       msg: "",
-      show: true
+      show: true,
     };
   },
   watch: {
@@ -77,7 +77,7 @@ export default {
       // binding this to the data value in the email input
       this.email = value;
       this.validateEmail(value);
-    }
+    },
   },
   methods: {
     validateEmail(value) {
@@ -97,16 +97,16 @@ export default {
         .post("http://localhost:3000/sendEmail", {
           email: this.form.email,
           subject: this.form.subject,
-          message: this.form.message
+          message: this.form.message,
         })
-        .then(res => {
+        .then((res) => {
           //this.msg = res.data.msg;
           //this.$bvToast.toast(res.data.msg);
           this.makeToast(res.data.msg, {
             autoHideDelay: 10000,
             title: "Email confirmation",
             variant: "success",
-            solid: true
+            solid: true,
           });
           this.form.email = "";
           this.form.subject = null;
@@ -115,8 +115,8 @@ export default {
     },
     makeToast(message, options) {
       this.$bvToast.toast(message, options);
-    }
-  }
+    },
+  },
 };
 </script>
 <style lang="scss" scoped>

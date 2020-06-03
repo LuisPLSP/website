@@ -1,8 +1,11 @@
 <template>
   <section class="intro">
     <b-container>
-      <b-row class="my-md-3">
-        <b-col md="6" class="d-flex align-items-center justify-content-center">
+      <b-row class="my-3">
+        <b-col
+          md="6"
+          class="text-center d-flex align-items-center justify-content-center"
+        >
           <h1 class="mb-5 intro-title">{{ $t("intro.title") }}</h1>
         </b-col>
         <b-col md="6">
@@ -21,7 +24,7 @@ export default {
   name: "Intro",
   methods: {
     setLocale(locale) {
-      this.$i18n.locale = locale
+      this.$i18n.locale = locale;
     }
   }
 };
@@ -40,7 +43,6 @@ section {
 }
 
 h1 {
-  text-align: left;
   padding-top: auto;
   padding-bottom: auto;
   font-size: 2em;
