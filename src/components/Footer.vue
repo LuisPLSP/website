@@ -29,13 +29,13 @@
         </b-col>
         <b-col md="3">
           <b-nav vertical>
-            <a
+            <!-- <a
               class="adjust"
               style="color: white;"
               href="https://teespring.com/stores/steps-to-podiums-store"
               target="_blank"
               >{{ $t("footer.merchandise") }}</a
-            >
+            > -->
             <a class="adjust" style="color: white;" v-b-modal.privacy>{{
               $t("footer.privacypolicy")
             }}</a>

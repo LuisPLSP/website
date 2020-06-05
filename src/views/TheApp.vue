@@ -3,15 +3,15 @@
 
     <banner></banner>
 
-    <intro></intro>
-
     <videos></videos>
 
-    <about></about>
+    <intro></intro>
+
+    <contact></contact>
 
     <aboutus></aboutus>
 
-    <contact></contact>
+    <about></about>
 
   </div>
 </template>
@@ -25,7 +25,7 @@ import Aboutus from "../components/Aboutus.vue";
 import Contact from "../components/Contact.vue";
 
 export default {
-  name: "Home",
+  name: "TheApp",
   components: {
     Banner,
     Intro,

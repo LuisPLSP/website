@@ -1,56 +1,55 @@
 <template>
   <section class="contact">
     <b-container>
-      <b-row class="my-md-5">
-        <b-col
-          id="contact-us"
-          class="d-flex align-items-center justify-content-center"
-          md="6"
-        >
-          <h1 class="contact-title">Contact Us</h1>
-        </b-col>
-        <b-col class="contact-form" md="6">
-          <b-form @submit="checkForm">
-            <b-form-group id="email" label="Email address:" label-for="email">
+        <b-row class="my-5">
+          <b-col
+            id="contact-us"
+            class="my-3 d-flex align-items-center justify-content-center"
+            md="6"
+          >
+            <h1 class="mb-5 contact-title">{{ $t("contact.title") }}</h1>
+          </b-col>
+          <b-col class="contact-form" md="6">
+            <b-form @submit="checkForm">
+              <div class="form">{{ $t("contact.emailtitle") }}</div>
               <b-form-input
                 id="email"
                 v-model.trim="form.email"
                 type="email"
                 required
-                placeholder="Enter email"
+                :placeholder="$t('contact.emailplaceholder')"
               ></b-form-input>
-            </b-form-group>
-            <b-form-group id="subject" label="Subject:" label-for="subject">
+              <div class="form">{{ $t("contact.subjecttitle") }}</div>
               <b-form-select
                 id="subject"
                 v-model="form.subject"
                 :options="subject"
                 required
               ></b-form-select>
-            </b-form-group>
 
-            <b-form-group id="message" label="Message:" label-for="message">
+              <div class="form">{{ $t("contact.messagetitle") }}</div>
               <b-form-textarea
                 id="message"
                 v-model.trim="form.message"
                 required
-                placeholder="Message"
+                :placeholder="$t('contact.messageplaceholder')"
               ></b-form-textarea>
-            </b-form-group>
-            <b-button
-              style="margin-right: 10px;"
-              type="submit"
-              variant="success"
-              >Submit</b-button
-            >
-          </b-form>
-        </b-col>
-      </b-row>
-    </b-container>
+              <b-button
+                class="form"
+                style="margin-right: 10px;"
+                type="submit"
+                variant="success"
+                >{{ $t("contact.submit") }}</b-button
+              >
+            </b-form>
+          </b-col>
+        </b-row>
+      </b-container>
   </section>
 </template>
 
 <script>
+import Vue from "vue";
 export default {
   name: "Contact",
   data() {
@@ -61,25 +60,31 @@ export default {
         subject: null,
         message: "",
       },
-      subject: [
-        { text: "--Select One--", value: null },
-        "Collaboration",
-        "Business Inquire",
-        "Social Media",
-        "Other",
-      ],
       msg: "",
       show: true,
     };
   },
+  computed: {
+    subject() {
+      return [
+        { text: this.$t("contact.subjectoption"), value: null },
+        this.$t("contact.subjectoption1"),
+        this.$t("contact.subjectoption2"),
+        this.$t("contact.subjectoption3"),
+        this.$t("contact.subjectoption4"),
+      ];
+    },
+  },
   watch: {
     email(value) {
-      // binding this to the data value in the email input
       this.email = value;
       this.validateEmail(value);
     },
   },
   methods: {
+    setLocale(locale) {
+      this.$i18n.locale = locale;
+    },
     validateEmail(value) {
       if (/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(value)) {
         this.alert["email"] = "";
@@ -92,26 +97,39 @@ export default {
         return true;
       }
       e.preventDefault();
-      console.log("Sending request...");
       Vue.axios
-        .post("http://localhost:3000/sendEmail", {
-          email: this.form.email,
-          subject: this.form.subject,
-          message: this.form.message,
-        })
-        .then((res) => {
-          //this.msg = res.data.msg;
-          //this.$bvToast.toast(res.data.msg);
-          this.makeToast(res.data.msg, {
+        .post(
+          "https://us-central1-steps-to-podium-website-d4f43.cloudfunctions.net/emailMessage",
+          {
+            email: this.form.email,
+            subject: this.form.subject,
+            message: this.form.message,
+          }
+        )
+        .then(
+          //res => {
+          //console.log(res);
+          this.makeToast(this.$t("contact.confirmmessage"), {
             autoHideDelay: 10000,
-            title: "Email confirmation",
+            title: this.$t("contact.confirmation"),
             variant: "success",
             solid: true,
-          });
-          this.form.email = "";
-          this.form.subject = null;
-          this.form.message = "";
-        });
+          }),
+          (this.form.email = ""),
+          (this.form.subject = null),
+          (this.form.message = "")
+          //}
+        );
+      // .catch(
+      //   error => {
+      //   this.makeToast("Try again later, please!", {
+      //     autoHideDelay: 10000,
+      //     title: "An error occurred",
+      //     variant: "warning",
+      //     solid: true
+      //   })
+      //   }
+      //   );
     },
     makeToast(message, options) {
       this.$bvToast.toast(message, options);
@@ -138,5 +156,9 @@ h1 {
   font-size: 2em;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+}
+.form {
+  margin-bottom: 0.3em;
+  margin-top: 0.75em;
 }
 </style>
