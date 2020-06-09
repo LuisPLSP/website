@@ -18,13 +18,13 @@
           <b-nav-item size="sm" class="navbar-item" href="#about">{{
             $t("nav.about")
           }}</b-nav-item>
-          <!-- <b-nav-item
+          <b-nav-item
             size="sm"
             class="navbar-item"
             href="https://teespring.com/stores/steps-to-podiums-store"
             target="_blank"
             >{{ $t("nav.merchandise") }}</b-nav-item
-          > -->
+          >
           <b-nav-item size="sm" class="navbar-item" href="#contact-us">{{
             $t("nav.contactus")
           }}</b-nav-item>
