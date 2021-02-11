@@ -1,7 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
-import TheApp from "../views/TheApp.vue";
+import MuddyMatch from "../views/MuddyMatch.vue";
 //import App from "../App.vue";
 
 Vue.use(VueRouter);
@@ -13,9 +13,9 @@ const routes = [
     component: Home
   },
   {
-    path: "/app",
-    name: "TheApp",
-    component: TheApp
+    path: "/muddy-match",
+    name: "MuddyMatch",
+    component: MuddyMatch
   }
 ];
 

@@ -1,5 +1,5 @@
 <template>
-  <section class="contact">
+  <section class="feedback">
     <b-container>
         <b-row class="my-5">
           <b-col
@@ -7,7 +7,8 @@
             class="my-3 d-flex align-items-center justify-content-center"
             md="6"
           >
-            <h1 class="mb-5 contact-title">{{ $t("contact.title") }}</h1>
+          <h1 class="mb-5 contact-title">Feedback</h1>
+            <!-- <h1 class="mb-5 contact-title">{{ $t("contact.title") }}</h1> -->
           </b-col>
           <b-col class="contact-form" md="6">
             <b-form @submit="checkForm">
@@ -51,7 +52,7 @@
 <script>
 import Vue from "vue";
 export default {
-  name: "Contact",
+  name: "Feedback",
   data() {
     return {
       errors: [],

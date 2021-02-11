@@ -1,39 +1,34 @@
 <template>
   <div id="app">
-
     <banner></banner>
 
-    <videos></videos>
+    <introapp></introapp>
 
-    <intro></intro>
+    <featuresapp></featuresapp>
 
-    <contact></contact>
+    <feedback></feedback>
 
-    <aboutus></aboutus>
-
-    <about></about>
+    <aboutusapp></aboutusapp>
 
   </div>
 </template>
 
 <script>
 import Banner from "../components/Banner.vue";
-import Intro from "../components/Intro.vue";
-import Videos from "../components/Videos.vue";
-import About from "../components/About.vue";
-import Aboutus from "../components/Aboutus.vue";
-import Contact from "../components/Contact.vue";
+import Introapp from "../components/Introapp.vue";
+import Featuresapp from "../components/Featuresapp.vue";
+import Aboutusapp from "../components/Aboutusapp.vue";
+import Feedback from "../components/Feedback.vue";
 
 export default {
-  name: "TheApp",
+  name: "MuddyMatch",
   components: {
     Banner,
-    Intro,
-    Videos,
-    About,
-    Aboutus,
-    Contact
-  }
+    Introapp,
+    Featuresapp,
+    Aboutusapp,
+    Feedback,
+  },
 };
 </script>
 
@@ -62,4 +57,3 @@ h1 {
   margin-top: 0.75em;
 }
 </style>
-

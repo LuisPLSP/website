@@ -10,7 +10,7 @@
             <b-embed
               type="iframe"
               aspect="16by9"
-              src="https://www.youtube.com/embed/_v9gnC5PiWk"
+              src="https://www.youtube.com/embed/nfjehrb0QFE"
               allowfullscreens
             ></b-embed>
             <b-card-text style="margin-top: 10px;">
@@ -38,7 +38,7 @@
             </b-card-text>
 
             <b-button
-              href="https://www.youtube.com/watch?v=Tqg4juGzrPo&list=PLHSgGy8X-DgWDosqmcL1MrC9GHl8FUvBU"
+              href="https://www.youtube.com/watch?v=bjWCacKgx20&list=PLHSgGy8X-DgWDosqmcL1MrC9GHl8FUvBU&index=12"
               target="_blank"
               variant="primary"
               >{{ $t("videos.watchmore") }}</b-button
@@ -52,7 +52,7 @@
             <b-embed
               type="iframe"
               aspect="16by9"
-              src="https://www.youtube.com/embed/_s0HnK6e4tY"
+              src="https://www.youtube.com/embed/qL8ZkjNCNsg"
               allowfullscreens
             ></b-embed>
             <b-card-text style="margin-top: 10px;">
@@ -60,7 +60,7 @@
             </b-card-text>
 
             <b-button
-              href="https://www.youtube.com/watch?v=UkVHY90Ast4&list=PLHSgGy8X-DgXb9ikFBfyijEyjTP5ZvTSL"
+              href="https://www.youtube.com/watch?v=WCxFQXSimfk&list=PLHSgGy8X-DgXb9ikFBfyijEyjTP5ZvTSL&index=9"
               target="_blank"
               variant="primary"
               >{{ $t("videos.watchmore") }}</b-button
@@ -68,19 +68,20 @@
           </b-card>
         </b-col>
         <b-col md="6" data-aos="fade-up" data-aos-duration="1500" class="module"
-          ><b-card class="shadow-lg" :title="$t('videos.races.title')">
+          >
+          <b-card class="shadow-lg" :title="$t('videos.behindthescenes.title')">
             <b-embed
               type="iframe"
               aspect="16by9"
-              src="https://www.youtube.com/embed/3TWD9xUAxRc"
+              src="https://www.youtube.com/embed/piw6AWByQu0"
               allowfullscreens
             ></b-embed>
             <b-card-text style="margin-top: 10px;">
-              {{ $t("videos.races.text") }}
+              {{ $t("videos.behindthescenes.text") }}
             </b-card-text>
 
             <b-button
-              href="https://www.youtube.com/watch?v=KJhGZ5AnAxA&list=PLHSgGy8X-DgXrFE_SCm3WuAN-y9FDysOl"
+              href="https://www.youtube.com/watch?v=qcBd63dva1Y&list=PLHSgGy8X-DgVHB44FAgFRCJbHn-19tgUk"
               target="_blank"
               variant="primary"
               >{{ $t("videos.watchmore") }}</b-button
@@ -95,19 +96,19 @@
           data-aos="fade-up"
           data-aos-duration="1000"
         >
-          <b-card class="shadow-lg" :title="$t('videos.behindthescenes.title')">
+          <b-card class="shadow-lg" :title="$t('videos.races.title')">
             <b-embed
               type="iframe"
               aspect="16by9"
-              src="https://www.youtube.com/embed/qcBd63dva1Y"
+              src="https://www.youtube.com/embed/3TWD9xUAxRc"
               allowfullscreens
             ></b-embed>
             <b-card-text style="margin-top: 10px;">
-              {{ $t("videos.behindthescenes.text") }}
+              {{ $t("videos.races.text") }}
             </b-card-text>
 
             <b-button
-              href="https://www.youtube.com/watch?v=qcBd63dva1Y&list=PLHSgGy8X-DgVHB44FAgFRCJbHn-19tgUk"
+              href="https://www.youtube.com/watch?v=KJhGZ5AnAxA&list=PLHSgGy8X-DgXrFE_SCm3WuAN-y9FDysOl"
               target="_blank"
               variant="primary"
               >{{ $t("videos.watchmore") }}</b-button

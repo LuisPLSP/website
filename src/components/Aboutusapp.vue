@@ -1,0 +1,109 @@
+<template>
+  <section class="aboutusapp">
+    <b-container fluid="md">
+      <b-row>
+        <b-col
+          lg="6"
+          data-aos="fade"
+          data-aos-duration="1000"
+          class="mb-3 about-me container module"
+        >
+          <h2 class="h2">The Architect</h2>
+
+          <img
+            class="photo-luis floated"
+            style="padding-top: 0.5em;"
+            src="../assets/foto-XL-finish-website.jpg"
+            alt="S2Plogo"
+          />
+          <p>
+            {{ $t("aboutus.luis") }}
+            <b-link
+              style="color: light-blue;"
+              href="https://www.linkedin.com/in/luis-peixoto-1969aa6a/"
+              target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></b-link>
+          </p>
+        </b-col>
+
+        <b-col
+          lg="6"
+          data-aos="fade"
+          data-aos-duration="1500"
+          class="about-me container"
+        >
+          <h2 class="h2">The Designer</h2>
+
+          <img
+            class="photo-lili floated"
+            style="padding-top: 0.5em;"
+            src="../assets/foto-Lili-website.jpg"
+            alt="S2Plogo"
+          />
+          <p>
+            {{ $t("aboutus.lili") }}
+            <b-link
+              style="color: light-blue;"
+              href="https://www.linkedin.com/in/lilianammpinho/"
+              target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></b-link>
+          </p>
+        </b-col>
+      </b-row>
+    </b-container>
+  </section>
+</template>
+<script>
+export default {
+  name: "Aboutusapp",
+};
+</script>
+<style lang="scss" scoped>
+section {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+.h2 {
+    padding-top: auto;
+  padding-bottom: 20px;
+  font-size: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+.about-me {
+  .floated {
+    float: left;
+    padding: 0 1em;
+  }
+  p {
+    font-size: 1.2em;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 400;
+    justify-content: center;
+  }
+}
+.photo-luis {
+  object-fit: cover;
+  height: 220px;
+  width: 210px;
+  padding-right: 1em;
+  object-position: 75% 0;
+}
+.photo-lili {
+  object-fit: cover;
+  height: 220px;
+  width: 210px;
+  padding-right: 1em;
+  object-position: 60% 0;
+}
+</style>

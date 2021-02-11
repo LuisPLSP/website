@@ -1,19 +1,16 @@
 <template>
   <b-container fluid>
     <b-navbar toggleable="sm" id="navbar" type="light">
-      <b-navbar-brand :to="{name: 'Home'}">
+      <b-navbar-brand :to="{ name: 'Home' }">
         <img id="logo" src="../assets/S2Plogo.png" alt="S2Plogo" />
       </b-navbar-brand>
-      
+
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
       <b-collapse id="nav-collapse" class="collapse" is-nav>
         <b-navbar-nav align="end" class=" ml-auto">
-          <!-- <b-nav-item
-            size="sm"
-            class="navbar-item"
-            :to="{name: 'TheApp'}"
-            >App</b-nav-item
+          <!-- <b-nav-item size="sm" class="navbar-item" :to="{ name: 'MuddyMatch' }"
+            >Muddy Match</b-nav-item
           > -->
           <b-nav-item size="sm" class="navbar-item" href="#about">{{
             $t("nav.about")
