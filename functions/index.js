@@ -1,3 +1,5 @@
+const admin = require("firebase-admin");
+admin.initializeApp();
 const functions = require("firebase-functions");
 const nodemailer = require("nodemailer");
 const smtpTransport = require("nodemailer-smtp-transport");
@@ -6,8 +8,7 @@ const gmailPassword = functions.config().gmail.password;
 const cors = require("cors")({
   origin: true,
 });
-const admin = require("firebase-admin");
-admin.initializeApp();
+
 
 exports.emailMessage = functions.https.onRequest((req, res) => {
   return cors(req, res, () => {

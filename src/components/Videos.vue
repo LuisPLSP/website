@@ -10,7 +10,7 @@
             <b-embed
               type="iframe"
               aspect="16by9"
-              src="https://www.youtube.com/embed/nfjehrb0QFE"
+              src="https://www.youtube.com/embed/dRekn0iRiRs"
               allowfullscreens
             ></b-embed>
             <b-card-text style="margin-top: 10px;">
