@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import MuddyMatch from "../views/MuddyMatch.vue";
+import Courses from "../views/Courses.vue";
 //import App from "../App.vue";
 
 Vue.use(VueRouter);
@@ -16,6 +17,11 @@ const routes = [
     path: "/muddy-match",
     name: "MuddyMatch",
     component: MuddyMatch
+  },
+  {
+    path: "/courses",
+    name: "Courses",
+    component: Courses
   }
 ];
 

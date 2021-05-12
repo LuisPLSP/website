@@ -9,7 +9,10 @@
 
       <b-collapse id="nav-collapse" class="collapse" is-nav>
         <b-navbar-nav align="end" class=" ml-auto">
-          <!-- <b-nav-item size="sm" class="navbar-item" :to="{ name: 'MuddyMatch' }"
+          <!-- <b-nav-item size="sm" class="navbar-item" :to="{ name: 'Courses' }"
+            >Courses</b-nav-item
+          >
+          <b-nav-item size="sm" class="navbar-item" :to="{ name: 'MuddyMatch' }"
             >Muddy Match</b-nav-item
           > -->
           <b-nav-item size="sm" class="navbar-item" href="#about">{{
@@ -42,15 +45,6 @@ export default {
   name: "Navbar",
 
   computed: {
-    subject() {
-      return [
-        { text: this.$t("contact.subjectoption"), value: null },
-        this.$t("contact.subjectoption1"),
-        this.$t("contact.subjectoption2"),
-        this.$t("contact.subjectoption3"),
-        this.$t("contact.subjectoption4"),
-      ];
-    },
     displayLocale() {
       let other = "PT";
       if (this.$i18n.locale === "pt") {

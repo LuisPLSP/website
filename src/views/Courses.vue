@@ -1,32 +1,33 @@
 <template>
   <div id="app">
+
     <banner></banner>
 
-    <introapp></introapp>
+    <introcourses></introcourses>
 
-    <featuresapp></featuresapp>
+    <allcourses></allcourses>
 
-    <feedback></feedback>
+    <contact></contact>
 
-    <aboutusapp></aboutusapp>
+    <!-- <teaser></teaser> -->
   </div>
 </template>
 
 <script>
 import Banner from "../components/Banner.vue";
-import Introapp from "../components/Introapp.vue";
-import Featuresapp from "../components/Featuresapp.vue";
-import Aboutusapp from "../components/Aboutusapp.vue";
-import Feedback from "../components/Feedback.vue";
+import Introcourses from "../components/Introcourses.vue";
+import Allcourses from "../components/Allcourses.vue";
+import Contact from "../components/Contact.vue";
+//import Teaser from "../components/Teaser.vue";
 
 export default {
-  name: "MuddyMatch",
+  name: "Courses",
   components: {
     Banner,
-    Introapp,
-    Featuresapp,
-    Aboutusapp,
-    Feedback
+    Introcourses,
+    Allcourses,
+    Contact
+   // Teaser
   }
 };
 </script>
