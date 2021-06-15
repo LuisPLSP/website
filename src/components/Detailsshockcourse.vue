@@ -9,6 +9,9 @@
                 <b-card-text>
                   <p>{{ $t("shock.textthecourse1") }}</p>
                   <p>{{ $t("shock.textthecourse2") }}</p>
+                  <p>
+                    <i>{{ $t("shock.textthecourse3") }}</i>
+                  </p>
                   <h4>{{ $t("shock.whatyouwilllearn") }}</h4>
                   <ul>
                     <li>{{ $t("shock.whatyouwilllearn1") }}</li>
