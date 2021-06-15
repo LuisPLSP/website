@@ -3,7 +3,11 @@ import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import MuddyMatch from "../views/MuddyMatch.vue";
 import Courses from "../views/Courses.vue";
-//import App from "../App.vue";
+import LandingPageForks from "../views/LandingPageForks.vue";
+import LandingPageShock from "../views/LandingPageShock.vue";
+import LandingPageTechSession from "../views/LandingPageTechSession.vue";
+import VueMeta from "vue-meta";
+Vue.use(VueMeta);
 
 Vue.use(VueRouter);
 
@@ -11,24 +15,39 @@ const routes = [
   {
     path: "/",
     name: "Home",
-    component: Home
+    component: Home,
   },
   {
     path: "/muddy-match",
     name: "MuddyMatch",
-    component: MuddyMatch
+    component: MuddyMatch,
   },
   {
     path: "/courses",
     name: "Courses",
-    component: Courses
-  }
+    component: Courses,
+  },
+  {
+    path: "/forkscourse",
+    name: "FrontForksCourse",
+    component: LandingPageForks,
+  },
+  {
+    path: "/shockcourse",
+    name: "ShockCourse",
+    component: LandingPageShock,
+  },
+  {
+    path: "/techsession",
+    name: "TechSession",
+    component: LandingPageTechSession,
+  },
 ];
 
 const router = new VueRouter({
   mode: "history",
   base: process.env.BASE_URL,
-  routes
+  routes,
 });
 
 export default router;

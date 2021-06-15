@@ -1,140 +1,88 @@
 <template>
   <section class="contact">
     <b-container>
-        <b-row class="my-5">
-          <b-col
-            id="contact-us"
-            class="my-3 d-flex align-items-center justify-content-center"
-            md="6"
-          >
-            <h1 class="mb-5 contact-title">{{ $t("contact.title") }}</h1>
-          </b-col>
-          <b-col class="contact-form" md="6">
-            <b-form @submit="checkForm">
-              <div class="form">{{ $t("contact.emailtitle") }}</div>
-              <b-form-input
-                id="email"
-                v-model.trim="form.email"
-                type="email"
-                required
-                :placeholder="$t('contact.emailplaceholder')"
-              ></b-form-input>
-              <div class="form">{{ $t("contact.subjecttitle") }}</div>
-              <b-form-select
-                id="subject"
-                v-model="form.subject"
-                :options="subject"
-                required
-              ></b-form-select>
-
-              <div class="form">{{ $t("contact.messagetitle") }}</div>
-              <b-form-textarea
-                id="message"
-                v-model.trim="form.message"
-                required
-                :placeholder="$t('contact.messageplaceholder')"
-              ></b-form-textarea>
-              <b-button
-                class="form"
-                style="margin-right: 10px;"
-                type="submit"
-                variant="success"
-                >{{ $t("contact.submit") }}</b-button
-              >
-            </b-form>
-          </b-col>
-        </b-row>
-      </b-container>
+      <b-row class="mt-4">
+        <b-col
+          id="contact-us"
+          class="d-flex align-items-center justify-content-center"
+          md="12"
+        >
+          <h1>{{ $t("contact.title") }}</h1>
+        </b-col>
+      </b-row>
+      <b-row class="mb-3">
+        <b-col
+          id="contact-us"
+          style="display: flex; flex-direction: column; align-items: center;"
+          md="12"
+        >
+          <p style="margin-bottom: 0px;">{{ $t("contact.text1") }}</p>
+          <p>{{ $t("contact.text2") }}</p>
+        </b-col>
+      </b-row>
+      <b-row class="d-flex align-items-center justify-content-center">
+        <b-col md="10">
+          <div
+            id="contactFormEN"
+            v-show="getLangEn"
+            :class="{ 'd-flex': getLangEn }"
+            class=" align-items-center justify-content-center"
+          ></div>
+          <div
+            v-show="getLangPt"
+            id="contactFormPT"
+            :class="{ 'd-flex': getLangPt }"
+            class="align-items-center justify-content-center"
+          ></div>
+        </b-col>
+      </b-row>
+    </b-container>
   </section>
 </template>
 
 <script>
-import Vue from "vue";
+import { mapGetters } from "vuex";
+//import Vue from "vue";
 export default {
   name: "Contact",
-  data() {
-    return {
-      errors: [],
-      form: {
-        email: "",
-        subject: null,
-        message: "",
-      },
-      msg: "",
-      show: true,
-    };
-  },
+
   computed: {
-    subject() {
-      return [
-        { text: this.$t("contact.subjectoption"), value: null },
-        this.$t("contact.subjectoption1"),
-        this.$t("contact.subjectoption2"),
-        this.$t("contact.subjectoption3"),
-        this.$t("contact.subjectoption4"),
-      ];
-    },
+    ...mapGetters(["getLangEn", "getLangPt"]),
   },
-  watch: {
-    email(value) {
-      this.email = value;
-      this.validateEmail(value);
-    },
-  },
+
   methods: {
     setLocale(locale) {
       this.$i18n.locale = locale;
     },
-    validateEmail(value) {
-      if (/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(value)) {
-        this.alert["email"] = "";
-      } else {
-        this.alert["email"] = "Invalid Email Address";
+  },
+  mounted() {
+    const script = document.createElement("script");
+    script.src = "https://js.hsforms.net/forms/v2.js";
+    document.body.appendChild(script);
+
+    script.addEventListener("load", () => {
+      if (window.hbspt) {
+        window.hbspt.forms.create({
+          region: "na1",
+          portalId: "20187745",
+          formId: "7f54eec8-73c9-4239-a670-2cf269c58211",
+          target: "#contactFormEN",
+        });
       }
-    },
-    checkForm: function(e) {
-      if (this.email && this.message && this.subject) {
-        return true;
+    });
+    script.src = "https://js.hsforms.net/forms/v2.js";
+    document.body.appendChild(script);
+
+    script.addEventListener("load", () => {
+      if (window.hbspt) {
+        window.hbspt.forms.create({
+          region: "na1",
+          portalId: "20187745",
+          formId: "36aeb33e-b47d-4944-aa62-1b73d6b6b76d",
+          target: "#contactFormPT",
+        });
       }
-      e.preventDefault();
-      Vue.axios
-        .post(
-          "https://us-central1-steps-to-podium-website-d4f43.cloudfunctions.net/emailMessage",
-          {
-            email: this.form.email,
-            subject: this.form.subject,
-            message: this.form.message,
-          }
-        )
-        .then(
-          //res => {
-          //console.log(res);
-          this.makeToast(this.$t("contact.confirmmessage"), {
-            autoHideDelay: 10000,
-            title: this.$t("contact.confirmation"),
-            variant: "success",
-            solid: true,
-          }),
-          (this.form.email = ""),
-          (this.form.subject = null),
-          (this.form.message = "")
-          //}
-        )
-      .catch(
-        (error) => {
-          //console.log(error);
-        this.makeToast("Try again later, please!", {
-          autoHideDelay: 10000,
-          title: error,
-          variant: "warning",
-          solid: true
-        })
-        }
-        );
-    },
-    makeToast(message, options) {
-      this.$bvToast.toast(message, options);
-    },
+    });
   },
 };
 </script>

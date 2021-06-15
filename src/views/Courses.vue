@@ -1,34 +1,42 @@
 <template>
   <div id="app">
-
-    <banner></banner>
+    <bannersuspensions></bannersuspensions>
 
     <introcourses></introcourses>
 
     <allcourses></allcourses>
 
-    <contact></contact>
-
-    <!-- <teaser></teaser> -->
+    <testimonialsforks></testimonialsforks>
   </div>
 </template>
 
 <script>
-import Banner from "../components/Banner.vue";
+import Bannersuspensions from "../components/Bannersuspensions.vue";
 import Introcourses from "../components/Introcourses.vue";
 import Allcourses from "../components/Allcourses.vue";
-import Contact from "../components/Contact.vue";
-//import Teaser from "../components/Teaser.vue";
+import Testimonialsforks from "../components/Testimonialsforks.vue";
 
 export default {
   name: "Courses",
   components: {
-    Banner,
+    Bannersuspensions,
     Introcourses,
     Allcourses,
-    Contact
-   // Teaser
-  }
+    Testimonialsforks,
+  },
+  methods: {
+    setLocale(locale) {
+      this.$i18n.locale = locale;
+    },
+  },
+  metaInfo() {
+    return {
+      title: this.$t("meta.coursestitle"),
+      meta: [
+        { name: "description", content: this.$t("meta.coursesdescription") },
+      ],
+    };
+  },
 };
 </script>
 
@@ -43,17 +51,5 @@ section {
   align-items: center;
   margin-top: 2em;
   margin-bottom: 2em;
-}
-h1 {
-  text-align: left;
-  padding-top: auto;
-  padding-bottom: auto;
-  font-size: 2em;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-}
-.form {
-  margin-bottom: 0.3em;
-  margin-top: 0.75em;
 }
 </style>

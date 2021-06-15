@@ -9,6 +9,8 @@ import axios from "axios";
 import VueAxios from "vue-axios";
 
 window.axios = require("axios");
+import VueMeta from "vue-meta";
+Vue.use(VueMeta);
 
 require("typeface-montserrat");
 
@@ -17,6 +19,8 @@ import "aos/dist/aos.css";
 
 import VueI18n from "vue-i18n";
 import i18n from "./i18n";
+
+import { store } from "./store/index";
 
 Vue.use(VueI18n);
 
@@ -33,8 +37,8 @@ new Vue({
   created() {
     AOS.init();
   },
-
+  store,
   router,
   i18n,
-  render: h => h(App)
+  render: (h) => h(App),
 }).$mount("#app");

@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-
     <banner></banner>
 
     <intro></intro>
@@ -13,6 +12,7 @@
 
     <contact></contact>
 
+    <partners></partners>
   </div>
 </template>
 
@@ -23,6 +23,7 @@ import Videos from "../components/Videos.vue";
 import About from "../components/About.vue";
 import Aboutus from "../components/Aboutus.vue";
 import Contact from "../components/Contact.vue";
+import Partners from "../components/Partners.vue";
 
 export default {
   name: "Home",
@@ -32,8 +33,20 @@ export default {
     Videos,
     About,
     Aboutus,
-    Contact
-  }
+    Contact,
+    Partners,
+  },
+  methods: {
+    setLocale(locale) {
+      this.$i18n.locale = locale;
+    },
+  },
+  metaInfo() {
+    return {
+      title: this.$t("meta.maintitle"),
+      meta: [{ name: "description", content: this.$t("meta.maindescription") }],
+    };
+  },
 };
 </script>
 
@@ -62,4 +75,3 @@ h1 {
   margin-top: 0.75em;
 }
 </style>
-

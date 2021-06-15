@@ -20,7 +20,7 @@
             <b-button
               href="https://www.youtube.com/watch?v=p88nLIZ4QYg&list=PLHSgGy8X-DgWVWBw-yR10u0tFgi8qQAG8"
               target="_blank"
-              variant="primary"
+              class="button"
               >{{ $t("videos.watchmore") }}</b-button
             >
           </b-card>
@@ -40,7 +40,7 @@
             <b-button
               href="https://www.youtube.com/watch?v=bjWCacKgx20&list=PLHSgGy8X-DgWDosqmcL1MrC9GHl8FUvBU&index=12"
               target="_blank"
-              variant="primary"
+              class="button"
               >{{ $t("videos.watchmore") }}</b-button
             >
           </b-card>
@@ -62,13 +62,17 @@
             <b-button
               href="https://www.youtube.com/watch?v=WCxFQXSimfk&list=PLHSgGy8X-DgXb9ikFBfyijEyjTP5ZvTSL&index=9"
               target="_blank"
-              variant="primary"
+              class="button"
               >{{ $t("videos.watchmore") }}</b-button
             >
           </b-card>
         </b-col>
-        <b-col md="6" data-aos="fade-up" data-aos-duration="1500" class="module"
-          >
+        <b-col
+          md="6"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          class="module"
+        >
           <b-card class="shadow-lg" :title="$t('videos.behindthescenes.title')">
             <b-embed
               type="iframe"
@@ -83,7 +87,7 @@
             <b-button
               href="https://www.youtube.com/watch?v=qcBd63dva1Y&list=PLHSgGy8X-DgVHB44FAgFRCJbHn-19tgUk"
               target="_blank"
-              variant="primary"
+              class="button"
               >{{ $t("videos.watchmore") }}</b-button
             >
           </b-card>
@@ -110,7 +114,7 @@
             <b-button
               href="https://www.youtube.com/watch?v=KJhGZ5AnAxA&list=PLHSgGy8X-DgXrFE_SCm3WuAN-y9FDysOl"
               target="_blank"
-              variant="primary"
+              class="button"
               >{{ $t("videos.watchmore") }}</b-button
             >
           </b-card>
@@ -135,7 +139,7 @@
             <b-button
               href="https://www.youtube.com/watch?v=fSPpY9XHPWo&list=PLHSgGy8X-DgVTtxRqI3b7ODqV8rcHVy08"
               target="_blank"
-              variant="primary"
+              class="button"
               >{{ $t("videos.watchmore") }}</b-button
             >
           </b-card>
@@ -152,7 +156,7 @@
           <b-button
             block
             v-on:click="isHidden = !isHidden"
-            variant="outline-primary"
+            class="outline-button"
             >{{ $t("videos.loadmore") }}</b-button
           >
         </b-col>
@@ -165,9 +169,9 @@ export default {
   name: "Videos",
   data() {
     return {
-      isHidden: true
+      isHidden: true,
     };
-  }
+  },
 };
 </script>
 <style lang="scss" scoped>
@@ -181,5 +185,19 @@ section {
   align-items: center;
   margin-top: 2em;
   margin-bottom: 2em;
+}
+.button {
+  width: 150px;
+  background-color: #067a14;
+  &:hover {
+    background-color: #04610f;
+  }
+}
+.outline-button {
+  background-color: transparent;
+  color: black;
+  &:hover {
+    background-color: #067a14;
+  }
 }
 </style>

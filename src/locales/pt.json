@@ -1,5 +1,6 @@
 {
   "nav": {
+    "courses":"Cursos",
     "about": "Sobre nós",
     "merchandise": "Merchandise",
     "contactus": "Contactos",
@@ -8,13 +9,13 @@
   },
   "intro": {
     "title": "O que é o Steps to Podium?",
-    "text1": "O Steps to Podium cria conteúdo educativo, único e inspirador sobre o mundo do todo-o-terreno sobre duas rodas.",
-    "text2": "Com o Steps to Podium, podes aprender a tratar da tua mota ou a melhorar o teu desempenho, tens acesso a reviews de motas e equipamento e podes ainda descobrir a engenharia por detrás do nosso maravilhoso e complexo desporto. Tudo isto enquanto acompanhas a evolução do Luis como atleta amador, vivenciando as suas aventuras nos treinos ou nas corridas mais incríveis! Preparado para te juntares a esta viagem?"
+    "text1": "O Steps to Podium (S2P) cria conteúdo inspirador e educativo sobre o mundo do todo-o-terreno em duas rodas.",
+    "text2": "Com o S2P, podes aprender a tratar da tua mota ou a melhorar a tua performance, ver reviews de motas e equipamento, descobrir mais sobre a engenharia por detrás deste maravilhoso desporto, e seguir as aventuras do Luís enquanto atleta amador. Preparado para te juntares à viagem?"
   },
   "videos": {
     "offroadengineered": {
       "title": "Offroad Engineered",
-      "text": "Uma série de vídeos educativos que explica, de um modo simples e através de animações, a engenharia por detrás das motas e do nosso desporto."
+      "text": "Uma série de vídeos educativos que explica, de um modo simples e através de animações detalhadas, a engenharia por detrás das motas e deste nosso desporto."
     },
     "how-tos": {
       "title": "How-to's",
@@ -22,33 +23,34 @@
     },
     "reviews": {
       "title": "Reviews",
-      "text": "Estás à procura de peças ou de novo equipamento? Aqui encontras reviews fiedignas sobre vários produtos, para poderes fazer compras informadas."
+      "text": "Estás à procura de peças ou de novo equipamento? Aqui encontras reviews fidedignas sobre vários produtos, para poderes fazer uma compra informada."
     },
     "races": {
       "title": "Corridas",
-      "text": "Uma das melhores coisas de andar de mota... é competir. Segue as aventuras da equipa S2P e descobre mais sobre o mundo das corridas em Portugal!"
+      "text": "Uma das melhores coisas de andar de mota é competir. O Luís adora testar os limites, por isso está sempre a experimentar novas corridas. Segue as aventuras da equipa e descobre o mundo das corridas em Portugal!"
     },
     "behindthescenes": {
       "title": "Nos Bastidores",
-      "text": "Neste segmento, contamos a história das tuas marcas preferidas do todo-o-terreno e desvendamos os planos do futuro, entrevistando pessoas-chave dessas empresas."
+      "text": "Neste segmento, vamos contar-te tudo sobre as tuas marcas favoritas do todo-o-terreno e os seus planos para o futuro, entrevistando as pessoas certas dentro das empresas."
     },
     "interviews": {
       "title": "Entrevistas",
-      "text": "O Steps to Podium também vai acompanhando as novidades do mundo do todo-o-terreno através de conversas sobre os mais variados temas com pessoas-chave do desporto."
+      "text": "Descobre mais sobre pilotos, corridas ou novos projetos na comunidade do todo-o-terreno com as nossas entrevistas descontraídas a pessoas-chave do desporto."
     },
     "watchmore": "Ver mais",
     "loadmore": "Carregar mais"
   },
   "about": {
     "title": "Sobre nós",
-    "text": "A ideia de criar o Steps to Podium surgiu durante o semestre em que o Luis esteve num intercâmbio na Alemanha. A impossibilidade de andar de mota fê-lo perceber o quão importante o desporto era para si. Para compensar, passava algum tempo no YouTube a ver vídeos sobre o desporto... e rapidamente percebeu que havia falta de conteúdo educativo feito especificamente para a comunidade do todo-o-terreno. Foi assim que o Steps to Podium nasceu. De um modo descontraído, simples, independente e sem rodeios, o Steps to Podium quer inspirar, ensinar e ajudar todos os pilotos amadores no mundo."
+    "text": "A ideia de criar o Steps to Podium surgiu durante o semestre de Erasmus do Luís na Alemanha. A impossibilidade de andar de mota fê-lo perceber o quanto valorizava o desporto e levou-o a ser um consumidor ávido de vídeos do YouTube sobre o tema. No entanto, rapidamente percebeu que havia pouco conteúdo feito especificamente para a comunidade do todo-o-terreno. Foi assim que nasceu o Steps to Podium. De um modo simples e descontraído, sem interesses ou rodeios, o S2P quer inspirar, ensinar e ajudar todos os pilotos amadores de todo-o-terreno."
   },
   "aboutus": {
-    "luis": "O Luís é Engenheiro Mecânico e trabalha em Programação de Software mas, mais importante ainda, é um autêntico fanático por motas de todo-o-terreno. A sua paixão fá-lo tentar compreender o desporto como um todo, seja em cima da mota ou fora dela.",
-    "lili": "A Liliana é uma expert em Marketing que se apaixonou pelo projeto (e provavelmente pelo Luís) e decidiu ajudar a fazer crescer a marca. Faz parte da equipa desde o início, por isso percebe uma ou outra coisa sobre motas... mas não faças muitas perguntas."
+    "luis": "O Luís é Engenheiro Mecânico e trabalha em programação de software mas, ainda mais importante, é um autêntico fanático por motas de todo-o-terreno. Esta paixão fê-lo embarcar numa constante busca para tentar compreender totalmente o desporto, seja em cima da mota ou fora dela.",
+    "lili": "A Liliana é uma expert em Marketing que se apaixonou pelo projeto (e pelo Luís) e decidiu ajudar a fazer crescer a marca. Faz parte da equipa desde o início, por isso já percebe uma ou outra coisa sobre motas... mas não lhe faças muitas perguntas."
   },
   "contact": {
-    "title": "Contactos",
+    "title": "Contacta-nos",
+    "text":"Tens alguma questão, proposta, ideia, ou dica que queiras partilhar connosco? Manda-nos a tua mensagem e damos resposta assim que possível.",
     "emailtitle": "Email:",
     "emailplaceholder": "Insere aqui o teu email",
     "subjecttitle": "Assunto",
@@ -72,5 +74,173 @@
     "privacypolicy": "Política de Privacidade",
     "termsandconditions": "Termos & Condições",
     "follow": "Segue-nos"
+  },
+  "courses": {
+    "explorecourses": "Explorar Cursos",
+    "text1": "Quer sejas um “piloto de fim-de-semana” ou um piloto profissional do todo-o-terreno, não há dúvida de que as suspensões da tua mota têm um grande impacto no teu conforto e performance.",
+    "text2": "Se sempre quiseste saber todos os segredos das suspensões e como as ajustar para as adequar às tuas necessidades, esta é a tua oportunidade. Nos nossos cursos especializados, vais aprender não só os fundamentos teóricos mas também a pôr as “mãos-na-massa” e a fazer os teus próprios ajustes.",
+  "allcourses": "Cursos Disponíveis",
+  "watchmore": "Saber mais",
+  "comingsoon": "Brevemente",
+  "testimonials": "Testemunhos",
+  "texttestimonials":"A opinião de quem já experimentou",
+  "testimonial1": "Eu mexia nas suspensões mas nunca era tão radical, e assim percebi exatamente qual é o impacto que tem na mota, em termos de tração, por exemplo. Aprendi muito.",
+  "testimonialperson1": "Bernardo Vots",
+  "testimonial2": "Foi espetacular. Foi super vantajoso para perceber o que a mota pode ou não fazer, como é que eu posso melhorar os meus tempos nas corridas, e para perder o medo de mexer nos clicks.",
+  "testimonialperson2": "Hugo Teixeira",
+  "testimonial3": "Acho que os dois cursos se complementam muito bem, e diria que é quase obrigatório fazer os dois, porque faz mesmo a diferença.",
+  "testimonialperson3": "Filipe Regalado Sousa",
+  "testimonial4": "Achei este curso bastante produtivo. Permitiu-nos explorar bastante as afinações dos clicks e eu acho muito importante fazermos isto. Conseguimos perceber realmente as sensações que a mota nos transmite.",
+  "testimonialperson4": "Luís Silva",
+  "testimonial5": "O ambiente é muito bom. A partilha de pessoas a andar de mota com experiências diferentes e a discussão de conceitos que depois vamos sentir na prática, é super interessante. Não é só conhecimento que se pode ler em qualquer lado, é sentir e perceber como as coisas funcionam.",
+  "testimonialperson5": "Pedro Peixoto",
+  "testimonial6": "Acho uma grande mais-valia. Toda a gente deveria saber interpretar o que é a compressão, o que é retorno, o que é alta ou baixa velocidade… e a influência que esses ajustes têm na condução e no conforto [do piloto]",
+  "testimonialperson6": "Hugo Mota",
+  "testimonial7": "Isto é muito bom para o pessoal ganhar à vontade e perceber como é que uma suspensão ou um amortecedor funcionam. Explicares bem o que cada afinação faz e depois percebermos o que isso transmite ou o que nos permite fazer, é super importante.",
+  "testimonialperson7": "Duarte Mota"
+  },
+  "forks": {
+  "time&date": "Data & Hora",
+  "time&date1": "24 de Maio, 9h",
+  "time&date2": "",
+  "location":"Localização",
+  "location1":"Porto, Portugal",
+  "location2":"",
+  "duration":"Duração",
+  "duration1":"4 horas",
+  "duration2":"",
+  "maxparticipants":"Max. Participantes",
+  "maxparticipants1":"5",
+  "maxparticipants2":"",
+  "price":"Preço",
+  "price1":"50€",
+  "price2":"",
+  "signup": "Inscrever-me",
+  "tabthecourse": "O Curso",
+  "textthecourse1":"Hoje em dia, as suspensões podem ser ajustadas de várias formas, considerando o teu peso, o tipo de terreno ou pilotagem e ainda outras variáveis. Um bom ajuste vai, sem dúvida, ter impacto na tua performance - mas também no teu conforto e segurança em cima da mota.",
+  "textthecourse2":"No entanto, são poucos os pilotos que conseguem ir “além dos cliques” e, de facto, perceber exatamente como tirar total partido das suas suspensões. Neste curso, vais aprender a ajustar as tuas suspensões à tua medida - e mais.",
+  "whatyouwilllearn":"O que vais aprender",
+  "whatyouwilllearn1":"Como funcionam as suspensões e como são construídas",
+  "whatyouwilllearn2":"Como é que as suspensões podem ser ajustadas",
+  "whatyouwilllearn3":"Que impacto têm os ajustes",
+  "whatyouwilllearn4":"Como ajustar as tuas suspensões à tua medida",
+  "extras": "Extras (também incluído)",
+  "textextras1": "Lanche e merchandising no dia do curso",
+  "textextras2": "Acompanhamento técnico pós-curso",
+  "textextras3": "Preço especial para manutenção ou revisão das tuas suspensões connosco",
+  "textextras4": "Desconto de 10% nos restantes cursos e sessões técnicas Steps to Podium",
+  "textextras5": "Acesso à comunidade S2P",
+  "requirements": "Requisitos",
+  "textrequirements1": "Para poder fazer este curso, é necessário que as suspensões da frente da tua mota tenham ajuste de amortecimento de compressão de baixa velocidade e ajuste de amortecimento de retorno/rebound de baixa velocidade.",
+  "textrequirements2": "Para tirares o melhor partido deste curso, as tuas suspensões devem estar em boas condições e com a manutenção necessária em dia. Deves ainda trazer uma pequena chave de fendas para ajustar os reguladores das tuas suspensões.",
+  "tabisthisforme": "Este curso é para mim?",
+  "textisthisforme1": "Definitivamente.",
+  "textisthisforme2": "Se já chegaste até aqui, não temos dúvidas de que este curso é para ti. Este curso foi preparado para todos aqueles que querem aprender mais sobre suspensões e o impacto que estas podem ter na experiência de andar de mota, independentemente do nível de experiência do piloto.",
+  "weekendwarrior": "Praticantes curiosos e de “fim-de-semana”",
+  "textweekendwarrior": "Uma vez que “só dás umas voltas de vez em quando”, podes estar a pensar que não vale a pena aprender a ajustar as suspensões. Estás enganado. Saber como afinar as tuas suspensões vai não só ajudar-te a poupar algum dinheiro como a melhorar bastante a tua experiência em cima da mota. Vais estar preparado para tirar partido delas não só em passeios rolantes, mas também em trilhos mais desafiantes. ",
+  "amateurpro": "Pilotos amadores e profissionais",
+  "textamateurpro1": "Poupar algum dinheiro e melhorar performance são duas das melhores coisas da vida para qualquer piloto amador (nós sabemos bem!). Aprender a afinar e a ajustar as tuas suspensões à tua medida vai permitir-te ambos. Para além de aprenderes mais sobre as suspensões e a forma como estas funcionam, vais poder aprender a ajustá-las consoante as necessidades de cada corrida, para que fiques sempre cada vez mais próximo do pódio.",
+  "textamateurpro2": "Então, do que estás à espera?",
+  "tabsigningup": "Inscrição",
+  "textsigningup1": "Para te inscreveres neste curso, basta preencher o formulário abaixo.",
+  "textsigningup2": "Depois de submeteres o formulário, vais receber um e-mail com toda a informação necessária para efetuares o pagamento do curso e garantires o teu lugar. Só após a validação do pagamento é que a tua inscrição é válida.",
+  "textsigningup3": "Após a validação da tua inscrição, vais receber um e-mail com tudo o que precisas de saber para te juntares a nós.",
+  "textsigningup4": "Qualquer dúvida ou questão, por favor entra em contacto connosco através do email stepstopodium@gmail.com."
+  },
+  "shock": {
+    "time&date": "Data & Hora",
+    "time&date1": "24 de Maio, 9h",
+    "time&date2": "",
+    "location":"Localização",
+    "location1":"Porto, Portugal",
+    "location2":"",
+    "duration":"Duração",
+    "duration1":"4 horas",
+    "duration2":"",
+    "maxparticipants":"Max. Participantes",
+    "maxparticipants1":"5",
+    "maxparticipants2":"",
+    "price":"Preço",
+    "price1":"50€",
+    "price2":"",
+    "signup": "Inscrever-me",
+    "tabthecourse": "O Curso",
+    "textthecourse1":"O amortecedor deve ser o componente mais importante de um mota de todo-o-terreno. Não só absorve as irregularidades do terreno como também é crucial para transferir a potência para o chão. Por isso, um bom ajuste vai, sem dúvida, ter impacto na tua performance - mas também no teu conforto e segurança em cima da mota.",
+    "textthecourse2":"No entanto, são poucos os pilotos que conseguem perceber a diferença entre os reguladores de amortecimento de alta e baixa velocidade e, de facto, perceber exatamente como tirar total partido do amortecedor. Neste curso, vais aprender a ajustar o teu amortecedor à tua medida - e mais.",
+    "whatyouwilllearn":"O que vais aprender",
+    "whatyouwilllearn1":"Como funciona o amortecedor e como é construído",
+    "whatyouwilllearn2":"Como é que o amortecedor pode ser ajustado",
+    "whatyouwilllearn3":"Que impacto têm os ajustes",
+    "whatyouwilllearn4":"Como ajustar o teu amortecedor à tua medida",
+    "extras": "Extras (também incluído)",
+    "textextras1": "Lanche e merchandising no dia do curso",
+    "textextras2": "Acompanhamento técnico pós-curso",
+    "textextras3": "Preço especial para manutenção ou revisão das tuas suspensões connosco",
+    "textextras4": "Desconto de 10% nos restantes cursos e sessões técnicas Steps to Podium",
+    "textextras5": "Acesso à comunidade S2P",
+    "requirements": "Requisitos",
+    "textrequirements1": "Para poder fazer este curso, é necessário que o amortecedor da tua mota tenha ajuste de amortecimento de compressão de baixa e alta velocidade e ajuste de amortecimento de retorno/rebound de baixa velocidade.",
+    "textrequirements2": "Para tirares o melhor partido deste curso, o teu amortecedor deve estar em boa condição e com a manutenção necessária em dia. Deves ainda trazer uma pequena chave de fendas para ajustar os reguladores do teu amortecedor",
+    "tabisthisforme": "Este curso é para mim?",
+    "textisthisforme1": "Definitivamente.",
+    "textisthisforme2": "Se já chegaste até aqui, não temos dúvidas de que este curso é para ti. Este curso foi preparado para todos aqueles que querem aprender mais sobre amortecedores e o impacto que estas podem ter na experiência de andar de mota, independentemente do nível de experiência do piloto.",
+    "weekendwarrior": "Praticantes curiosos e de “fim-de-semana”",
+    "textweekendwarrior": "Uma vez que “só dás umas voltas de vez em quando”, podes estar a pensar que não vale a pena aprender a ajustar o amortecedor. Estás enganado. Saber como afinar o teu amortecedor vai não só ajudar-te a poupar algum dinheiro como a melhorar bastante a tua experiência em cima da mota. Vais estar preparado para tirar partido delas não só em passeios rolantes, mas também em trilhos mais desafiantes.",
+    "amateurpro": "Pilotos amadores e profissionais",
+    "textamateurpro1": "Poupar algum dinheiro e melhorar performance são duas das melhores coisas da vida para qualquer piloto amador (nós sabemos bem!). Aprender a afinar e a ajustar o teu amortecedor à tua medida vai permitir-te ambos. Para além de aprenderes mais sobre os amortecedores e a forma como estes funcionam, vais poder aprender a ajustá-las consoante as necessidades de cada corrida, para que fiques sempre cada vez mais próximo do pódio.",
+    "textamateurpro2": "Então, do que estás à espera?",
+    "tabsigningup": "Inscrição",
+    "textsigningup1": "Para te inscreveres neste curso, basta preencher o formulário abaixo.",
+    "textsigningup2": "Depois de submeteres o formulário, vais receber um e-mail com toda a informação necessária para efetuares o pagamento do curso e garantires o teu lugar. Só após a validação do pagamento é que a tua inscrição é válida.",
+    "textsigningup3": "Após a validação da tua inscrição, vais receber um e-mail com tudo o que precisas de saber para te juntares a nós.",
+    "textsigningup4": "Qualquer dúvida ou questão, por favor entra em contacto connosco através do email stepstopodium@gmail.com."
+    },
+  "techsession": {
+    "text1":"Tens dúvidas relativamente às suspensões da tua mota? Gostavas de aprender manutenção básica ou a afinar o motor? Precisas de apoio na preparação para uma corrida? Nós podemos ajudar.",
+    "text2":"Marca uma sessão de acompanhamento técnico de 30 ou 60 minutos, de acordo com o que precisares, e nós ajudamos a esclarecer todas as tuas dúvidas.",
+    "durationtitle":"Duração",
+    "durationtext":"30 ou 60 mins",
+    "pricetitle":"Preço",
+    "pricetext1":"30 mins: 15 €",
+    "pricetext2":"1 hora: 25 €",
+    "time&datetitle":"Data e Hora",
+    "time&dateotext":"A combinar",
+    "locationtitle":"Local",
+    "locationotext":"Online",
+    "signup":"Marcar sessão",
+    "accordionbooktitle": "Como funciona e como faço a marcação?",
+    "accordionbooktext1": "É simples:",
+    "accordionbookstep1": "Preenche o formulário abaixo, incluindo no campo da mensagem todas as dúvidas ou tópicos que gostavas de ver abordados; com uma sugestão de data hora.",
+    "accordionbookstep2": "Nós entramos em contacto contigo para verificar todas as informações e confirmar a data/hora proposta ou combinar uma data alternativa.",
+    "accordionbookstep3": "Nós entramos em contacto contigo para verificar todas as informações e confirmar a data/hora proposta ou combinar uma data alternativa.",
+    "accordionbooktext2": "Se tiveres questões, podes entrar em contacto connosco através do e-mail ",
+    "accordionbookemail": "stepstopodium@gmail.com",
+    "accordiontimetitle": "Devo marcar 30 ou 60 minutos?",
+    "accordiontimetext1": "Depende.",
+    "accordiontimetext2": "Se pretendes esclarecer uma dúvida específica sobre um assunto que já dominas ou se só estás à procura de ter um conhecimento mais genérico sobre determinado tema, 30 minutos são suficientes. Para esclarecer várias dúvidas, abordar um tema em detalhe ou aprender a prática de alguns processos, 60 minutos é o ideal.",
+    "accordiontimetext3": "Em ambas as sessões, se se justificar, vamos ajudar-te a “pôr as mãos na massa”."
+  },
+  "register": {
+    "title":"Inscrição",
+    "text":"Inscreve-te já e garante o teu lugar",
+    "submit": "Inscrever-me",
+    "privatecoursetitle":"Queres fazer um curso privado?",
+    "textprivatecourse1":"Estás à procura de uma sessão individual? Queres fazer o curso só com o teu grupo de amigos? Pretendes um curso específico para a tua equipa? Nós podemos ajudar.",
+    "textprivatecourse2":"Para mais informações sobre cursos privados, preenche o formulário acima ou entra em contacto através de stepstopodium@gmail.com.",
+    "formcontact":"36aeb33e-b47d-4944-aa62-1b73d6b6b76d",
+    "formcourses":"92c107e7-6280-4618-ab42-b19fa93e423a",
+    "formtechsessions":"f7a6b137-9dad-4b59-8e02-fb9dc83fda5d"
+  },
+  "meta":{
+    "maintitle":"Steps to Podium: A tua comunidade offroad",
+    "maindescription":"Aprende a tratar da tua mota ou a melhorar a tua performance, acede a reviews exclusivas e descobre a engenharia por detrás do desporto com o Steps to Podium.",
+    "coursestitle":"Steps to Podium: Cursos de Suspensões",
+    "coursesdescription":"Queres aprender todos os segredos das suspensões da tua mota e como fazer os teus próprios ajustes, além de mexer nos “cliques”? Inscreve-te já num dos nossos cursos!",
+    "forkscoursestitle":"Steps to Podium: Curso de Suspensões da Frente",
+    "forkscoursesdescription":"Queres aprender todos os segredos das suspensões da tua mota e como fazer os teus próprios ajustes, além de mexer nos “cliques”? Inscreve-te já num dos nossos cursos!",
+    "shockcoursestitle":"Steps to Podium: Curso de Amortecedor",
+    "shockcoursesdescription":"Queres aprender todos os segredos do amortecedor da tua mota e como fazer os teus próprios ajustes, além de mexer nos “cliques”? Inscreve-te já num dos nossos cursos!",
+    "techsessionstitle":"Steps to Podium: Sessões de Acompanhamento Técnico",
+    "techsessionsdescription":"Se tens dúvidas sobre a manutenção ou mecânica da tua mota ou outros tópicos relacionados, nós podemos ajudar. Marca já a tua sessão técnica!"
   }
 }

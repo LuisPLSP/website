@@ -7,7 +7,7 @@
       crossorigin="anonymous"
     />
     <navbar></navbar>
-    <router-view/>
+    <router-view />
     <bottom></bottom>
   </div>
 </template>
@@ -20,8 +20,8 @@ export default {
   name: "App",
   components: {
     Navbar,
-    Bottom
-  }
+    Bottom,
+  },
 };
 </script>
 

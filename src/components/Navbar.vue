@@ -9,15 +9,12 @@
 
       <b-collapse id="nav-collapse" class="collapse" is-nav>
         <b-navbar-nav align="end" class=" ml-auto">
-          <!-- <b-nav-item size="sm" class="navbar-item" :to="{ name: 'Courses' }"
-            >Courses</b-nav-item
-          >
-          <b-nav-item size="sm" class="navbar-item" :to="{ name: 'MuddyMatch' }"
+          <b-nav-item size="sm" class="navbar-item" :to="{ name: 'Courses' }">{{
+            $t("nav.courses")
+          }}</b-nav-item>
+          <!-- <b-nav-item size="sm" class="navbar-item" :to="{ name: 'MuddyMatch' }"
             >Muddy Match</b-nav-item
           > -->
-          <b-nav-item size="sm" class="navbar-item" href="#about">{{
-            $t("nav.about")
-          }}</b-nav-item>
           <b-nav-item
             size="sm"
             class="navbar-item"
@@ -25,7 +22,7 @@
             target="_blank"
             >{{ $t("nav.merchandise") }}</b-nav-item
           >
-          <b-nav-item size="sm" class="navbar-item" href="#contact-us">{{
+          <b-nav-item size="sm" class="navbar-item" href="/#contact-us">{{
             $t("nav.contactus")
           }}</b-nav-item>
           <b-nav-item
@@ -41,6 +38,7 @@
 </template>
 
 <script>
+import { mapActions } from "vuex";
 export default {
   name: "Navbar",
 
@@ -54,14 +52,21 @@ export default {
     },
   },
   methods: {
+    ...mapActions(["index/changeLangEn", "index/changeLangPt"]),
     setLocale(locale) {
       this.$i18n.locale = locale;
     },
     switchLocale() {
       if (this.$i18n.locale === "pt") {
         this.$i18n.locale = "en";
+        this.$store.dispatch("changeLangEn", true);
+        this.$store.dispatch("changeLangPt", false);
+        console.log("En to true, Pt to false");
       } else {
         this.$i18n.locale = "pt";
+        this.$store.dispatch("changeLangEn", false);
+        this.$store.dispatch("changeLangPt", true);
+        console.log("Pt to true, En to false");
       }
     },
   },

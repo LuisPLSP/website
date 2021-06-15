@@ -1,27 +1,13 @@
 <template>
   <section class="intro">
     <b-container>
-      <b-row class="my-4">
-        <b-col lg="6" class="d-flex">
-          <h1 class=" intro-title" style="text-align: left;">
-            What to expect from these Courses?
-          </h1>
-        </b-col>
-      </b-row>
       <b-row>
         <b-col class="intro-text my-3" lg="6">
           <p style="text-align: left;">
-            There is something that most suspension workshops
-            <strong>don't tell you:</strong>
-            <br />
-            You can do a lot of adjustments to your suspensions before having to
-            "revalve" them. The goal of these courses is simply to learn to
-            understand what your suspensions are doing and learn how to adjust
-            them for your liking and riding.
+            {{ $t("courses.text1") }}
           </p>
-          <p style="text-align: left; font-style: italic;">
-            Money spent in knowledge and education only values over time. On
-            parts, the opposite happens.
+          <p style="text-align: left;">
+            {{ $t("courses.text2") }}
           </p>
         </b-col>
 
