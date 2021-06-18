@@ -35,46 +35,46 @@
             img-height="480"
           >
             <b-carousel-slide
-              img-src="../assets/bannershock.jpg"
+              img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/courses%2Fbannershock.jpg?alt=media&token=3a77329e-c86a-4633-a70c-5fc25860aefd"
             ></b-carousel-slide>
             <b-carousel-slide
-              img-src="../assets/shock-gallery-2.jpg"
+              img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/rearshockcourse%2Fshock-gallery-2.jpg?alt=media&token=37b17f29-eb0c-4ecd-b43d-e03f31a0efd1"
             ></b-carousel-slide>
             <b-carousel-slide
-              img-src="../assets/shock-gallery-3.jpg"
+              img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/rearshockcourse%2Fshock-gallery-3.jpg?alt=media&token=944b2fdc-6b65-44a8-97e1-f58d8580f588"
             ></b-carousel-slide>
             <b-carousel-slide
-              img-src="../assets/shock-gallery-4.jpg"
+              img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/rearshockcourse%2Fshock-gallery-4.jpg?alt=media&token=1daa63a7-1247-4002-b8b9-b62247b02d31"
             ></b-carousel-slide>
             <b-carousel-slide
-              img-src="../assets/shock-gallery-5.jpg"
+              img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/rearshockcourse%2Fshock-gallery-5.jpg?alt=media&token=03a849e0-7393-450b-8211-6aeab9d01c07"
             ></b-carousel-slide>
             <b-carousel-slide
-              img-src="../assets/shock-gallery-6.jpg"
+              img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/rearshockcourse%2Fshock-gallery-6.jpg?alt=media&token=7319f05c-a110-4b09-9f78-bdddb97c7ffe"
             ></b-carousel-slide>
             <b-carousel-slide
-              img-src="../assets/shock-gallery-7.jpg"
+              img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/rearshockcourse%2Fshock-gallery-7.jpg?alt=media&token=22e22ba5-49b6-4e65-8379-bc741ea11948"
             ></b-carousel-slide>
             <b-carousel-slide
-              img-src="../assets/shock-gallery-8.jpg"
+              img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/rearshockcourse%2Fshock-gallery-8.jpg?alt=media&token=a1ea4c60-0710-4ab9-93f3-1fa4bfbe9122"
             ></b-carousel-slide>
             <b-carousel-slide
-              img-src="../assets/shock-gallery-9.jpg"
+              img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/rearshockcourse%2Fshock-gallery-9.jpg?alt=media&token=15258949-10a2-4582-a710-7753100f9324"
             ></b-carousel-slide>
             <b-carousel-slide
-              img-src="../assets/shock-gallery-10.jpg"
+              img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/rearshockcourse%2Fshock-gallery-10.jpg?alt=media&token=334fb056-4408-4332-bfa6-593c5dbb0219"
             ></b-carousel-slide>
             <b-carousel-slide
-              img-src="../assets/shock-gallery-11.jpg"
+              img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/rearshockcourse%2Fshock-gallery-11.jpg?alt=media&token=648f8c65-024f-451b-8120-b95bb9b8d793"
             ></b-carousel-slide>
             <b-carousel-slide
-              img-src="../assets/shock-gallery-13.jpg"
+              img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/rearshockcourse%2Fshock-gallery-13.jpg?alt=media&token=dd7fac82-4cf3-4c01-a5fb-afa226e8a2d3"
             ></b-carousel-slide>
             <b-carousel-slide
-              img-src="../assets/shock-gallery-14.jpg"
+              img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/rearshockcourse%2Fshock-gallery-14.jpg?alt=media&token=fbd1af7f-9125-4153-b76e-b4a5343a556c"
             ></b-carousel-slide>
             <b-carousel-slide
-              img-src="../assets/shock-gallery-15.jpg"
+              img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/rearshockcourse%2Fshock-gallery-15.jpg?alt=media&token=477ec778-57f5-40e0-a278-c5f7fbf79170"
             ></b-carousel-slide>
           </b-carousel>
         </b-col>

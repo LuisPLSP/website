@@ -2,7 +2,7 @@
   <div class="banner">
     <img
       id="bannercourses"
-      src="../assets/bannerSuspensionCourses.jpg"
+      src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/courses%2FbannerSuspensionCourses.jpg?alt=media&token=c243ea0e-cc0d-4018-b679-40f71fd436cb"
       fluid
       alt="banner"
     />
@@ -14,6 +14,7 @@
 <script>
 export default {
   name: "Bannersuspensions",
+
   methods: {
     setLocale(locale) {
       this.$i18n.locale = locale;

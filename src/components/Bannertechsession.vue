@@ -2,7 +2,7 @@
   <div class="banner">
     <img
       id="bannertechsession"
-      src="../assets/bannerForks.jpg"
+      src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/frontforkscourse%2FbannerForks.jpg?alt=media&token=28daea59-dd1f-4b49-834b-7181bd20376e"
       fluid
       alt="banner"
     />

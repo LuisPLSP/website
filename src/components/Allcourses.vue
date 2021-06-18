@@ -14,7 +14,7 @@
           ><b-card
             style="position: relative;"
             class="shadow-lg"
-            :img-src="require('../assets/frontForkCourse.jpg')"
+            img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/courses%2FfrontForkCourse.jpg?alt=media&token=3f37ab77-9368-4a0a-a5e4-30fa87021e4d"
             img-alt="Front fork course"
             overlay
           >
@@ -30,7 +30,7 @@
           ><b-card
             style="position: relative;"
             class="shadow-lg"
-            :img-src="require('../assets/bannershock.jpg')"
+            img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/courses%2Fbannershock.jpg?alt=media&token=3a77329e-c86a-4633-a70c-5fc25860aefd"
             img-alt="Front fork course"
             overlay
           >
@@ -47,7 +47,7 @@
           ><b-card
             style="position: relative;"
             class="shadow-lg"
-            :img-src="require('../assets/frontForkCourse.jpg')"
+            img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/courses%2FfrontForkCourse.jpg?alt=media&token=3f37ab77-9368-4a0a-a5e4-30fa87021e4d"
             img-alt="Front fork course"
             overlay
           >
@@ -62,7 +62,7 @@
         <b-col lg="5" data-aos="fade-up" data-aos-duration="1500" class="module"
           ><b-card
             class="shadow-lg"
-            :img-src="require('../assets/frontForkCourse.jpg')"
+            img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/courses%2FfrontForkCourse.jpg?alt=media&token=3f37ab77-9368-4a0a-a5e4-30fa87021e4d"
             img-alt="Front fork course"
             overlay
           >
@@ -78,9 +78,7 @@
 <script>
 export default {
   name: "Allcourses",
-  data() {
-    return {};
-  },
+
   methods: {
     setLocale(locale) {
       this.$i18n.locale = locale;

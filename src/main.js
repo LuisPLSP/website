@@ -8,6 +8,8 @@ import "bootstrap-vue/dist/bootstrap-vue.css";
 import axios from "axios";
 import VueAxios from "vue-axios";
 
+import firebase from "firebase/app";
+
 window.axios = require("axios");
 import VueMeta from "vue-meta";
 Vue.use(VueMeta);
@@ -40,5 +42,6 @@ new Vue({
   store,
   router,
   i18n,
+  firebase,
   render: (h) => h(App),
 }).$mount("#app");
