@@ -1,51 +1,51 @@
 <template>
   <section class="feedback">
     <b-container>
-        <b-row class="my-5">
-          <b-col
-            id="contact-us"
-            class="my-3 d-flex align-items-center justify-content-center"
-            md="6"
-          >
+      <b-row class="my-5">
+        <b-col
+          id="contact-us"
+          class="my-3 d-flex align-items-center justify-content-center"
+          md="6"
+        >
           <h1 class="mb-5 contact-title">Feedback</h1>
-            <!-- <h1 class="mb-5 contact-title">{{ $t("contact.title") }}</h1> -->
-          </b-col>
-          <b-col class="contact-form" md="6">
-            <b-form @submit="checkForm">
-              <div class="form">{{ $t("contact.emailtitle") }}</div>
-              <b-form-input
-                id="email"
-                v-model.trim="form.email"
-                type="email"
-                required
-                :placeholder="$t('contact.emailplaceholder')"
-              ></b-form-input>
-              <div class="form">{{ $t("contact.subjecttitle") }}</div>
-              <b-form-select
-                id="subject"
-                v-model="form.subject"
-                :options="subject"
-                required
-              ></b-form-select>
+          <!-- <h1 class="mb-5 contact-title">{{ $t("contact.title") }}</h1> -->
+        </b-col>
+        <b-col class="contact-form" md="6">
+          <b-form @submit="checkForm">
+            <div class="form">{{ $t("contact.emailtitle") }}</div>
+            <b-form-input
+              id="email"
+              v-model.trim="form.email"
+              type="email"
+              required
+              :placeholder="$t('contact.emailplaceholder')"
+            ></b-form-input>
+            <div class="form">{{ $t("contact.subjecttitle") }}</div>
+            <b-form-select
+              id="subject"
+              v-model="form.subject"
+              :options="subject"
+              required
+            ></b-form-select>
 
-              <div class="form">{{ $t("contact.messagetitle") }}</div>
-              <b-form-textarea
-                id="message"
-                v-model.trim="form.message"
-                required
-                :placeholder="$t('contact.messageplaceholder')"
-              ></b-form-textarea>
-              <b-button
-                class="form"
-                style="margin-right: 10px;"
-                type="submit"
-                variant="success"
-                >{{ $t("contact.submit") }}</b-button
-              >
-            </b-form>
-          </b-col>
-        </b-row>
-      </b-container>
+            <div class="form">{{ $t("contact.messagetitle") }}</div>
+            <b-form-textarea
+              id="message"
+              v-model.trim="form.message"
+              required
+              :placeholder="$t('contact.messageplaceholder')"
+            ></b-form-textarea>
+            <b-button
+              class="form"
+              style="margin-right: 10px;"
+              type="submit"
+              variant="success"
+              >{{ $t("contact.submit") }}</b-button
+            >
+          </b-form>
+        </b-col>
+      </b-row>
+    </b-container>
   </section>
 </template>
 
@@ -121,17 +121,15 @@ export default {
           (this.form.message = "")
           //}
         )
-      .catch(
-        (error) => {
+        .catch((error) => {
           //console.log(error);
-        this.makeToast("Try again later, please!", {
-          autoHideDelay: 10000,
-          title: error,
-          variant: "warning",
-          solid: true
-        })
-        }
-        );
+          this.makeToast("Try again later, please!", {
+            autoHideDelay: 10000,
+            title: error,
+            variant: "warning",
+            solid: true,
+          });
+        });
     },
     makeToast(message, options) {
       this.$bvToast.toast(message, options);
@@ -156,7 +154,7 @@ h1 {
   padding-top: auto;
   padding-bottom: auto;
   font-size: 2em;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: 700;
 }
 .form {

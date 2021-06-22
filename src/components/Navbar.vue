@@ -12,6 +12,12 @@
           <b-nav-item size="sm" class="navbar-item" :to="{ name: 'Courses' }">{{
             $t("nav.courses")
           }}</b-nav-item>
+          <b-nav-item
+            size="sm"
+            class="navbar-item"
+            :to="{ name: 'TechSession' }"
+            >{{ $t("nav.techsessions") }}</b-nav-item
+          >
           <!-- <b-nav-item size="sm" class="navbar-item" :to="{ name: 'MuddyMatch' }"
             >Muddy Match</b-nav-item
           > -->
@@ -89,7 +95,7 @@ export default {
   margin-bottom: auto;
   display: flex;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: 500;
   //   .collapse {
   //   font-size: larger;
@@ -101,7 +107,7 @@ export default {
   margin-bottom: auto;
   display: flex;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: 500;
   border: none;
   text-decoration: none;

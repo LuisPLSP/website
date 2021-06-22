@@ -1,7 +1,5 @@
 import Vue from "vue";
 import Vuex from "vuex";
-//import firebase from "firebase";
-//let storage = firebase.storage();
 
 Vue.use(Vuex);
 
@@ -10,13 +8,6 @@ export const store = new Vuex.Store({
     lang: {
       en: true,
       pt: false,
-    },
-    assets: {
-      homePhotos: [],
-      coursesPhotos: [],
-      forksPhotos: [],
-      shockPhotos: [],
-      techsessionPhotos: [],
     },
   },
   getters: {
@@ -34,9 +25,6 @@ export const store = new Vuex.Store({
     setLangPt(state, pt) {
       state.lang.pt = pt;
     },
-    setHomePhotos(state, homePhotos) {
-      state.assets.homePhotos = homePhotos;
-    },
   },
   actions: {
     changeLangEn: function({ commit }, params) {
@@ -45,12 +33,6 @@ export const store = new Vuex.Store({
     changeLangPt: function({ commit }, params) {
       commit("setLangPt", params);
     },
-    // fetchHomePhotos: function({ commit }) {
-    //   let storageRef = storage.ref();
-    //   const response = storageRef.child("frontforkscourse");
-    //   commit("setBusinessDetails", response);
-    //   console.log(this.state.assets.homePhotos);
-    // },
   },
   modules: {},
   strict: false,

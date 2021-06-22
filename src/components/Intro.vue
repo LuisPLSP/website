@@ -25,8 +25,8 @@ export default {
   methods: {
     setLocale(locale) {
       this.$i18n.locale = locale;
-    }
-  }
+    },
+  },
 };
 </script>
 <style lang="scss" scoped>
@@ -46,7 +46,7 @@ h1 {
   padding-top: auto;
   padding-bottom: auto;
   font-size: 2em;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: 700;
 }
 h4 {

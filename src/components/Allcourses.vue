@@ -10,63 +10,104 @@
         </b-col>
       </b-row>
       <b-row class="my-md-5" align-h="around">
-        <b-col lg="5" data-aos="fade-up" data-aos-duration="1000" class="module"
-          ><b-card
-            style="position: relative;"
-            class="shadow-lg"
-            img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/courses%2FfrontForkCourse.jpg?alt=media&token=3f37ab77-9368-4a0a-a5e4-30fa87021e4d"
+        <b-col
+          lg="5"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          class="module"
+        >
+          <b-card
+            class="shadow-lg card"
+            img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/courses%2FFrontFork-card.png?alt=media&token=c68ac30b-842f-4bad-87c9-9b01225dd873"
             img-alt="Front fork course"
             overlay
           >
+            <div class="overlay-text">
+              <h2>{{ $t("courses.forkscourses") }}</h2>
+              <h3>
+                {{ $t("courses.forksdate1") }} |
+                {{ $t("courses.forkslocation1") }}
+              </h3>
+            </div>
             <b-button
-              class="btn-to-course"
+              @click="chosenSlotToTrue"
               href="/forkscourse"
-              target="_blank"
+              class="btn-to-course"
               >{{ $t("courses.watchmore") }}</b-button
             >
           </b-card>
         </b-col>
-        <b-col lg="5" data-aos="fade-up" data-aos-duration="1500" class="module"
-          ><b-card
+        <b-col
+          lg="5"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          class="module"
+        >
+          <b-card
             style="position: relative;"
-            class="shadow-lg"
-            img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/courses%2Fbannershock.jpg?alt=media&token=3a77329e-c86a-4633-a70c-5fc25860aefd"
+            class="shadow-lg card"
+            img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/courses%2FFrontFork-card.png?alt=media&token=c68ac30b-842f-4bad-87c9-9b01225dd873"
             img-alt="Front fork course"
             overlay
           >
-            <b-button
-              class="btn-to-course"
-              href="/shockcourse"
-              target="_blank"
-              >{{ $t("courses.watchmore") }}</b-button
-            >
+            <div class="overlay-text">
+              <h2>{{ $t("courses.forkscourses") }}</h2>
+              <h3>
+                {{ $t("courses.forksdate2") }} |
+                {{ $t("courses.forkslocation2") }}
+              </h3>
+            </div>
+            <b-button class="btn-to-course" href="/forkscourse">{{
+              $t("courses.watchmore")
+            }}</b-button>
           </b-card>
         </b-col> </b-row
       ><b-row class="mb-md-5" align-h="around">
-        <b-col lg="5" data-aos="fade-up" data-aos-duration="1000" class="module"
-          ><b-card
+        <b-col
+          lg="5"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          class="module"
+        >
+          <b-card
             style="position: relative;"
-            class="shadow-lg"
-            img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/courses%2FfrontForkCourse.jpg?alt=media&token=3f37ab77-9368-4a0a-a5e4-30fa87021e4d"
-            img-alt="Front fork course"
+            class="shadow-lg card"
+            img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/courses%2FShock-card.png?alt=media&token=e9b9656c-213d-4c00-acde-fd4856e6b2fe"
+            img-alt="rear shock course"
             overlay
           >
-            <b-button
-              class="btn-to-course"
-              href="/techsession"
-              target="_blank"
-              >{{ $t("courses.watchmore") }}</b-button
-            >
+            <div class="overlay-text">
+              <h2>{{ $t("courses.shockcourses") }}</h2>
+              <h3>
+                {{ $t("courses.shockdate1") }} |
+                {{ $t("courses.shocklocation1") }}
+              </h3>
+            </div>
+            <b-button class="btn-to-course" href="/shockcourse">{{
+              $t("courses.watchmore")
+            }}</b-button>
           </b-card>
         </b-col>
-        <b-col lg="5" data-aos="fade-up" data-aos-duration="1500" class="module"
-          ><b-card
-            class="shadow-lg"
-            img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/courses%2FfrontForkCourse.jpg?alt=media&token=3f37ab77-9368-4a0a-a5e4-30fa87021e4d"
-            img-alt="Front fork course"
+        <b-col
+          lg="5"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          class="module"
+        >
+          <b-card
+            class="shadow-lg card"
+            img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/courses%2FShock-card.png?alt=media&token=e9b9656c-213d-4c00-acde-fd4856e6b2fe"
+            img-alt="rear shock course"
             overlay
           >
-            <b-button disabled class="btn-to-course" href="#" target="_blank">{{
+            <div class="overlay-text">
+              <h2>{{ $t("courses.shockcourses") }}</h2>
+              <h3>
+                {{ $t("courses.shockdate2") }} |
+                {{ $t("courses.shocklocation2") }}
+              </h3>
+            </div>
+            <b-button disabled class="btn-to-course" href="/shockcourse">{{
               $t("courses.comingsoon")
             }}</b-button>
           </b-card>
@@ -78,7 +119,6 @@
 <script>
 export default {
   name: "Allcourses",
-
   methods: {
     setLocale(locale) {
       this.$i18n.locale = locale;
@@ -102,20 +142,100 @@ h1 {
   padding-top: auto;
   padding-bottom: auto;
   font-size: 2em;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: 700;
 }
+
 .btn-to-course {
   position: absolute;
   left: 30%;
   right: 30%;
   top: 75%;
   background-color: #067a14;
+
   &:hover {
     background-color: #04610f;
   }
   &:focus {
     background-color: #04610f;
+  }
+}
+.overlay-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  h2 {
+    font-size: 40px;
+    font-weight: 700;
+    transform: scale(1, 1.2);
+    text-shadow: 2px 2px 4px #000000;
+  }
+  h3 {
+    font-size: 20px;
+    font-weight: 700;
+    transform: scale(1, 1.2);
+    text-shadow: 2px 2px 4px #000000;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .overlay-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 700;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    h2 {
+      font-size: 25px;
+      font-weight: 700;
+      transform: scale(1, 1.2);
+    }
+    h3 {
+      font-size: 10px;
+      font-weight: 700;
+      transform: scale(1, 1.2);
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .overlay-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 700;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    h2 {
+      font-size: 35px;
+      font-weight: 700;
+      transform: scale(1, 1.2);
+    }
+    h3 {
+      font-size: 20px;
+      font-weight: 700;
+      transform: scale(1, 1.2);
+    }
   }
 }
 </style>

@@ -15,7 +15,7 @@
           <b-embed
             type="iframe"
             aspect="16by9"
-            src="https://www.youtube.com/embed/dRekn0iRiRs"
+            src="https://www.youtube.com/embed/G2qiWOHQoPY"
             allowfullscreens
           ></b-embed>
         </b-col>
@@ -51,7 +51,7 @@ h1 {
   padding-top: auto;
   padding-bottom: auto;
   font-size: 2em;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: 700;
 }
 h4 {

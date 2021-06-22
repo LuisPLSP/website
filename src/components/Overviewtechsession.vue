@@ -82,7 +82,7 @@ h3 {
   margin-bottom: 5px;
   padding-right: 10px;
   font-size: 1.25rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: 600;
 }
 

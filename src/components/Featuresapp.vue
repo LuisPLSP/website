@@ -10,7 +10,6 @@
           <!-- <h1 class="mb-5 intro-title">{{ $t("introapp.title") }}</h1> -->
         </b-col>
         <b-col
-        
           md="4"
           data-aos="fade-up"
           data-aos-duration="1000"
@@ -119,7 +118,7 @@ h1 {
   padding-top: auto;
   padding-bottom: auto;
   font-size: 2em;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: 700;
 }
 h4 {

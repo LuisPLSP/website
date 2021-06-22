@@ -11,7 +11,9 @@
           <b-card class="shadow-lg mb-3 mt-3" tag="article">
             <b-card-text>
               <h3>{{ $t("forks.time&date") }}</h3>
-              <p>{{ $t("forks.time&date1") }}</p>
+              <p>
+                {{ $t("forks.time&date1") }}
+              </p>
               <h3>{{ $t("forks.location") }}</h3>
               <p>{{ $t("forks.location1") }}</p>
               <h3>{{ $t("forks.duration") }}</h3>
@@ -21,7 +23,7 @@
               <h3>{{ $t("forks.price") }}</h3>
               <p>{{ $t("forks.price1") }}</p>
             </b-card-text>
-            <b-button float="right" href="#register" variant="primary">{{
+            <b-button float="right" variant="primary">{{
               $t("forks.signup")
             }}</b-button>
           </b-card>
@@ -111,7 +113,7 @@ h3 {
   margin-bottom: 5px;
   padding-right: 10px;
   font-size: 1.25rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: 600;
 }
 

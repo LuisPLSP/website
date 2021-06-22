@@ -86,7 +86,7 @@ h2 {
   padding-top: auto;
   padding-bottom: auto;
   font-size: 1.75em;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: 700;
 }
 h4 {
