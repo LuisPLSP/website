@@ -30,9 +30,9 @@
               </h3>
             </div>
             <b-button
-              @click="chosenSlotToTrue"
               href="/forkscourse"
               class="btn-to-course"
+              target="_blank"
               >{{ $t("courses.watchmore") }}</b-button
             >
           </b-card>
@@ -57,9 +57,12 @@
                 {{ $t("courses.forkslocation2") }}
               </h3>
             </div>
-            <b-button class="btn-to-course" href="/forkscourse">{{
-              $t("courses.watchmore")
-            }}</b-button>
+            <b-button
+              class="btn-to-course"
+              target="_blank"
+              href="/forkscourse"
+              >{{ $t("courses.watchmore") }}</b-button
+            >
           </b-card>
         </b-col> </b-row
       ><b-row class="mb-md-5" align-h="around">
@@ -83,9 +86,12 @@
                 {{ $t("courses.shocklocation1") }}
               </h3>
             </div>
-            <b-button class="btn-to-course" href="/shockcourse">{{
-              $t("courses.watchmore")
-            }}</b-button>
+            <b-button
+              class="btn-to-course"
+              target="_blank"
+              href="/shockcourse"
+              >{{ $t("courses.watchmore") }}</b-button
+            >
           </b-card>
         </b-col>
         <b-col
@@ -107,9 +113,13 @@
                 {{ $t("courses.shocklocation2") }}
               </h3>
             </div>
-            <b-button disabled class="btn-to-course" href="/shockcourse">{{
-              $t("courses.comingsoon")
-            }}</b-button>
+            <b-button
+              disabled
+              class="btn-to-course"
+              target="_blank"
+              href="/shockcourse"
+              >{{ $t("courses.comingsoon") }}</b-button
+            >
           </b-card>
         </b-col>
       </b-row>

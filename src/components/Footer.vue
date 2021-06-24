@@ -16,14 +16,14 @@
         </b-col>
         <b-col md="2">
           <b-nav vertical>
-            <a class="adjust" style="color: white;" href="#banner">{{
-              $t("footer.project")
+            <a class="adjust" style="color: white;" href="/courses">{{
+              $t("footer.courses")
             }}</a>
-            <a class="adjust" style="color: white;" href="#videos">{{
+            <a class="adjust" style="color: white;" href="/techsession">{{
+              $t("footer.techsession")
+            }}</a>
+            <a class="adjust" style="color: white;" href="/#videos">{{
               $t("footer.videos")
-            }}</a>
-            <a class="adjust" style="color: white;" href="#about">{{
-              $t("footer.about")
             }}</a>
           </b-nav>
         </b-col>
@@ -648,7 +648,7 @@
 </template>
 <script>
 export default {
-  name: "Bottom"
+  name: "Bottom",
 };
 </script>
 <style lang="scss" scoped>
