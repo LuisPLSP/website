@@ -7,6 +7,8 @@
     <allcourses></allcourses>
 
     <testimonialsforks></testimonialsforks>
+
+    <testimonialsvideo></testimonialsvideo>
   </div>
 </template>
 
@@ -15,6 +17,7 @@ import Bannersuspensions from "../components/Bannersuspensions.vue";
 import Introcourses from "../components/Introcourses.vue";
 import Allcourses from "../components/Allcourses.vue";
 import Testimonialsforks from "../components/Testimonialsforks.vue";
+import Testimonialsvideo from "../components/Testimonialsvideo.vue";
 
 export default {
   name: "Courses",
@@ -23,6 +26,7 @@ export default {
     Introcourses,
     Allcourses,
     Testimonialsforks,
+    Testimonialsvideo,
   },
   methods: {
     setLocale(locale) {

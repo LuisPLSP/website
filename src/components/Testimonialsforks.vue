@@ -19,7 +19,7 @@
       </b-row>
       <b-row>
         <b-col lg="12" class="col-xl-10 mx-auto">
-          <div class="p-5 bg-white rounded">
+          <div class="py-3 px-1 bg-white rounded">
             <!-- Bootstrap carousel-->
             <div
               class="carousel slide"
@@ -27,7 +27,7 @@
               data-ride="carousel"
             >
               <!-- Bootstrap inner [slides]-->
-              <div class="carousel-inner px-5 pb-2">
+              <div class="carousel-inner px-2 pb-2">
                 <!-- Carousel slide-->
                 <div class="carousel-item active">
                   <div class="media">
