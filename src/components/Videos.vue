@@ -2,7 +2,7 @@
   <section id="videos" class="videos">
     <b-container class="embed">
       <b-row class="my-md-4">
-        <b-col md="6" data-aos="fade-up" data-aos-duration="1000" class="module"
+        <b-col md="6" data-aos="fade-up" data-aos-duration="500" class="module"
           ><b-card
             class="shadow-lg"
             :title="$t('videos.offroadengineered.title')"
@@ -25,7 +25,7 @@
             >
           </b-card>
         </b-col>
-        <b-col md="6" data-aos="fade-up" data-aos-duration="1500" class="module"
+        <b-col md="6" data-aos="fade-up" data-aos-duration="1000" class="module"
           ><b-card class="shadow-lg" :title="$t('videos.how-tos.title')">
             <b-embed
               type="iframe"
@@ -47,7 +47,7 @@
         </b-col>
       </b-row>
       <b-row>
-        <b-col md="6" data-aos="fade-up" data-aos-duration="1000" class="module"
+        <b-col md="6" data-aos="fade-up" data-aos-duration="500" class="module"
           ><b-card class="shadow-lg" :title="$t('videos.reviews.title')">
             <b-embed
               type="iframe"
@@ -70,7 +70,7 @@
         <b-col
           md="6"
           data-aos="fade-up"
-          data-aos-duration="1500"
+          data-aos-duration="1000"
           class="module"
         >
           <b-card class="shadow-lg" :title="$t('videos.behindthescenes.title')">
@@ -119,12 +119,7 @@
             >
           </b-card>
         </b-col>
-        <b-col
-          md="6"
-          class="module"
-          data-aos="fade-up"
-          data-aos-duration="1500"
-        >
+        <b-col md="6" class="module" data-aos="fade-up" data-aos-duration="500">
           <b-card class="shadow-lg" :title="$t('videos.interviews.title')">
             <b-embed
               type="iframe"
@@ -150,7 +145,7 @@
         <b-col
           md="6"
           data-aos="fade-up"
-          data-aos-duration="1500"
+          data-aos-duration="500"
           class="d-flex align-items-center"
         >
           <b-button

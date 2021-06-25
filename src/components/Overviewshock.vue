@@ -35,9 +35,6 @@
             img-height="480"
           >
             <b-carousel-slide
-              img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/courses%2Fbannershock.jpg?alt=media&token=3a77329e-c86a-4633-a70c-5fc25860aefd"
-            ></b-carousel-slide>
-            <b-carousel-slide
               img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/rearshockcourse%2Fshock-gallery-2.jpg?alt=media&token=37b17f29-eb0c-4ecd-b43d-e03f31a0efd1"
             ></b-carousel-slide>
             <b-carousel-slide

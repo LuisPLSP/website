@@ -10,12 +10,7 @@
         </b-col>
       </b-row>
       <b-row class="my-md-5" align-h="around">
-        <b-col
-          lg="5"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          class="module"
-        >
+        <b-col lg="5" data-aos="fade-up" data-aos-duration="500" class="module">
           <b-card
             class="shadow-lg card"
             img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/courses%2FFrontFork-card.png?alt=media&token=c68ac30b-842f-4bad-87c9-9b01225dd873"
@@ -29,18 +24,17 @@
                 {{ $t("courses.forkslocation1") }}
               </h3>
             </div>
-            <b-button
-              href="/forkscourse"
-              class="btn-to-course"
-              target="_blank"
-              >{{ $t("courses.watchmore") }}</b-button
-            >
+            <router-link to="/forkscourse">
+              <b-button class="btn-to-course">{{
+                $t("courses.watchmore")
+              }}</b-button>
+            </router-link>
           </b-card>
         </b-col>
         <b-col
           lg="5"
           data-aos="fade-up"
-          data-aos-duration="1500"
+          data-aos-duration="1000"
           class="module"
         >
           <b-card
@@ -57,21 +51,15 @@
                 {{ $t("courses.forkslocation2") }}
               </h3>
             </div>
-            <b-button
-              class="btn-to-course"
-              target="_blank"
-              href="/forkscourse"
-              >{{ $t("courses.watchmore") }}</b-button
-            >
+            <router-link to="/forkscourse">
+              <b-button class="btn-to-course">{{
+                $t("courses.watchmore")
+              }}</b-button>
+            </router-link>
           </b-card>
         </b-col> </b-row
       ><b-row class="mb-md-5" align-h="around">
-        <b-col
-          lg="5"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          class="module"
-        >
+        <b-col lg="5" data-aos="fade-up" data-aos-duration="500" class="module">
           <b-card
             style="position: relative;"
             class="shadow-lg card"
@@ -86,18 +74,17 @@
                 {{ $t("courses.shocklocation1") }}
               </h3>
             </div>
-            <b-button
-              class="btn-to-course"
-              target="_blank"
-              href="/shockcourse"
-              >{{ $t("courses.watchmore") }}</b-button
-            >
+            <router-link to="/shockcourse">
+              <b-button class="btn-to-course">{{
+                $t("courses.watchmore")
+              }}</b-button>
+            </router-link>
           </b-card>
         </b-col>
         <b-col
           lg="5"
           data-aos="fade-up"
-          data-aos-duration="1500"
+          data-aos-duration="1000"
           class="module"
         >
           <b-card
@@ -113,13 +100,9 @@
                 {{ $t("courses.shocklocation2") }}
               </h3>
             </div>
-            <b-button
-              disabled
-              class="btn-to-course"
-              target="_blank"
-              href="/shockcourse"
-              >{{ $t("courses.comingsoon") }}</b-button
-            >
+            <b-button disabled class="btn-to-course">{{
+              $t("courses.comingsoon")
+            }}</b-button>
           </b-card>
         </b-col>
       </b-row>
@@ -132,6 +115,12 @@ export default {
   methods: {
     setLocale(locale) {
       this.$i18n.locale = locale;
+    },
+    redirectToForks() {
+      this.$router.push({ path: "/forkscourse" });
+    },
+    redirectToShock() {
+      this.$router.push({ path: "/shockcourse/#shock" });
     },
   },
 };
@@ -158,9 +147,14 @@ h1 {
 
 .btn-to-course {
   position: absolute;
-  left: 30%;
-  right: 30%;
+  // left: 30%;
+  // right: 30%;
   top: 75%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
   background-color: #067a14;
 
   &:hover {

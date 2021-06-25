@@ -62,7 +62,8 @@ section {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  margin-right: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 .partners {
   height: 150px;
@@ -76,5 +77,23 @@ img {
   max-width: 50%;
   display: block;
   margin: 0 auto;
+}
+@media only screen and (max-width: 767px) {
+  .images {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .partners {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
 }
 </style>

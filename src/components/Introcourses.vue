@@ -2,7 +2,7 @@
   <section class="intro">
     <b-container>
       <b-row>
-        <b-col class="intro-text my-3" lg="6">
+        <b-col class="intro-text my-4" lg="6">
           <p style="text-align: left;">
             {{ $t("courses.text1") }}
           </p>

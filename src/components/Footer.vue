@@ -16,12 +16,16 @@
         </b-col>
         <b-col md="2">
           <b-nav vertical>
-            <a class="adjust" style="color: white;" href="/courses">{{
-              $t("footer.courses")
-            }}</a>
-            <a class="adjust" style="color: white;" href="/techsession">{{
-              $t("footer.techsession")
-            }}</a>
+            <router-link to="/courses">
+              <a class="adjust" style="color: white;">{{
+                $t("footer.courses")
+              }}</a>
+            </router-link>
+            <router-link to="/techsession">
+              <a class="adjust" style="color: white;">{{
+                $t("footer.techsession")
+              }}</a>
+            </router-link>
             <a class="adjust" style="color: white;" href="/#videos">{{
               $t("footer.videos")
             }}</a>

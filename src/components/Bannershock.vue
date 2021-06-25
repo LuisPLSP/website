@@ -1,5 +1,5 @@
 <template>
-  <div class="banner">
+  <div class="banner" id="shock">
     <img
       id="bannershock"
       src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/rearshockcourse%2Fshock-gallery-1.jpg?alt=media&token=ea4280bf-6a31-44d7-acff-3bf4b1dd9571"

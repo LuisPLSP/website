@@ -29,6 +29,9 @@ export default {
       this.$i18n.locale = locale;
     },
   },
+  mounted() {
+    window.scrollTo(0, 0);
+  },
   metaInfo() {
     return {
       title: this.$t("meta.shockcoursestitle"),

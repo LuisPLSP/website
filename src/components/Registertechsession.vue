@@ -36,7 +36,6 @@
 
 <script>
 import { mapGetters } from "vuex";
-//import Vue from "vue";
 export default {
   name: "Registercourse",
 
@@ -46,7 +45,6 @@ export default {
   methods: {
     setLocale(locale) {
       this.$i18n.locale = locale;
-      console.log(locale);
     },
   },
   mounted() {
