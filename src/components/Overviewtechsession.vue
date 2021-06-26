@@ -9,7 +9,7 @@
           data-aos-duration="1000"
         >
           <b-card
-            class="d-flex align-items-center justify-content-flex-start shadow-lg mb-3 mt-3"
+            class="d-flex align-items-center justify-content-flex-start shadow-lg mb-3 mt-3 mx-2"
             tag="article"
           >
             <b-card-text>
@@ -31,7 +31,7 @@
         <b-col
           lg="6"
           style="display: flex; flex-direction: column; align-items: center; justify-content: center;"
-          class="mr-5"
+          class="mx-3"
           ><p>
             {{ $t("techsession.text1") }}
           </p>

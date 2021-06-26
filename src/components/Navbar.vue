@@ -9,9 +9,9 @@
 
       <b-collapse id="nav-collapse" class="collapse" is-nav>
         <b-navbar-nav align="end" class=" ml-auto">
-          <b-nav-item size="sm" class="navbar-item" :to="{ name: 'Courses' }">{{
-            $t("nav.courses")
-          }}</b-nav-item>
+          <b-nav-item size="sm" class="navbar-item" :to="{ path: 'Courses' }"
+            >{{ $t("nav.courses") }}
+          </b-nav-item>
           <b-nav-item
             size="sm"
             class="navbar-item"
@@ -67,12 +67,12 @@ export default {
         this.$i18n.locale = "en";
         this.$store.dispatch("changeLangEn", true);
         this.$store.dispatch("changeLangPt", false);
-        console.log("En to true, Pt to false");
+        //console.log("En to true, Pt to false");
       } else {
         this.$i18n.locale = "pt";
         this.$store.dispatch("changeLangEn", false);
         this.$store.dispatch("changeLangPt", true);
-        console.log("Pt to true, En to false");
+        //console.log("Pt to true, En to false");
       }
     },
   },
