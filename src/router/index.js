@@ -28,17 +28,17 @@ const routes = [
     component: Courses,
   },
   {
-    path: "/forkscourse",
+    path: "/frontforkscourse",
     name: "FrontForksCourse",
     component: LandingPageForks,
   },
   {
-    path: "/shockcourse",
+    path: "/rearshockcourse",
     name: "ShockCourse",
     component: LandingPageShock,
   },
   {
-    path: "/techsession",
+    path: "/technicalsession",
     name: "TechSession",
     component: LandingPageTechSession,
   },

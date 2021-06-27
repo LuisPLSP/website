@@ -2,7 +2,7 @@
   <div class="banner" id="shock">
     <img
       id="bannershock"
-      src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/rearshockcourse%2Fshock-gallery-1.jpg?alt=media&token=ea4280bf-6a31-44d7-acff-3bf4b1dd9571"
+      src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/rearshockcourse%2FbannerShock.jpg?alt=media&token=f899604f-b43c-4aeb-8fdd-b2dd1302f0f3"
       fluid
       alt="banner"
     />
@@ -26,7 +26,7 @@ export default {
 }
 h1 {
   color: white;
-  font-size: 5em;
+  font-size: 5vw;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 700;
   position: absolute;

@@ -6,7 +6,7 @@
           lg="4"
           class="d-flex align-items-center justify-content-center"
           data-aos="fade-up"
-          data-aos-duration="1000"
+          data-aos-duration="300"
         >
           <b-card class="shadow-lg mb-3 mt-3" tag="article">
             <b-card-text>

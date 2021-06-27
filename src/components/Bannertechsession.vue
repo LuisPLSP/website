@@ -2,7 +2,7 @@
   <div class="banner">
     <img
       id="bannertechsession"
-      src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/courses%2Fbanner-techsession.jpg?alt=media&token=52bc2c08-71d5-4a82-9a5a-2cceff70d485"
+      src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/courses%2FbannerTechnicalSessions.jpg?alt=media&token=d99f5b06-2fd4-4fe4-bdd0-b937a4addb6a"
       fluid
       alt="banner"
     />
@@ -26,7 +26,7 @@ export default {
 }
 h1 {
   color: white;
-  font-size: 5em;
+  font-size: 5vw;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 700;
   position: absolute;

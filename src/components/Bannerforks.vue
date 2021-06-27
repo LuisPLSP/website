@@ -26,7 +26,6 @@ export default {
 }
 h1 {
   color: white;
-  //font-size: 5em;
   font-size: 5vw;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 700;

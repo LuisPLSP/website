@@ -10,7 +10,7 @@
         </b-col>
       </b-row>
       <b-row class="my-md-5" align-h="around">
-        <b-col lg="5" data-aos="fade-up" data-aos-duration="500" class="module">
+        <b-col lg="5" data-aos="fade-up" data-aos-duration="200" class="module">
           <b-card
             class="shadow-lg card"
             img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/courses%2FFrontFork-card.png?alt=media&token=c68ac30b-842f-4bad-87c9-9b01225dd873"
@@ -24,19 +24,14 @@
                 {{ $t("courses.forkslocation1") }}
               </h3>
             </div>
-            <router-link to="/forkscourse">
+            <router-link to="/frontforkscourse">
               <b-button class="btn-to-course">{{
                 $t("courses.watchmore")
               }}</b-button>
             </router-link>
           </b-card>
         </b-col>
-        <b-col
-          lg="5"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          class="module"
-        >
+        <b-col lg="5" data-aos="fade-up" data-aos-duration="300" class="module">
           <b-card
             style="position: relative;"
             class="shadow-lg card"
@@ -51,7 +46,7 @@
                 {{ $t("courses.forkslocation2") }}
               </h3>
             </div>
-            <router-link to="/forkscourse">
+            <router-link to="/frontforkscourse">
               <b-button class="btn-to-course">{{
                 $t("courses.watchmore")
               }}</b-button>
@@ -59,7 +54,7 @@
           </b-card>
         </b-col> </b-row
       ><b-row class="mb-md-5" align-h="around">
-        <b-col lg="5" data-aos="fade-up" data-aos-duration="500" class="module">
+        <b-col lg="5" data-aos="fade-up" data-aos-duration="200" class="module">
           <b-card
             style="position: relative;"
             class="shadow-lg card"
@@ -74,19 +69,14 @@
                 {{ $t("courses.shocklocation1") }}
               </h3>
             </div>
-            <router-link to="/shockcourse">
+            <router-link to="/rearshockcourse">
               <b-button class="btn-to-course">{{
                 $t("courses.watchmore")
               }}</b-button>
             </router-link>
           </b-card>
         </b-col>
-        <b-col
-          lg="5"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          class="module"
-        >
+        <b-col lg="5" data-aos="fade-up" data-aos-duration="300" class="module">
           <b-card
             class="shadow-lg card"
             img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/courses%2FShock-card.png?alt=media&token=e9b9656c-213d-4c00-acde-fd4856e6b2fe"
