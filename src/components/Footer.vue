@@ -21,7 +21,7 @@
                 $t("footer.courses")
               }}</a>
             </router-link>
-            <router-link class="adjust" to="/techsession">
+            <router-link class="adjust" to="/technicalsessions">
               <a class="adjust" style="color: white;">{{
                 $t("footer.techsession")
               }}</a>

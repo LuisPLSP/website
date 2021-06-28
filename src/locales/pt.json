@@ -51,7 +51,8 @@
   },
   "contact": {
     "title": "Contacta-nos",
-    "text":"Tens alguma questão, proposta, ideia, ou dica que queiras partilhar connosco? Manda-nos a tua mensagem e damos resposta assim que possível.",
+    "text1": "Tens alguma questão, proposta, ideia, ou dica que queiras partilhar connosco?",
+    "text2": "Manda-nos a tua mensagem e damos resposta assim que possível.",
     "emailtitle": "Email:",
     "emailplaceholder": "Insere aqui o teu email",
     "subjecttitle": "Assunto",
@@ -65,6 +66,9 @@
     "submit": "Submeter",
     "confirmation": "Confirmação de envio",
     "confirmmessage": "O teu email foi enviado! Responderemos nas próximas 24 horas."
+  },
+  "partners": {
+    "title": "Parceiros"
   },
   "footer": {
     "rightsreserved": "Todos os direitos reservados ©",
@@ -219,9 +223,9 @@
     "pricetext1":"30 mins: 15 €",
     "pricetext2":"1 hora: 25 €",
     "time&datetitle":"Data e Hora",
-    "time&dateotext":"A combinar",
+    "time&datetext":"A combinar",
     "locationtitle":"Local",
-    "locationotext":"Online",
+    "locationtext":"Online",
     "signup":"Marcar sessão",
     "accordionbooktitle": "Como funciona e como faço a marcação?",
     "accordionbooktext1": "É simples:",

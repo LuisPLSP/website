@@ -41,7 +41,7 @@
 </template>
 
 <script>
-import { mapGetters } from "vuex";
+import { mapGetters, mapActions } from "vuex";
 //import Vue from "vue";
 export default {
   name: "Contact",
@@ -51,11 +51,21 @@ export default {
   },
 
   methods: {
+    ...mapActions(["index/changeLangEn", "index/changeLangPt"]),
     setLocale(locale) {
       this.$i18n.locale = locale;
     },
   },
   mounted() {
+    const firstLocale = this.$i18n.locale;
+    if (firstLocale == "en") {
+      this.$store.dispatch("changeLangEn", true),
+        this.$store.dispatch("changeLangPt", false);
+    } else {
+      this.$store.dispatch("changeLangEn", false),
+        this.$store.dispatch("changeLangPt", true);
+    }
+
     const script = document.createElement("script");
     script.src = "https://js.hsforms.net/forms/v2.js";
     document.body.appendChild(script);

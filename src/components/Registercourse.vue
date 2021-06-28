@@ -46,10 +46,17 @@ export default {
   methods: {
     setLocale(locale) {
       this.$i18n.locale = locale;
-      console.log(locale);
     },
   },
   mounted() {
+    const firstLocale = this.$i18n.locale;
+    if (firstLocale == "en") {
+      this.$store.dispatch("changeLangEn", true),
+        this.$store.dispatch("changeLangPt", false);
+    } else {
+      this.$store.dispatch("changeLangEn", false),
+        this.$store.dispatch("changeLangPt", true);
+    }
     const script = document.createElement("script");
     script.src = "https://js.hsforms.net/forms/v2.js";
     document.body.appendChild(script);

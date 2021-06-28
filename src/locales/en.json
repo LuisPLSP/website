@@ -67,6 +67,9 @@
     "confirmation": "Email confirmation",
     "confirmmessage": "Your email has been sent! We'll reply within 24 hours."
   },
+  "partners": {
+    "title": "Partners"
+  },
   "footer": {
     "rightsreserved": "All Copyrights reserved ©",
     "courses": "Courses",

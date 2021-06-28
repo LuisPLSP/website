@@ -38,7 +38,7 @@ const routes = [
     component: LandingPageShock,
   },
   {
-    path: "/technicalsession",
+    path: "/technicalsessions",
     name: "TechSession",
     component: LandingPageTechSession,
   },
