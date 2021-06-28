@@ -2,7 +2,7 @@
   <div class="banner">
     <img
       id="bannertechsession"
-      src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/courses%2FbannerTechnicalSessions.jpg?alt=media&token=d99f5b06-2fd4-4fe4-bdd0-b937a4addb6a"
+      src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/courses%2FbannerTechnicalSessions.jpg?alt=media&token=e8e080cd-8866-428b-adc9-62f0d2812055"
       fluid
       alt="banner"
     />

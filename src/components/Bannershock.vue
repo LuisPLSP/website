@@ -2,7 +2,7 @@
   <div class="banner" id="shock">
     <img
       id="bannershock"
-      src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/rearshockcourse%2FbannerShock.jpg?alt=media&token=f899604f-b43c-4aeb-8fdd-b2dd1302f0f3"
+      src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/rearshockcourse%2FbannerRearShock.jpg?alt=media&token=dfe7dad7-983d-485d-9a7e-1dea0e87e6a8"
       fluid
       alt="banner"
     />

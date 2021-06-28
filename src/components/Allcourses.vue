@@ -13,7 +13,7 @@
         <b-col lg="5" data-aos="fade-up" data-aos-duration="200" class="module">
           <b-card
             class="shadow-lg card"
-            img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/courses%2FFrontFork-card.png?alt=media&token=c68ac30b-842f-4bad-87c9-9b01225dd873"
+            img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/courses%2FFrontForks-card.jpg?alt=media&token=57aa9485-d3c2-47b3-9004-a1f1e6cbbcba"
             img-alt="Front fork course"
             overlay
           >
@@ -35,7 +35,7 @@
           <b-card
             style="position: relative;"
             class="shadow-lg card"
-            img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/courses%2FFrontFork-card.png?alt=media&token=c68ac30b-842f-4bad-87c9-9b01225dd873"
+            img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/courses%2FFrontForks-card.jpg?alt=media&token=57aa9485-d3c2-47b3-9004-a1f1e6cbbcba"
             img-alt="Front fork course"
             overlay
           >
@@ -58,7 +58,7 @@
           <b-card
             style="position: relative;"
             class="shadow-lg card"
-            img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/courses%2FShock-card.png?alt=media&token=e9b9656c-213d-4c00-acde-fd4856e6b2fe"
+            img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/courses%2FShock-card.jpg?alt=media&token=fa899d97-6966-41ee-bd05-b69c91c86f6e"
             img-alt="rear shock course"
             overlay
           >
@@ -79,7 +79,7 @@
         <b-col lg="5" data-aos="fade-up" data-aos-duration="300" class="module">
           <b-card
             class="shadow-lg card"
-            img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/courses%2FShock-card.png?alt=media&token=e9b9656c-213d-4c00-acde-fd4856e6b2fe"
+            img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/courses%2FShock-card.jpg?alt=media&token=fa899d97-6966-41ee-bd05-b69c91c86f6e"
             img-alt="rear shock course"
             overlay
           >
