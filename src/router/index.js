@@ -6,6 +6,7 @@ import Courses from "../views/Courses.vue";
 import LandingPageForks from "../views/LandingPageForks.vue";
 import LandingPageShock from "../views/LandingPageShock.vue";
 import LandingPageTechSession from "../views/LandingPageTechSession.vue";
+import CoursesGeneralConditions from "../views/CoursesGeneralConditions.vue";
 import VueMeta from "vue-meta";
 Vue.use(VueMeta);
 
@@ -41,6 +42,11 @@ const routes = [
     path: "/technicalsessions",
     name: "TechSession",
     component: LandingPageTechSession,
+  },
+  {
+    path: "/coursesgeneralconditions",
+    name: "CoursesGeneralConditions",
+    component: CoursesGeneralConditions,
   },
 ];
 
