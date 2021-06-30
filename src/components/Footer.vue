@@ -17,12 +17,12 @@
         <b-col md="2">
           <b-nav vertical>
             <router-link class="adjust" to="/courses">
-              <a class="adjust" style="color: white;">{{
+              <a class="adjust" style="color: white; font-size: 1em;">{{
                 $t("footer.courses")
               }}</a>
             </router-link>
             <router-link class="adjust" to="/technicalsessions">
-              <a class="adjust" style="color: white;">{{
+              <a class="adjust" style="color: white; font-size: 1em;">{{
                 $t("footer.techsession")
               }}</a>
             </router-link>
@@ -670,7 +670,7 @@ footer {
     font-size: 0.85em;
   }
 
-  a {
+  .adjust {
     color: white;
     padding-bottom: 1em;
     font-size: 0.85em;

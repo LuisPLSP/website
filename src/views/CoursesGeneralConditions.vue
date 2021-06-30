@@ -8,7 +8,7 @@
     <p>
       A inscrição nos cursos do Steps to Podium deverá ser efetuada mediante
       preenchimento dos respetivos formulários (<a
-        href="www.stepstopodium.com/courses"
+        href="https://www.stepstopodium.com/courses"
         target="_blank"
         >https://stepstopodium.com/Courses</a
       >), sendo dada prioridade a cada um deles com base na ordem de receção dos
