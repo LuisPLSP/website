@@ -6,6 +6,7 @@
       fluid
       alt="banner"
     />
+    <h1>{{ $t("courses.coursestitle") }}</h1>
     <b-button size="lg" class="btn-to-course" href="#allcourses"
       >{{ $t("courses.explorecourses") }}
     </b-button>
@@ -26,6 +27,18 @@ export default {
 // Banner
 .banner {
   position: relative;
+}
+h1 {
+  color: white;
+  font-size: 5vw;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 2px 2px 4px #000000;
 }
 #bannercourses {
   height: 500px;
