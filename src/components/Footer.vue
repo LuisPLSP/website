@@ -674,13 +674,15 @@ footer {
     color: white;
     padding-bottom: 1em;
     font-size: 0.85em;
-    align-self: start;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   /* For mobile phones: */
   .adjust {
-    align-self: auto;
+    color: white;
+    padding-bottom: 1em;
+    font-size: 0.85em;
+    align-self: start;
   }
 }
 </style>
