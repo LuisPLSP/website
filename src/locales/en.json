@@ -256,6 +256,28 @@
     "formcourses":"4d5dc7df-70c6-44be-b9ef-d47fc6d2770a",
     "formtechsessions":"f7a6b137-9dad-4b59-8e02-fb9dc83fda5d"
   },
+  "coursesgeneralconditions": {
+"title": "General Conditions | Steps to Podium Courses",
+"text1": "Participation in the courses promoted by Steps to Podium presupposes full knowledge and acceptance of the following general conditions.",
+"text2": "Enrollment in Steps to Podium courses must be done by completing the respective forms (",
+"text3": "), with priority being given to each one of them based on the order in which they are received.",
+"text4": "Enrollments are only considered after the payment of the full amount of the course has been received. Payments must take place within 48 hours of enrollment (in case of shorter notice, proof of payment must be sent to stepstopodium@gmail.com).",
+"text5": "Payment can be made through:",
+"text6": "mbway",
+"text7": " to the following phone number: +351934653597 (please put your name in the description)",
+"text8": "bank wire transfer",
+"text9": " to IBAN PT50 0010 0000 3518 4730 0012 8",
+"text10": "The registration is officially confirmed only after the payment has been validated.",
+"text11": "After communicating the validation to the participant, he will also receive all the necessary information regarding the course.",
+"text12": "If payment is made at a time when the course is already completed on the chosen date, which makes participation impossible, the participant may choose another available date or request a refund of the payment. In case of cancellation of the course by Steps to Podium, the amount paid by the participant will be refunded in full.",
+"text13": "If the participant is unable to attend the course for any reason, he/she must communicate the cancellation of the course to Steps to Podium, in writing, to the email stepstopodium@gmail.com). ",
+"text14": "A refund of the total amount will be made in case of prior notice with 72 hours in advance;",
+"text15": "and a 50% refund of the total amount (25 euros) in the case of 48 hours prior notice.",
+"text16": "The amount paid will not be refunded in case of no-show, nor is it possible to transfer the registration to another date; and under no circumstances will the registration fee be refunded after completion of the course.",
+"text17": "Steps to Podium reserves the right to change dates, times or even cancel courses if the minimum number of participants set is not reached. In this case, all applicants will be notified in advance, as early as possible before the date of the course, and the total amount of the course will be refunded. Other amounts spent by the participant are not the responsibility of Steps to Podium.",
+"text18": "Participants are required to comply with the safety regulations in force at the location of the course; and Steps to Podium is not responsible for the loss or damage of any items brought by entrants.",
+"text19": "Steps to Podium reserves the right to unilaterally modify at any time, without prior notice, these general conditions."
+  },
   "meta":{
     "maintitle":"Steps to Podium: Your offroad community",
     "maindescription":"Learn how to improve your riding or take care of your bike, access bikes and gear reviews, and discover the engineering behind our sport with Steps to Podium.",

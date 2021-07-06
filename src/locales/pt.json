@@ -254,6 +254,28 @@
     "formcourses":"92c107e7-6280-4618-ab42-b19fa93e423a",
     "formtechsessions":"f7a6b137-9dad-4b59-8e02-fb9dc83fda5d"
   },
+  "coursesgeneralconditions": {
+    "title": "Condições Gerais | Cursos Steps to Podium",
+    "text1": "A participação em cursos promovidos pelo Steps to Podium pressupõe o conhecimento e a aceitação integral das condições gerais que se seguem.",
+    "text2": "A inscrição nos cursos do Steps to Podium deverá ser efetuada mediante preenchimento dos respetivos formulários (",
+    "text3": "), sendo dada prioridade a cada um deles com base na ordem de receção dos mesmos.",
+    "text4": "As inscrições só se consideram efetuadas após boa cobrança da totalidade do valor do curso, o que deverá verificar-se até 48 horas após a inscrição (em caso de menor antecedência relativamente ao dia do curso, o comprovativo do pagamento deve ser enviado para stepstopodium@gmail.com).",
+    "text5": "O pagamento pode ser feito através de:",
+    "text6": "mbway",
+    "text7": "para o número 934653597 (coloca, por favor, o teu nome na descrição)",
+    "text8": "transferência bancária",
+    "text9": "para o IBAN PT50 0010 0000 3518 4730 0012 8",
+    "text10": "Só após a validação do pagamento é que a inscrição é oficialmente confirmada.",
+    "text11": "No momento da comunicação ao participante, este receberá ainda toda a informação necessária relativa ao curso.",
+    "text12": "Se o pagamento for feito num momento em que o curso já está completo na data escolhida, o que impossibilita a sua participação, o participante poderá escolher outra data disponível ou pedir o reembolso do pagamento. Em caso de cancelamento do curso por parte do Steps to Podium, o valor pago pelo participante será reembolsado na íntegra.",
+    "text13": "Caso o participante não consiga comparecer ao curso por algum motivo, deve comunicar o cancelamento do curso ao Steps to Podium, por escrito, para o email stepstopodium@gmail.com).",
+    "text14": "Será efetuado o reembolso do valor total em caso de aviso prévio com 72 horas de antecedência;",
+    "text15": "e o reembolso de 50% do valor total (25 euros) no caso de aviso prévio com 48 horas de antecedência.",
+    "text16": "O valor pago não será restituído em caso de falta de comparência, nem é possível a transferência da inscrição para outra data; e em nenhuma situação será restituído o valor da inscrição após a realização do curso.",
+    "text17": "O Steps to Podium reserva-se o direito de alterar datas, horários ou mesmo cancelar cursos no caso do número mínimo de inscrições fixado não ser atingido. Nesse caso, todos os inscritos serão previamente avisados, com o máximo de antecedência possível à data de realização do curso, e o valor total do curso será reembolsado. Demais valores gastos pelo participante não são da responsabilidade do Steps to Podium.",
+    "text18": "Os participantes estão obrigados ao cumprimento das normas de segurança vigentes no local de realização do curso; e o Steps to Podium não se responsabiliza pela perda ou dano de quaisquer objetos trazidos pelos inscritos.",
+    "text19": "O Steps to Podium reserva-se no direito de modificar unilateralmente e em qualquer momento, sem aviso prévio, as presentes condições gerais."
+      },
   "meta":{
     "maintitle":"Steps to Podium: A tua comunidade offroad",
     "maindescription":"Aprende a tratar da tua mota ou a melhorar a tua performance, acede a reviews exclusivas e descobre a engenharia por detrás do desporto com o Steps to Podium.",
