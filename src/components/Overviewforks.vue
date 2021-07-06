@@ -15,13 +15,26 @@
                 {{ $t("forks.time&date1") }}
               </p>
               <h3>{{ $t("forks.location") }}</h3>
-              <p>{{ $t("forks.location1") }}</p>
+              <p v-show="getCardDetails.location === 'one'">
+                {{ $t("forks.location1") }}
+              </p>
+              <p v-show="getCardDetails.location === 'two'">
+                {{ $t("forks.location2") }}
+              </p>
+              <p v-show="getCardDetails.location === 'three'">
+                {{ $t("forks.location3") }}
+              </p>
               <h3>{{ $t("forks.duration") }}</h3>
               <p>{{ $t("forks.duration1") }}</p>
               <h3>{{ $t("forks.maxparticipants") }}</h3>
               <p>{{ $t("forks.maxparticipants1") }}</p>
               <h3>{{ $t("forks.price") }}</h3>
-              <p>{{ $t("forks.price1") }}</p>
+              <p v-show="getCardDetails.price === 'regular'">
+                {{ $t("forks.price1") }}
+              </p>
+              <p v-show="getCardDetails.price === 'high'">
+                {{ $t("forks.price2") }}
+              </p>
             </b-card-text>
             <b-button float="right" variant="primary">{{
               $t("forks.signup")
@@ -86,12 +99,16 @@
 </template>
 
 <script>
+import { mapGetters } from "vuex";
 export default {
   name: "Overviewforks",
   methods: {
     setLocale(locale) {
       this.$i18n.locale = locale;
     },
+  },
+  computed: {
+    ...mapGetters(["getCardDetails"]),
   },
 };
 </script>

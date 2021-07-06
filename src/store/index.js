@@ -9,6 +9,10 @@ export const store = new Vuex.Store({
       en: true,
       pt: false,
     },
+    card: {
+      price: "regular",
+      location: "one",
+    },
   },
   getters: {
     getLangEn(state) {
@@ -16,6 +20,9 @@ export const store = new Vuex.Store({
     },
     getLangPt(state) {
       return state.lang.pt;
+    },
+    getCardDetails(state) {
+      return state.card;
     },
   },
   mutations: {
@@ -25,6 +32,10 @@ export const store = new Vuex.Store({
     setLangPt(state, pt) {
       state.lang.pt = pt;
     },
+    setCardDetails(state, cardChosen) {
+      state.card.price = cardChosen.price;
+      state.card.location = cardChosen.location;
+    },
   },
   actions: {
     changeLangEn: function({ commit }, params) {
@@ -32,6 +43,9 @@ export const store = new Vuex.Store({
     },
     changeLangPt: function({ commit }, params) {
       commit("setLangPt", params);
+    },
+    changeCardDetails: function({ commit }, params) {
+      commit("setCardDetails", params);
     },
   },
   modules: {},

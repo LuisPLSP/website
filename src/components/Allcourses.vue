@@ -25,9 +25,11 @@
               </h3>
             </div>
             <router-link to="/frontforkscourse">
-              <b-button class="btn-to-course">{{
-                $t("courses.watchmore")
-              }}</b-button>
+              <b-button
+                v-on:click="cardClicked({ price: 'regular', location: 'one' })"
+                class="btn-to-course"
+                >{{ $t("courses.watchmore") }}</b-button
+              >
             </router-link>
           </b-card>
         </b-col>
@@ -47,9 +49,11 @@
               </h3>
             </div>
             <router-link to="/frontforkscourse">
-              <b-button class="btn-to-course">{{
-                $t("courses.watchmore")
-              }}</b-button>
+              <b-button
+                v-on:click="cardClicked({ price: 'high', location: 'two' })"
+                class="btn-to-course"
+                >{{ $t("courses.watchmore") }}</b-button
+              >
             </router-link>
           </b-card>
         </b-col> </b-row
@@ -58,21 +62,23 @@
           <b-card
             style="position: relative;"
             class="shadow-lg card"
-            img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/courses%2FShock-card.jpg?alt=media&token=fa899d97-6966-41ee-bd05-b69c91c86f6e"
-            img-alt="rear shock course"
+            img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/courses%2FFrontForks-card.jpg?alt=media&token=57aa9485-d3c2-47b3-9004-a1f1e6cbbcba"
+            img-alt="Front fork course"
             overlay
           >
             <div class="overlay-text">
-              <h2>{{ $t("courses.shockcourses") }}</h2>
+              <h2>{{ $t("courses.forkscourses") }}</h2>
               <h3>
-                {{ $t("courses.shockdate1") }} |
-                {{ $t("courses.shocklocation1") }}
+                {{ $t("courses.forksdate3") }} |
+                {{ $t("courses.forkslocation3") }}
               </h3>
             </div>
-            <router-link to="/rearshockcourse">
-              <b-button class="btn-to-course">{{
-                $t("courses.watchmore")
-              }}</b-button>
+            <router-link to="/frontforkscourse">
+              <b-button
+                v-on:click="cardClicked({ price: 'high', location: 'three' })"
+                class="btn-to-course"
+                >{{ $t("courses.watchmore") }}</b-button
+              >
             </router-link>
           </b-card>
         </b-col>
@@ -86,13 +92,17 @@
             <div class="overlay-text">
               <h2>{{ $t("courses.shockcourses") }}</h2>
               <h3>
-                {{ $t("courses.shockdate2") }} |
-                {{ $t("courses.shocklocation2") }}
+                {{ $t("courses.shockdate1") }} |
+                {{ $t("courses.shocklocation1") }}
               </h3>
             </div>
-            <b-button disabled class="btn-to-course">{{
-              $t("courses.comingsoon")
-            }}</b-button>
+            <router-link to="/rearshockcourse">
+              <b-button
+                v-on:click="cardClicked({ price: 'regular', location: 'one' })"
+                class="btn-to-course"
+                >{{ $t("courses.comingsoon") }}</b-button
+              >
+            </router-link>
           </b-card>
         </b-col>
       </b-row>
@@ -100,17 +110,17 @@
   </section>
 </template>
 <script>
+import { mapActions } from "vuex";
 export default {
   name: "Allcourses",
   methods: {
+    ...mapActions(["index/changeCardPrice"]),
     setLocale(locale) {
       this.$i18n.locale = locale;
     },
-    redirectToForks() {
-      this.$router.push({ path: "/forkscourse" });
-    },
-    redirectToShock() {
-      this.$router.push({ path: "/shockcourse/#shock" });
+
+    cardClicked(card) {
+      this.$store.dispatch("changeCardDetails", card);
     },
   },
 };
