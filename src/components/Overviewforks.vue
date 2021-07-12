@@ -50,46 +50,46 @@
             img-height="480"
           >
             <b-carousel-slide
-              img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/frontforkscourse%2Fforks-gallery-1.jpg?alt=media&token=5c2f6017-2e69-4155-834c-b90665d9b80a"
+              img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/frontforkscourse%2Fforks-gallery-n1.jpg?alt=media&token=f148f3e5-9dff-4d6f-ac7a-5df705b2fd75"
             ></b-carousel-slide>
             <b-carousel-slide
-              img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/frontforkscourse%2Fforks-gallery-2.jpg?alt=media&token=907047d4-d160-4873-bf9a-1f49ce97c514"
+              img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/frontforkscourse%2Fforks-gallery-n2.jpg?alt=media&token=bd8130ac-adbe-488c-844f-f3452bb1d35e"
             ></b-carousel-slide>
             <b-carousel-slide
-              img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/frontforkscourse%2Fforks-gallery-3.jpg?alt=media&token=fa4c41ff-c633-4fc0-9d20-fb33ba35eeda"
+              img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/frontforkscourse%2Fforks-gallery-n3.jpg?alt=media&token=1103fd7d-1bed-4327-86e1-dda9c9a9dafa"
             ></b-carousel-slide>
             <b-carousel-slide
-              img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/frontforkscourse%2Fforks-gallery-4.jpg?alt=media&token=424758f1-dc81-43b8-a0e5-42d7fc33627c"
+              img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/frontforkscourse%2Fforks-gallery-n4.jpg?alt=media&token=6f3b1a6f-7f04-4c3a-afff-ba3fae623788"
             ></b-carousel-slide>
             <b-carousel-slide
-              img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/frontforkscourse%2Fforks-gallery-5.jpg?alt=media&token=3e64404f-37c7-44f6-b135-1a7c826d7a11"
+              img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/frontforkscourse%2Fforks-gallery-n5.jpg?alt=media&token=7a13e728-1ef3-413b-aa36-6aba1db4a023"
             ></b-carousel-slide>
             <b-carousel-slide
-              img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/frontforkscourse%2Fforks-gallery-6.jpg?alt=media&token=13837566-1db6-4cf4-8152-c8a98581132b"
+              img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/frontforkscourse%2Fforks-gallery-n6.jpg?alt=media&token=68fa548e-5bc2-4c46-b933-371d048d1360"
             ></b-carousel-slide>
             <b-carousel-slide
-              img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/frontforkscourse%2Fforks-gallery-7.jpg?alt=media&token=edbacc71-17b5-4624-a933-4f4073210485"
+              img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/frontforkscourse%2Fforks-gallery-n7.jpg?alt=media&token=fa185937-86a6-4f84-b785-1dae25e9b1b9"
             ></b-carousel-slide>
             <b-carousel-slide
-              img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/frontforkscourse%2Fforks-gallery-8.jpg?alt=media&token=45f86179-a8df-4934-8011-b3f3adc5f0ab"
+              img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/frontforkscourse%2Fforks-gallery-n8.jpg?alt=media&token=482d6a4d-5a99-4049-b68d-c2d4da3635af"
             ></b-carousel-slide>
             <b-carousel-slide
-              img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/frontforkscourse%2Fforks-gallery-9.jpg?alt=media&token=f26ef277-ed30-4356-9094-ad052aa84d39"
+              img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/frontforkscourse%2Fforks-gallery-n9.jpg?alt=media&token=236c41d1-ef15-4830-a8f4-4e1e299d3306"
             ></b-carousel-slide>
             <b-carousel-slide
-              img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/frontforkscourse%2Fforks-gallery-10.jpg?alt=media&token=3053e3ff-8e86-40ec-ae7b-745d675fca79"
+              img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/frontforkscourse%2Fforks-gallery-n10.jpg?alt=media&token=f531a87c-0a68-497b-aedd-402f4a23cc44"
             ></b-carousel-slide>
             <b-carousel-slide
-              img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/frontforkscourse%2Fforks-gallery-12.jpg?alt=media&token=b9c62f77-6a7f-4675-b2c4-b1144ac7e725"
+              img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/frontforkscourse%2FbannerTechnicalSessions.jpg?alt=media&token=542519d3-8487-4df1-9a21-6bee5a3e7715"
             ></b-carousel-slide>
             <b-carousel-slide
-              img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/frontforkscourse%2Fforks-gallery-13.jpg?alt=media&token=17568a91-e788-4369-be1a-6a554896e5a5"
+              img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/frontforkscourse%2Fforks-gallery-n13.jpg?alt=media&token=6a9a7060-8668-433e-b9c2-be555cbe8979"
             ></b-carousel-slide>
             <b-carousel-slide
-              img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/frontforkscourse%2Fforks-gallery-14.jpg?alt=media&token=ae52456b-4172-4d29-8998-2ead6f961b98"
+              img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/frontforkscourse%2Fforks-gallery-n14.jpg?alt=media&token=3dc37539-d2c7-4741-abca-ffc5f167f26d"
             ></b-carousel-slide>
             <b-carousel-slide
-              img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/frontforkscourse%2Fforks-gallery-15.jpg?alt=media&token=0a04c67c-7fb0-4079-b00e-665876caf89d"
+              img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/frontforkscourse%2Fforks-gallery-n15.jpg?alt=media&token=f401a7b9-3f88-445e-840f-565b9b42c1be"
             ></b-carousel-slide>
           </b-carousel>
         </b-col>
