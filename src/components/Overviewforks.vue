@@ -24,6 +24,9 @@
               <p v-show="getCardDetails.location === 'three'">
                 {{ $t("forks.location3") }}
               </p>
+              <p v-show="getCardDetails.location === 'four'">
+                {{ $t("forks.location4") }}
+              </p>
               <h3>{{ $t("forks.duration") }}</h3>
               <p>{{ $t("forks.duration1") }}</p>
               <h3>{{ $t("forks.maxparticipants") }}</h3>
@@ -34,6 +37,9 @@
               </p>
               <p v-show="getCardDetails.price === 'high'">
                 {{ $t("forks.price2") }}
+              </p>
+              <p v-show="getCardDetails.price === 'higher'">
+                {{ $t("forks.price3") }}
               </p>
             </b-card-text>
             <b-button float="right" variant="primary">{{

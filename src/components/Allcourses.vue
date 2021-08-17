@@ -24,13 +24,13 @@
                 {{ $t("courses.forkslocation1") }}
               </h3>
             </div>
-            <router-link to="/frontforkscourse">
-              <b-button
-                v-on:click="cardClicked({ price: 'regular', location: 'one' })"
-                class="btn-to-course"
-                >{{ $t("courses.watchmore") }}</b-button
-              >
-            </router-link>
+            <!-- <router-link to="/frontforkscourse"> -->
+            <b-button
+              v-on:click="cardClicked({ price: 'regular', location: 'one' })"
+              class="btn-sold-out"
+              >{{ $t("courses.soldout") }}</b-button
+            >
+            <!-- </router-link> -->
           </b-card>
         </b-col>
         <b-col lg="5" data-aos="fade-up" data-aos-duration="300" class="module">
@@ -56,8 +56,9 @@
               >
             </router-link>
           </b-card>
-        </b-col> </b-row
-      ><b-row class="mb-md-5" align-h="around">
+        </b-col>
+      </b-row>
+      <b-row class="mb-md-5" align-h="around">
         <b-col lg="5" data-aos="fade-up" data-aos-duration="200" class="module">
           <b-card
             style="position: relative;"
@@ -73,15 +74,40 @@
                 {{ $t("courses.forkslocation3") }}
               </h3>
             </div>
+            <!-- <router-link to="/frontforkscourse"> -->
+            <b-button
+              v-on:click="cardClicked({ price: 'high', location: 'three' })"
+              class="btn-sold-out"
+              >{{ $t("courses.soldout") }}</b-button
+            >
+            <!-- </router-link> -->
+          </b-card>
+        </b-col>
+        <b-col lg="5" data-aos="fade-up" data-aos-duration="200" class="module">
+          <b-card
+            class="shadow-lg card"
+            img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/courses%2FFrontForks-card.jpg?alt=media&token=57aa9485-d3c2-47b3-9004-a1f1e6cbbcba"
+            img-alt="Front fork course"
+            overlay
+          >
+            <div class="overlay-text">
+              <h2>{{ $t("courses.forkscourses") }}</h2>
+              <h3>
+                {{ $t("courses.forksdate4") }} |
+                {{ $t("courses.forkslocation4") }}
+              </h3>
+            </div>
             <router-link to="/frontforkscourse">
               <b-button
-                v-on:click="cardClicked({ price: 'high', location: 'three' })"
+                v-on:click="cardClicked({ price: 'high', location: 'one' })"
                 class="btn-to-course"
                 >{{ $t("courses.watchmore") }}</b-button
               >
             </router-link>
           </b-card>
         </b-col>
+      </b-row>
+      <b-row class="mb-md-5" align-h="around">
         <b-col lg="5" data-aos="fade-up" data-aos-duration="300" class="module">
           <b-card
             class="shadow-lg card"
@@ -99,6 +125,79 @@
             <router-link to="/rearshockcourse">
               <b-button
                 v-on:click="cardClicked({ price: 'regular', location: 'one' })"
+                class="btn-to-course"
+                >{{ $t("courses.watchmore") }}</b-button
+              >
+            </router-link>
+          </b-card>
+        </b-col>
+        <b-col lg="5" data-aos="fade-up" data-aos-duration="200" class="module">
+          <b-card
+            style="position: relative;"
+            class="shadow-lg card"
+            img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/courses%2FFrontForks-card.jpg?alt=media&token=57aa9485-d3c2-47b3-9004-a1f1e6cbbcba"
+            img-alt="Front fork course"
+            overlay
+          >
+            <div class="overlay-text">
+              <h2>{{ $t("courses.forkscourses") }}</h2>
+              <h3>
+                {{ $t("courses.forksdate5") }} |
+                {{ $t("courses.forkslocation5") }}
+              </h3>
+            </div>
+            <router-link to="/frontforkscourse">
+              <b-button
+                v-on:click="cardClicked({ price: 'higher', location: 'four' })"
+                class="btn-to-course"
+                >{{ $t("courses.watchmore") }}</b-button
+              >
+            </router-link>
+          </b-card>
+        </b-col>
+      </b-row>
+      <b-row class="mb-md-5" align-h="around">
+        <b-col lg="5" data-aos="fade-up" data-aos-duration="300" class="module">
+          <b-card
+            class="shadow-lg card"
+            img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/courses%2FShock-card.jpg?alt=media&token=fa899d97-6966-41ee-bd05-b69c91c86f6e"
+            img-alt="rear shock course"
+            overlay
+          >
+            <div class="overlay-text">
+              <h2>{{ $t("courses.shockcourses") }}</h2>
+              <h3>
+                {{ $t("courses.shockdate2") }} |
+                {{ $t("courses.shocklocation2") }}
+              </h3>
+            </div>
+            <router-link to="/rearshockcourse">
+              <b-button
+                v-on:click="cardClicked({ price: 'high', location: 'four' })"
+                class="btn-to-course"
+                >{{ $t("courses.watchmore") }}</b-button
+              >
+            </router-link>
+          </b-card>
+        </b-col>
+        <b-col lg="5" data-aos="fade-up" data-aos-duration="200" class="module">
+          <b-card
+            style="position: relative;"
+            class="shadow-lg card"
+            img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/courses%2FFrontForks-card.jpg?alt=media&token=57aa9485-d3c2-47b3-9004-a1f1e6cbbcba"
+            img-alt="Front fork course"
+            overlay
+          >
+            <div class="overlay-text">
+              <h2>{{ $t("courses.forkscourses") }}</h2>
+              <h3>
+                {{ $t("courses.forksdate6") }} |
+                {{ $t("courses.forkslocation6") }}
+              </h3>
+            </div>
+            <router-link to="/frontforkscourse">
+              <b-button
+                v-on:click="cardClicked({ price: 'higher', location: 'four' })"
                 class="btn-to-course"
                 >{{ $t("courses.comingsoon") }}</b-button
               >
@@ -163,6 +262,18 @@ h1 {
   &:focus {
     background-color: #04610f;
   }
+}
+.btn-sold-out {
+  position: absolute;
+  // left: 30%;
+  // right: 30%;
+  top: 75%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+  background-color: red;
 }
 .overlay-text {
   display: flex;

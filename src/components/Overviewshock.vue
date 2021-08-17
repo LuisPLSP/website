@@ -33,6 +33,9 @@
               <p v-show="getCardDetails.price === 'high'">
                 {{ $t("shock.price2") }}
               </p>
+              <p v-show="getCardDetails.price === 'higher'">
+                {{ $t("shock.price3") }}
+              </p>
             </b-card-text>
             <b-button float="right" href="#register" variant="primary">{{
               $t("shock.signup")
