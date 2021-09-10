@@ -10,30 +10,12 @@
         </b-col>
       </b-row>
       <b-row class="my-md-5" align-h="around">
-        <b-col lg="5" data-aos="fade-up" data-aos-duration="200" class="module">
-          <b-card
-            class="shadow-lg card"
-            img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/courses%2FFrontForks-card.jpg?alt=media&token=57aa9485-d3c2-47b3-9004-a1f1e6cbbcba"
-            img-alt="Front fork course"
-            overlay
-          >
-            <div class="overlay-text">
-              <h2>{{ $t("courses.forkscourses") }}</h2>
-              <h3>
-                {{ $t("courses.forksdate1") }} |
-                {{ $t("courses.forkslocation1") }}
-              </h3>
-            </div>
-            <!-- <router-link to="/frontforkscourse"> -->
-            <b-button
-              v-on:click="cardClicked({ price: 'regular', location: 'one' })"
-              class="btn-sold-out"
-              >{{ $t("courses.soldout") }}</b-button
-            >
-            <!-- </router-link> -->
-          </b-card>
-        </b-col>
-        <b-col lg="5" data-aos="fade-up" data-aos-duration="300" class="module">
+        <b-col
+          lg="5"
+          data-aos="fade-up"
+          data-aos-duration="200"
+          class="module mb-3"
+        >
           <b-card
             style="position: relative;"
             class="shadow-lg card"
@@ -48,18 +30,21 @@
                 {{ $t("courses.forkslocation2") }}
               </h3>
             </div>
-            <router-link to="/frontforkscourse">
-              <b-button
-                v-on:click="cardClicked({ price: 'high', location: 'two' })"
-                class="btn-to-course"
-                >{{ $t("courses.watchmore") }}</b-button
-              >
-            </router-link>
+            <!-- <router-link to="/frontforkscourse"> -->
+            <b-button
+              v-on:click="cardClicked({ price: 'high', location: 'two' })"
+              class="btn-sold-out"
+              >{{ $t("courses.soldout") }}</b-button
+            >
+            <!-- </router-link> -->
           </b-card>
         </b-col>
-      </b-row>
-      <b-row class="mb-md-5" align-h="around">
-        <b-col lg="5" data-aos="fade-up" data-aos-duration="200" class="module">
+        <b-col
+          lg="5"
+          data-aos="fade-up"
+          data-aos-duration="300"
+          class="module mb-3"
+        >
           <b-card
             style="position: relative;"
             class="shadow-lg card"
@@ -74,16 +59,23 @@
                 {{ $t("courses.forkslocation3") }}
               </h3>
             </div>
-            <!-- <router-link to="/frontforkscourse"> -->
-            <b-button
-              v-on:click="cardClicked({ price: 'high', location: 'three' })"
-              class="btn-sold-out"
-              >{{ $t("courses.soldout") }}</b-button
-            >
-            <!-- </router-link> -->
+            <router-link to="/frontforkscourse">
+              <b-button
+                v-on:click="cardClicked({ price: 'high', location: 'three' })"
+                class="btn-to-course"
+                >{{ $t("courses.watchmore") }}</b-button
+              >
+            </router-link>
           </b-card>
         </b-col>
-        <b-col lg="5" data-aos="fade-up" data-aos-duration="200" class="module">
+        <!-- </b-row>
+      <b-row class="mb-md-5" align-h="around"> -->
+        <b-col
+          lg="5"
+          data-aos="fade-up"
+          data-aos-duration="200"
+          class="module mb-3"
+        >
           <b-card
             class="shadow-lg card"
             img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/courses%2FFrontForks-card.jpg?alt=media&token=57aa9485-d3c2-47b3-9004-a1f1e6cbbcba"
@@ -106,9 +98,12 @@
             </router-link>
           </b-card>
         </b-col>
-      </b-row>
-      <b-row class="mb-md-5" align-h="around">
-        <b-col lg="5" data-aos="fade-up" data-aos-duration="300" class="module">
+        <b-col
+          lg="5"
+          data-aos="fade-up"
+          data-aos-duration="200"
+          class="module mb-3"
+        >
           <b-card
             class="shadow-lg card"
             img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/courses%2FShock-card.jpg?alt=media&token=fa899d97-6966-41ee-bd05-b69c91c86f6e"
@@ -131,7 +126,14 @@
             </router-link>
           </b-card>
         </b-col>
-        <b-col lg="5" data-aos="fade-up" data-aos-duration="200" class="module">
+        <!-- </b-row>
+      <b-row class="mb-md-5" align-h="around"> -->
+        <b-col
+          lg="5"
+          data-aos="fade-up"
+          data-aos-duration="300"
+          class="module mb-3"
+        >
           <b-card
             style="position: relative;"
             class="shadow-lg card"
@@ -155,9 +157,12 @@
             </router-link>
           </b-card>
         </b-col>
-      </b-row>
-      <b-row class="mb-md-5" align-h="around">
-        <b-col lg="5" data-aos="fade-up" data-aos-duration="300" class="module">
+        <b-col
+          lg="5"
+          data-aos="fade-up"
+          data-aos-duration="200"
+          class="module mb-3"
+        >
           <b-card
             class="shadow-lg card"
             img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/courses%2FShock-card.jpg?alt=media&token=fa899d97-6966-41ee-bd05-b69c91c86f6e"
@@ -180,7 +185,16 @@
             </router-link>
           </b-card>
         </b-col>
-        <b-col lg="5" data-aos="fade-up" data-aos-duration="200" class="module">
+        <!-- </b-row>
+      <b-row class="mb-md-5" align-h="around"> -->
+        <!-- <b-col lg="5" data-aos="fade-up" data-aos-duration="300" class="module mb-3">
+        </b-col> -->
+        <b-col
+          lg="5"
+          data-aos="fade-up"
+          data-aos-duration="200"
+          class="module mb-3"
+        >
           <b-card
             style="position: relative;"
             class="shadow-lg card"
