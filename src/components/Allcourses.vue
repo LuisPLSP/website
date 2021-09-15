@@ -59,13 +59,13 @@
                 {{ $t("courses.forkslocation3") }}
               </h3>
             </div>
-            <router-link to="/frontforkscourse">
-              <b-button
-                v-on:click="cardClicked({ price: 'high', location: 'three' })"
-                class="btn-to-course"
-                >{{ $t("courses.watchmore") }}</b-button
-              >
-            </router-link>
+            <!-- <router-link to="/frontforkscourse"> -->
+            <b-button
+              v-on:click="cardClicked({ price: 'high', location: 'three' })"
+              class="btn-sold-out"
+              >{{ $t("courses.soldout") }}</b-button
+            >
+            <!-- </router-link> -->
           </b-card>
         </b-col>
         <!-- </b-row>

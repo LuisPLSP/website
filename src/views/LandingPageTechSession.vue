@@ -4,7 +4,7 @@
     <overviewtechsession></overviewtechsession>
     <detailstechsession></detailstechsession>
     <registertechsession></registertechsession>
-    <testimonialstechsession></testimonialstechsession>
+    <!-- <testimonialstechsession></testimonialstechsession> -->
   </div>
 </template>
 
@@ -13,7 +13,7 @@ import Bannertechsession from "../components/Bannertechsession.vue";
 import Overviewtechsession from "../components/Overviewtechsession.vue";
 import Detailstechsession from "../components/Detailstechsession.vue";
 import Registertechsession from "../components/Registertechsession.vue";
-import Testimonialstechsession from "../components/Testimonialstechsession.vue";
+// import Testimonialstechsession from "../components/Testimonialstechsession.vue";
 
 export default {
   name: "Techsession",
@@ -22,7 +22,7 @@ export default {
     Overviewtechsession,
     Detailstechsession,
     Registertechsession,
-    Testimonialstechsession,
+    // Testimonialstechsession,
   },
   methods: {
     setLocale(locale) {
