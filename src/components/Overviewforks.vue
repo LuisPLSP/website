@@ -15,6 +15,9 @@
                 {{ $t("forks.time&date1") }}
               </p>
               <h3>{{ $t("forks.location") }}</h3>
+              <p v-show="getCardDetails.location === 'zero'">
+                {{ $t("forks.location0") }}
+              </p>
               <p v-show="getCardDetails.location === 'one'">
                 {{ $t("forks.location1") }}
               </p>

@@ -153,7 +153,7 @@
             </div>
             <router-link to="/frontforkscourse">
               <b-button
-                v-on:click="cardClicked({ price: 'higher', location: 'four' })"
+                v-on:click="cardClicked({ price: 'higher', location: 'zero' })"
                 class="btn-to-course"
                 >{{ $t("courses.comingsoon") }}</b-button
               >
