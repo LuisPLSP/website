@@ -10,36 +10,6 @@
         </b-col>
       </b-row>
       <b-row class="my-md-5" align-h="around">
-        <!-- </b-row>
-      <b-row class="mb-md-5" align-h="around"> -->
-        <b-col
-          lg="5"
-          data-aos="fade-up"
-          data-aos-duration="200"
-          class="module mb-3"
-        >
-          <b-card
-            class="shadow-lg card"
-            img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/courses%2FFrontForks-card.jpg?alt=media&token=57aa9485-d3c2-47b3-9004-a1f1e6cbbcba"
-            img-alt="Front fork course"
-            overlay
-          >
-            <div class="overlay-text">
-              <h2>{{ $t("courses.forkscourses") }}</h2>
-              <h3>
-                {{ $t("courses.forksdate4") }} |
-                {{ $t("courses.forkslocation4") }}
-              </h3>
-            </div>
-            <router-link to="/frontforkscourse">
-              <b-button
-                v-on:click="cardClicked({ price: 'high', location: 'one' })"
-                class="btn-to-course"
-                >{{ $t("courses.watchmore") }}</b-button
-              >
-            </router-link>
-          </b-card>
-        </b-col>
         <b-col
           lg="5"
           data-aos="fade-up"
@@ -55,7 +25,7 @@
             <div class="overlay-text">
               <h2>{{ $t("courses.shockcourses") }}</h2>
               <h3>
-                {{ $t("courses.shockdate1") }} |
+                {{ $t("courses.forksdate4") }} |
                 {{ $t("courses.shocklocation1") }}
               </h3>
             </div>
