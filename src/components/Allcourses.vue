@@ -13,35 +13,6 @@
         <b-col
           lg="5"
           data-aos="fade-up"
-          data-aos-duration="300"
-          class="module mb-3"
-        >
-          <b-card
-            style="position: relative;"
-            class="shadow-lg card"
-            img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/courses%2FFrontForks-card.jpg?alt=media&token=57aa9485-d3c2-47b3-9004-a1f1e6cbbcba"
-            img-alt="Front fork course"
-            overlay
-          >
-            <div class="overlay-text">
-              <h2>{{ $t("courses.forkscourses") }}</h2>
-              <h3>
-                {{ $t("courses.forksdate5") }} |
-                {{ $t("courses.forkslocation5") }}
-              </h3>
-            </div>
-            <router-link to="/frontforkscourse">
-              <b-button
-                v-on:click="cardClicked({ price: 'higher', location: 'four' })"
-                class="btn-to-course"
-                >{{ $t("courses.watchmore") }}</b-button
-              >
-            </router-link>
-          </b-card>
-        </b-col>
-        <b-col
-          lg="5"
-          data-aos="fade-up"
           data-aos-duration="200"
           class="module mb-3"
         >
@@ -54,13 +25,13 @@
             <div class="overlay-text">
               <h2>{{ $t("courses.shockcourses") }}</h2>
               <h3>
-                {{ $t("courses.shockdate2") }} |
-                {{ $t("courses.shocklocation2") }}
+                {{ $t("courses.shockdate3") }} |
+                {{ $t("courses.shocklocation3") }}
               </h3>
             </div>
             <router-link to="/rearshockcourse">
               <b-button
-                v-on:click="cardClicked({ price: 'high', location: 'four' })"
+                v-on:click="cardClicked({ price: 'high', location: 'zero' })"
                 class="btn-to-course"
                 >{{ $t("courses.watchmore") }}</b-button
               >

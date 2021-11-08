@@ -13,6 +13,9 @@
               <h3>{{ $t("shock.time&date") }}</h3>
               <p>{{ $t("shock.time&date1") }}</p>
               <h3>{{ $t("shock.location") }}</h3>
+              <p v-show="getCardDetails.location === 'zero'">
+                {{ $t("shock.location0") }}
+              </p>
               <p v-show="getCardDetails.location === 'one'">
                 {{ $t("shock.location1") }}
               </p>
