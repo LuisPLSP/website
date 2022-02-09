@@ -11,7 +11,12 @@
           <b-card class="shadow-lg mb-3 mt-3" tag="article">
             <b-card-text>
               <h3>{{ $t("shock.time&date") }}</h3>
-              <p>{{ $t("shock.time&date1") }}</p>
+              <p v-show="getCardDetails.time === 'zero'">
+                {{ $t("shock.time&date1") }}
+              </p>
+              <p v-show="getCardDetails.time === 'one'">
+                {{ $t("forks.time&date2") }}
+              </p>
               <h3>{{ $t("shock.location") }}</h3>
               <p v-show="getCardDetails.location === 'zero'">
                 {{ $t("shock.location0") }}

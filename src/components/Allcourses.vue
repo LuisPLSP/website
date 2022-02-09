@@ -17,6 +17,37 @@
           class="module mb-3"
         >
           <b-card
+            style="position: relative;"
+            class="shadow-lg card"
+            img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/courses%2FFrontForks-card.jpg?alt=media&token=57aa9485-d3c2-47b3-9004-a1f1e6cbbcba"
+            img-alt="Front fork course"
+            overlay
+          >
+            <div class="overlay-text">
+              <h2>{{ $t("courses.forkscourses") }}</h2>
+              <h3>
+                {{ $t("courses.forksdate1") }} |
+                {{ $t("courses.forkslocation1") }}
+              </h3>
+            </div>
+            <router-link to="/frontforkscourse">
+              <b-button
+                v-on:click="
+                  cardClicked({ time: 'zero', price: 'high', location: 'one' })
+                "
+                class="btn-to-course"
+                >{{ $t("courses.watchmore") }}</b-button
+              >
+            </router-link>
+          </b-card>
+        </b-col>
+        <b-col
+          lg="5"
+          data-aos="fade-up"
+          data-aos-duration="200"
+          class="module mb-3"
+        >
+          <b-card
             class="shadow-lg card"
             img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/courses%2FShock-card.jpg?alt=media&token=fa899d97-6966-41ee-bd05-b69c91c86f6e"
             img-alt="rear shock course"
@@ -25,13 +56,45 @@
             <div class="overlay-text">
               <h2>{{ $t("courses.shockcourses") }}</h2>
               <h3>
-                {{ $t("courses.shockdate3") }} |
-                {{ $t("courses.shocklocation3") }}
+                {{ $t("courses.shockdate1") }} |
+                {{ $t("courses.shocklocation1") }}
               </h3>
             </div>
             <router-link to="/rearshockcourse">
               <b-button
-                v-on:click="cardClicked({ price: 'high', location: 'zero' })"
+                v-on:click="
+                  cardClicked({ time: 'one', price: 'high', location: 'one' })
+                "
+                class="btn-to-course"
+                >{{ $t("courses.watchmore") }}</b-button
+              >
+            </router-link>
+          </b-card>
+        </b-col>
+        <b-col
+          lg="5"
+          data-aos="fade-up"
+          data-aos-duration="200"
+          class="module mb-3"
+        >
+          <b-card
+            class="shadow-lg card"
+            img-src="https://firebasestorage.googleapis.com/v0/b/steps-to-podium-website-d4f43.appspot.com/o/courses%2FShock-card.jpg?alt=media&token=fa899d97-6966-41ee-bd05-b69c91c86f6e"
+            img-alt="rear shock course"
+            overlay
+          >
+            <div class="overlay-text">
+              <h2>{{ $t("courses.shockcourses") }}</h2>
+              <h3>
+                {{ $t("courses.shockdate2") }} |
+                {{ $t("courses.shocklocation2") }}
+              </h3>
+            </div>
+            <router-link to="/rearshockcourse">
+              <b-button
+                v-on:click="
+                  cardClicked({ time: 'zero', price: 'high', location: 'zero' })
+                "
                 class="btn-to-course"
                 >{{ $t("courses.watchmore") }}</b-button
               >
@@ -58,13 +121,19 @@
             <div class="overlay-text">
               <h2>{{ $t("courses.forkscourses") }}</h2>
               <h3>
-                {{ $t("courses.forksdate6") }} |
-                {{ $t("courses.forkslocation6") }}
+                {{ $t("courses.forksdate3") }} |
+                {{ $t("courses.forkslocation3") }}
               </h3>
             </div>
             <router-link to="/frontforkscourse">
               <b-button
-                v-on:click="cardClicked({ price: 'higher', location: 'zero' })"
+                v-on:click="
+                  cardClicked({
+                    time: 'zero',
+                    price: 'higher',
+                    location: 'three'
+                  })
+                "
                 class="btn-to-course"
                 >{{ $t("courses.comingsoon") }}</b-button
               >
@@ -87,8 +156,8 @@ export default {
 
     cardClicked(card) {
       this.$store.dispatch("changeCardDetails", card);
-    },
-  },
+    }
+  }
 };
 </script>
 <style lang="scss" scoped>

@@ -10,6 +10,7 @@ export const store = new Vuex.Store({
       pt: false,
     },
     card: {
+      time: "zero",
       price: "regular",
       location: "one",
     },
@@ -33,6 +34,7 @@ export const store = new Vuex.Store({
       state.lang.pt = pt;
     },
     setCardDetails(state, cardChosen) {
+      state.card.time = cardChosen.time;
       state.card.price = cardChosen.price;
       state.card.location = cardChosen.location;
     },
