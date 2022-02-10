@@ -63,7 +63,7 @@
             <router-link to="/rearshockcourse">
               <b-button
                 v-on:click="
-                  cardClicked({ time: 'one', price: 'high', location: 'one' })
+                  cardClicked({ time: 'one', price: 'regular', location: 'one' })
                 "
                 class="btn-to-course"
                 >{{ $t("courses.watchmore") }}</b-button
