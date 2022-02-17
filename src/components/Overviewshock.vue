@@ -45,7 +45,7 @@
                 {{ $t("shock.price3") }}
               </p>
             </b-card-text>
-            <b-button float="right" href="#register" variant="primary">{{
+            <b-button float="right" href="#registercourse" variant="primary">{{
               $t("shock.signup")
             }}</b-button>
           </b-card>

@@ -48,7 +48,7 @@
                 {{ $t("forks.price3") }}
               </p>
             </b-card-text>
-            <b-button float="right" variant="primary">{{
+            <b-button float="right" href="#registercourse" variant="primary">{{
               $t("forks.signup")
             }}</b-button>
           </b-card>
