@@ -30,15 +30,15 @@
                 {{ $t("courses.forkslocation1") }}
               </h3>
             </div>
-            <router-link to="/frontforkscourse">
+            <!-- <router-link to="/frontforkscourse"> -->
               <b-button
                 v-on:click="
                   cardClicked({ time: 'zero', price: 'high', location: 'one' })
                 "
-                class="btn-to-course"
-                >{{ $t("courses.watchmore") }}</b-button
+               class="btn-sold-out"
+              >{{ $t("courses.soldout") }}</b-button
               >
-            </router-link>
+            <!-- </router-link> -->
           </b-card>
         </b-col>
         <b-col
@@ -60,7 +60,7 @@
                 {{ $t("courses.shocklocation1") }}
               </h3>
             </div>
-            <router-link to="/rearshockcourse">
+            <!-- <router-link to="/rearshockcourse"> -->
               <b-button
                 v-on:click="
                   cardClicked({
@@ -69,10 +69,10 @@
                     location: 'one'
                   })
                 "
-                class="btn-to-course"
-                >{{ $t("courses.watchmore") }}</b-button
+               class="btn-sold-out"
+              >{{ $t("courses.soldout") }}</b-button
               >
-            </router-link>
+            <!-- </router-link> -->
           </b-card>
         </b-col>
         <b-col
