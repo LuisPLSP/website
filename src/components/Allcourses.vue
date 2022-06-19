@@ -26,22 +26,22 @@
             <div class="overlay-text">
               <h2>{{ $t("courses.forkscourses") }}</h2>
               <h3>
-                {{ $t("courses.forksdate6") }} |
+                {{ $t("courses.forksdate1") }} |
                 {{ $t("courses.forkslocation1") }}
               </h3>
             </div>
-            <!-- <router-link to="/frontforkscourse"> -->
+            <router-link to="/frontforkscourse">
               <b-button
                 v-on:click="
                   cardClicked({ time: 'zero', price: 'higher', location: 'one' })
                 "
               class="btn-to-course"
                 >
-                <!-- {{ $t("courses.watchmore") }} -->
-                 {{ $t("courses.comingsoon") }}
+                {{ $t("courses.watchmore") }}
+                 <!-- {{ $t("courses.comingsoon") }} -->
                 </b-button
               >
-            <!-- </router-link> -->
+            </router-link>
           </b-card>
         </b-col>
         <b-col
@@ -59,11 +59,11 @@
             <div class="overlay-text">
               <h2>{{ $t("courses.shockcourses") }}</h2>
               <h3>
-                {{ $t("courses.shockdate4") }} |
+                {{ $t("courses.shockdate1") }} |
                 {{ $t("courses.shocklocation1") }}
               </h3>
             </div>
-            <!-- <router-link to="/rearshockcourse"> -->
+            <router-link to="/rearshockcourse">
               <b-button
                 v-on:click="
                   cardClicked({
@@ -74,11 +74,11 @@
                 "
               class="btn-to-course"
                 >
-                <!-- {{ $t("courses.watchmore") }} -->
-                {{ $t("courses.comingsoon") }}
+                {{ $t("courses.watchmore") }}
+                <!-- {{ $t("courses.comingsoon") }} -->
                 </b-button
               >
-            <!-- </router-link> -->
+            </router-link>
           </b-card>
           
         </b-col>
