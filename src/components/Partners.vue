@@ -19,11 +19,6 @@
           ><img src="../assets/Polisport-Logo.png" fluid alt="partner-logo"
         /></a>
       </div>
-      <div>
-        <a href="https://www.p-tech.ee/" target="_blank">
-          <img src="../assets/P-Tech-Logo.png" fluid alt="partner-logo"
-        /></a>
-      </div>
     </div>
   </section>
 </template>
