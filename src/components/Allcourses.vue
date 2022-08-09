@@ -31,16 +31,18 @@
               </h3> -->
             </div>
             <!-- <router-link to="/frontforkscourse"> -->
-              <b-button
-                v-on:click="
-                  cardClicked({ time: 'zero', price: 'higher', location: 'one' })
-                "
+            <b-button
+              v-on:click="
+                cardClicked({ time: 'zero', price: 'higher', location: 'one' })
+              "
               class="btn-to-course"
-                >
-                <!-- {{ $t("courses.watchmore") }} -->
-                 {{ $t("courses.comingsoon") }}
-                </b-button
-              >
+              href="https://share.hsforms.com/1fHT69voLRFGbLxate4I0JAc0oyp"
+              target="_blank"
+            >
+              <!-- {{ $t("courses.watchmore") }} -->
+              <!-- {{ $t("courses.comingsoon") }} -->
+              {{ $t("courses.preregister") }}
+            </b-button>
             <!-- </router-link> -->
           </b-card>
         </b-col>
@@ -64,25 +66,26 @@
               </h3> -->
             </div>
             <!-- <router-link to="/rearshockcourse"> -->
-              <b-button
-                v-on:click="
-                  cardClicked({
-                    time: 'one',
-                    price: 'high',
-                    location: 'one'
-                  })
-                "
+            <b-button
+              v-on:click="
+                cardClicked({
+                  time: 'one',
+                  price: 'high',
+                  location: 'one'
+                })
+              "
               class="btn-to-course"
-                >
-                <!-- {{ $t("courses.watchmore") }} -->
-                {{ $t("courses.comingsoon") }}
-                </b-button
-              >
+              href="https://share.hsforms.com/1fHT69voLRFGbLxate4I0JAc0oyp"
+              target="_blank"
+            >
+              <!-- {{ $t("courses.watchmore") }} -->
+              <!-- {{ $t("courses.comingsoon") }} -->
+              {{ $t("courses.preregister") }}
+            </b-button>
             <!-- </router-link> -->
           </b-card>
-          
         </b-col>
-         <!-- <b-col
+        <!-- <b-col
           lg="5"
           data-aos="fade-up"
           data-aos-duration="200"
