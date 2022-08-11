@@ -48,8 +48,11 @@
                 {{ $t("forks.price3") }}
               </p>
             </b-card-text>
-            <b-button float="right" href="#registercourse" variant="primary">{{
+            <!-- <b-button float="right" href="#registercourse" variant="primary">{{
               $t("forks.signup")
+            }}</b-button> -->
+            <b-button float="right" href="https://share.hsforms.com/1fHT69voLRFGbLxate4I0JAc0oyp" target="_blank" style="background-color: red;">{{
+              $t("courses.preregister")
             }}</b-button>
           </b-card>
         </b-col>

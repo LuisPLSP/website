@@ -29,21 +29,20 @@
                 {{ $t("courses.forksdate6") }} |
                 {{ $t("courses.forkslocation1") }}
               </h3> -->
+              <b-button class="btn-sold-out margin-top-20" href="https://share.hsforms.com/1fHT69voLRFGbLxate4I0JAc0oyp" target="_blank">{{ $t("courses.preregister") }}</b-button>
             </div>
-            <!-- <router-link to="/frontforkscourse"> -->
+            <router-link to="/frontforkscourse">
             <b-button
               v-on:click="
-                cardClicked({ time: 'zero', price: 'higher', location: 'one' })
+                cardClicked({ time: 'zero', price: 'higher', location: 'zero' })
               "
               class="btn-to-course"
-              href="https://share.hsforms.com/1fHT69voLRFGbLxate4I0JAc0oyp"
-              target="_blank"
             >
-              <!-- {{ $t("courses.watchmore") }} -->
+              {{ $t("courses.watchmore") }}
               <!-- {{ $t("courses.comingsoon") }} -->
-              {{ $t("courses.preregister") }}
+              <!-- {{ $t("courses.preregister") }} -->
             </b-button>
-            <!-- </router-link> -->
+            </router-link>
           </b-card>
         </b-col>
         <b-col
@@ -64,25 +63,24 @@
                 {{ $t("courses.shockdate4") }} |
                 {{ $t("courses.shocklocation1") }}
               </h3> -->
+              <b-button class="btn-sold-out margin-top-20" href="https://share.hsforms.com/1fHT69voLRFGbLxate4I0JAc0oyp" target="_blank">{{ $t("courses.preregister") }}</b-button>
             </div>
-            <!-- <router-link to="/rearshockcourse"> -->
+            <router-link to="/rearshockcourse">
             <b-button
               v-on:click="
                 cardClicked({
                   time: 'one',
                   price: 'high',
-                  location: 'one'
+                  location: 'zero'
                 })
               "
               class="btn-to-course"
-              href="https://share.hsforms.com/1fHT69voLRFGbLxate4I0JAc0oyp"
-              target="_blank"
             >
-              <!-- {{ $t("courses.watchmore") }} -->
+              {{ $t("courses.watchmore") }}
               <!-- {{ $t("courses.comingsoon") }} -->
-              {{ $t("courses.preregister") }}
+              <!-- {{ $t("courses.preregister") }} -->
             </b-button>
-            <!-- </router-link> -->
+            </router-link>
           </b-card>
         </b-col>
         <!-- <b-col
@@ -292,6 +290,10 @@ h1 {
   margin-right: auto;
   width: 150px;
   background-color: red;
+}
+
+.margin-top-20 {
+  margin-top: 20px;
 }
 .overlay-text {
   display: flex;
