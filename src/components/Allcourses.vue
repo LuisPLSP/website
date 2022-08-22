@@ -40,7 +40,7 @@
               <b-button
                 v-on:click="
                   cardClicked({
-                    time: 'one',
+                    time: 'zero',
                     price: 'higher',
                     location: 'one'
                   })
