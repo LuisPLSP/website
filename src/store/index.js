@@ -11,8 +11,8 @@ export const store = new Vuex.Store({
     },
     card: {
       time: "zero",
-      price: "regular",
-      location: "one",
+      price: "soon",
+      location: "zero",
     },
   },
   getters: {

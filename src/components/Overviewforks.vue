@@ -38,6 +38,9 @@
               <h3>{{ $t("forks.maxparticipants") }}</h3>
               <p>{{ $t("forks.maxparticipants1") }}</p>
               <h3>{{ $t("forks.price") }}</h3>
+              <p v-show="getCardDetails.price === 'soon'">
+                {{ $t("forks.price0") }}
+              </p>
               <p v-show="getCardDetails.price === 'regular'">
                 {{ $t("forks.price1") }}
               </p>
@@ -48,12 +51,12 @@
                 {{ $t("forks.price3") }}
               </p>
             </b-card-text>
-            <!-- <b-button float="right" href="#registercourse" variant="primary">{{
+            <b-button float="right" href="#registercourse" variant="primary">{{
               $t("forks.signup")
-            }}</b-button> -->
-            <b-button float="right" href="https://share.hsforms.com/1fHT69voLRFGbLxate4I0JAc0oyp" target="_blank" style="background-color: red;">{{
-              $t("courses.preregister")
             }}</b-button>
+            <!-- <b-button float="right" href="https://share.hsforms.com/1fHT69voLRFGbLxate4I0JAc0oyp" target="_blank" style="background-color: red;">{{
+              $t("courses.preregister")
+            }}</b-button> -->
           </b-card>
         </b-col>
         <b-col lg="8">

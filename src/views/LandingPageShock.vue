@@ -4,7 +4,7 @@
     <overviewshock></overviewshock>
     <detailsshockcourse></detailsshockcourse>
     <testimonialsshock></testimonialsshock>
-    <!-- <registercourse></registercourse> -->
+    <registercourse></registercourse>
   </div>
 </template>
 
@@ -13,7 +13,7 @@ import Bannershock from "../components/Bannershock.vue";
 import Overviewshock from "../components/Overviewshock.vue";
 import Detailsshockcourse from "../components/Detailsshockcourse.vue";
 import Testimonialsshock from "../components/Testimonialsshock.vue";
-// import Registercourse from "../components/Registercourse.vue";
+import Registercourse from "../components/Registercourse.vue";
 export default {
   name: "Shockcourse",
 
@@ -22,7 +22,7 @@ export default {
     Overviewshock,
     Detailsshockcourse,
     Testimonialsshock,
-    // Registercourse,
+    Registercourse,
   },
   methods: {
     setLocale(locale) {

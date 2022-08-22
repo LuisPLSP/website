@@ -4,7 +4,7 @@
     <overviewforks></overviewforks>
     <detailsforkscourse></detailsforkscourse>
     <testimonialsforks></testimonialsforks>
-    <!-- <registercourse></registercourse> -->
+    <registercourse></registercourse>
   </div>
 </template>
 
@@ -13,7 +13,7 @@ import Bannerforks from "../components/Bannerforks.vue";
 import Overviewforks from "../components/Overviewforks.vue";
 import Detailsforkscourse from "../components/Detailsforkscourse.vue";
 import Testimonialsforks from "../components/Testimonialsforks.vue";
-// import Registercourse from "../components/Registercourse.vue";
+import Registercourse from "../components/Registercourse.vue";
 
 export default {
   name: "Frontforkscourse",
@@ -22,7 +22,7 @@ export default {
     Overviewforks,
     Detailsforkscourse,
     Testimonialsforks,
-    // Registercourse,
+    Registercourse,
   },
   methods: {
     setLocale(locale) {

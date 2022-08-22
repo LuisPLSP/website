@@ -15,7 +15,7 @@
                 {{ $t("shock.time&date1") }}
               </p>
               <p v-show="getCardDetails.time === 'one'">
-                {{ $t("forks.time&date2") }}
+                {{ $t("shock.time&date2") }}
               </p>
               <h3>{{ $t("shock.location") }}</h3>
               <p v-show="getCardDetails.location === 'zero'">
@@ -35,6 +35,9 @@
               <h3>{{ $t("shock.maxparticipants") }}</h3>
               <p>{{ $t("shock.maxparticipants1") }}</p>
               <h3>{{ $t("shock.price") }}</h3>
+              <p v-show="getCardDetails.price === 'soon'">
+                {{ $t("shock.price0") }}
+              </p>
               <p v-show="getCardDetails.price === 'regular'">
                 {{ $t("shock.price1") }}
               </p>
@@ -45,12 +48,16 @@
                 {{ $t("shock.price3") }}
               </p>
             </b-card-text>
-            <!-- <b-button float="right" href="#registercourse" variant="primary">{{
+            <b-button float="right" href="#registercourse" variant="primary">{{
               $t("shock.signup")
-            }}</b-button> -->
-            <b-button float="right" href="https://share.hsforms.com/1fHT69voLRFGbLxate4I0JAc0oyp" target="_blank" style="background-color: red;">{{
-              $t("courses.preregister")
             }}</b-button>
+            <!-- <b-button
+              float="right"
+              href="https://share.hsforms.com/1fHT69voLRFGbLxate4I0JAc0oyp"
+              target="_blank"
+              style="background-color: red;"
+              >{{ $t("courses.preregister") }}</b-button
+            > -->
           </b-card>
         </b-col>
         <b-col lg="8">
@@ -114,11 +121,11 @@ export default {
   methods: {
     setLocale(locale) {
       this.$i18n.locale = locale;
-    },
+    }
   },
   computed: {
-    ...mapGetters(["getCardDetails"]),
-  },
+    ...mapGetters(["getCardDetails"])
+  }
 };
 </script>
 <style lang="scss" scoped>

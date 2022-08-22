@@ -25,23 +25,32 @@
           >
             <div class="overlay-text">
               <h2>{{ $t("courses.forkscourses") }}</h2>
-              <!-- <h3>
-                {{ $t("courses.forksdate6") }} |
+              <h3>
+                {{ $t("courses.forksdate1") }} |
                 {{ $t("courses.forkslocation1") }}
-              </h3> -->
-              <b-button class="btn-sold-out margin-top-20" href="https://share.hsforms.com/1fHT69voLRFGbLxate4I0JAc0oyp" target="_blank">{{ $t("courses.preregister") }}</b-button>
+              </h3>
+              <!-- <b-button
+                class="btn-sold-out margin-top-20"
+                href="https://share.hsforms.com/1fHT69voLRFGbLxate4I0JAc0oyp"
+                target="_blank"
+                >{{ $t("courses.preregister") }}</b-button
+              > -->
             </div>
             <router-link to="/frontforkscourse">
-            <b-button
-              v-on:click="
-                cardClicked({ time: 'zero', price: 'higher', location: 'zero' })
-              "
-              class="btn-to-course"
-            >
-              {{ $t("courses.watchmore") }}
-              <!-- {{ $t("courses.comingsoon") }} -->
-              <!-- {{ $t("courses.preregister") }} -->
-            </b-button>
+              <b-button
+                v-on:click="
+                  cardClicked({
+                    time: 'one',
+                    price: 'higher',
+                    location: 'one'
+                  })
+                "
+                class="btn-to-course"
+              >
+                {{ $t("courses.watchmore") }}
+                <!-- {{ $t("courses.comingsoon") }} -->
+                <!-- {{ $t("courses.preregister") }} -->
+              </b-button>
             </router-link>
           </b-card>
         </b-col>
@@ -59,27 +68,32 @@
           >
             <div class="overlay-text">
               <h2>{{ $t("courses.shockcourses") }}</h2>
-              <!-- <h3>
-                {{ $t("courses.shockdate4") }} |
+              <h3>
+                {{ $t("courses.shockdate1") }} |
                 {{ $t("courses.shocklocation1") }}
-              </h3> -->
-              <b-button class="btn-sold-out margin-top-20" href="https://share.hsforms.com/1fHT69voLRFGbLxate4I0JAc0oyp" target="_blank">{{ $t("courses.preregister") }}</b-button>
+              </h3>
+              <!-- <b-button
+                class="btn-sold-out margin-top-20"
+                href="https://share.hsforms.com/1fHT69voLRFGbLxate4I0JAc0oyp"
+                target="_blank"
+                >{{ $t("courses.preregister") }}</b-button
+              > -->
             </div>
             <router-link to="/rearshockcourse">
-            <b-button
-              v-on:click="
-                cardClicked({
-                  time: 'one',
-                  price: 'high',
-                  location: 'zero'
-                })
-              "
-              class="btn-to-course"
-            >
-              {{ $t("courses.watchmore") }}
-              <!-- {{ $t("courses.comingsoon") }} -->
-              <!-- {{ $t("courses.preregister") }} -->
-            </b-button>
+              <b-button
+                v-on:click="
+                  cardClicked({
+                    time: 'one',
+                    price: 'high',
+                    location: 'one'
+                  })
+                "
+                class="btn-to-course"
+              >
+                {{ $t("courses.watchmore") }}
+                <!-- {{ $t("courses.comingsoon") }} -->
+                <!-- {{ $t("courses.preregister") }} -->
+              </b-button>
             </router-link>
           </b-card>
         </b-col>
