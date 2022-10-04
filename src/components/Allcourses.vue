@@ -26,15 +26,15 @@
             <div class="overlay-text">
               <h2>{{ $t("courses.forkscourses") }}</h2>
               <h3>
-                {{ $t("courses.forksdate1") }} |
-                {{ $t("courses.forkslocation1") }}
+                {{ $t("courses.forksdate6") }} |
+                {{ $t("courses.forkslocation6") }}
               </h3>
-              <!-- <b-button
+              <b-button
                 class="btn-sold-out margin-top-20"
                 href="https://share.hsforms.com/1fHT69voLRFGbLxate4I0JAc0oyp"
                 target="_blank"
                 >{{ $t("courses.preregister") }}</b-button
-              > -->
+              >
             </div>
             <router-link to="/frontforkscourse">
               <b-button
@@ -69,15 +69,15 @@
             <div class="overlay-text">
               <h2>{{ $t("courses.shockcourses") }}</h2>
               <h3>
-                {{ $t("courses.shockdate1") }} |
-                {{ $t("courses.shocklocation1") }}
+                {{ $t("courses.shockdate4") }} |
+                {{ $t("courses.shocklocation4") }}
               </h3>
-              <!-- <b-button
+              <b-button
                 class="btn-sold-out margin-top-20"
                 href="https://share.hsforms.com/1fHT69voLRFGbLxate4I0JAc0oyp"
                 target="_blank"
                 >{{ $t("courses.preregister") }}</b-button
-              > -->
+              >
             </div>
             <router-link to="/rearshockcourse">
               <b-button
@@ -97,6 +97,7 @@
             </router-link>
           </b-card>
         </b-col>
+<!--         
         <b-col
           lg="5"
           data-aos="fade-up"
@@ -124,8 +125,8 @@
               target="_blank"
             >
               {{ $t("courses.register") }}
-              <!-- {{ $t("courses.comingsoon") }} -->
-              <!-- {{ $t("courses.preregister") }} -->
+               {{ $t("courses.comingsoon") }}
+               {{ $t("courses.preregister") }}
             </b-button>
           </b-card>
         </b-col>
@@ -155,11 +156,11 @@
               target="_blank"
             >
               {{ $t("courses.register") }}
-              <!-- {{ $t("courses.comingsoon") }} -->
-              <!-- {{ $t("courses.preregister") }} -->
+               {{ $t("courses.comingsoon") }} 
+              {{ $t("courses.preregister") }} 
             </b-button>
           </b-card>
-        </b-col>
+        </b-col> -->
       </b-row>
     </b-container>
   </section>

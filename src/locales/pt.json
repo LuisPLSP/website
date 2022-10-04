@@ -97,7 +97,7 @@
   "forkslocation4": "Porto",
   "forksdate5": "13 de Novembro",
   "forkslocation5": "Lisboa",
-  "forksdate6": "A determinar",
+  "forksdate6": "2023",
   "forkslocation6": "A determinar",
   "shockcourses": "AMORTECEDOR",
   "shockdate1": "02 de Outubro",
@@ -106,7 +106,7 @@
   "shocklocation2": "Castelo Branco",
   "shockdate3": "24 de Abril",
   "shocklocation3": "Sintra",
-  "shockdate4": "A determinar",
+  "shockdate4": "2023",
   "shocklocation4": "A determinar",
   "watchmore": "Saber mais",
   "register": "Registar",
@@ -180,7 +180,7 @@
   "textamateurpro1": "Poupar algum dinheiro e melhorar performance são duas das melhores coisas da vida para qualquer piloto amador (nós sabemos bem!). Aprender a afinar e a ajustar as tuas suspensões à tua medida vai permitir-te ambos. Para além de aprenderes mais sobre as suspensões e a forma como estas funcionam, vais poder aprender a ajustá-las consoante as necessidades de cada corrida, para que fiques sempre cada vez mais próximo do pódio.",
   "textamateurpro2": "Então, do que estás à espera?",
   "tabsigningup": "Inscrição",
-  "textsigningup1": "Para te inscreveres neste curso, basta preencher o formulário abaixo.",
+  "textsigningup1": "Para te inscreveres neste curso, basta preencher o formulário.",
   "textsigningup2": "Depois de submeteres o formulário, vais receber um e-mail com toda a informação necessária para efetuares o pagamento do curso e garantires o teu lugar. Só após a validação do pagamento é que a tua inscrição é válida.",
   "textsigningup3": "Após a validação da tua inscrição, vais receber um e-mail com tudo o que precisas de saber para te juntares a nós.",
   "textsigningup4": "Qualquer dúvida ou questão, por favor entra em contacto connosco através do email stepstopodium@gmail.com."
@@ -241,7 +241,7 @@
     },
   "techsession": {
     "bannertechsession": "Sessões Técnicas",
-    "text1":"Tens dúvidas relativamente às suspensões da tua mota? Gostavas de aprender manutenção básica ou a afinar o motor? Precisas de apoio na preparação para uma corrida? Nós podemos ajudar.",
+    "text1":"Tens dúvidas relativamente às suspensões da tua mota? Gostavas de aprender a afinar as tuas suspensões? Precisas de apoio na preparação para uma corrida? Nós podemos ajudar.",
     "text2":"Marca uma sessão de acompanhamento técnico de 30 ou 60 minutos, de acordo com o que precisares, e nós ajudamos a esclarecer todas as tuas dúvidas.",
     "durationtitle":"Duração",
     "durationtext":"30 ou 60 mins",
@@ -263,7 +263,13 @@
     "accordiontimetitle": "Devo marcar 30 ou 60 minutos?",
     "accordiontimetext1": "Depende.",
     "accordiontimetext2": "Se pretendes esclarecer uma dúvida específica sobre um assunto que já dominas ou se só estás à procura de ter um conhecimento mais genérico sobre determinado tema, 30 minutos são suficientes. Para esclarecer várias dúvidas, abordar um tema em detalhe ou aprender a prática de alguns processos, 60 minutos é o ideal.",
-    "accordiontimetext3": "Em ambas as sessões, se se justificar, vamos ajudar-te a “pôr as mãos na massa”."
+    "accordiontimetext3": "Em ambas as sessões, se se justificar, vamos ajudar-te a “pôr as mãos na massa”.",
+    "testimonials": "Testemunhos",
+    "texttestimonials":"A opinião de quem já experimentou",
+    "testimonial1": "As alterações que fiz às suspensões sob a orientação do Luis fizeram uma diferença enorme. Para além disso, as suas explicações foram muito úteis em perceber muitos outros tópicos e deu-me a confiança para ajustar as suspensões consoante o que preciso.",
+    "testimonialperson1": "Ariel Toron",
+    "testimonial2": "O Luis ajudou-me não só a ficar com as suspensões incríveis para o tipo de pilotagem que faço, mas também me passou o conhecimento e fez-me perceber as mudanças que fiz. Agora tenho uma maior compreensão de como uma suspensão funciona internamente e não posso enfatizar o suficiente o quão valiosas são as suas sessões técnicas",
+    "testimonialperson2": "Garry Whelpdale"
   },
   "register": {
     "title":"Inscrição",

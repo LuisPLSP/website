@@ -35,11 +35,11 @@
                       <blockquote class="blockquote border-0 p-0">
                         <p class="font-italic lead">
                           <i class="fa fa-quote-left mr-3 text-success"></i
-                          >{{ $t("courses.testimonial8")
+                          >{{ $t("techsession.testimonial1")
                           }}<i class="fa fa-quote-right ml-3 text-success"></i>
                         </p>
                         <footer class="blockquote-footer">
-                          {{ $t("courses.testimonialperson8") }}
+                          {{ $t("techsession.testimonialperson1") }}
                         </footer>
                       </blockquote>
                     </div>
@@ -52,11 +52,11 @@
                       <blockquote class="blockquote border-0 p-0">
                         <p class="font-italic lead">
                           <i class="fa fa-quote-left mr-3 text-success"></i
-                          >{{ $t("courses.testimonial2")
+                          >{{ $t("techsession.testimonial2")
                           }}<i class="fa fa-quote-right ml-3 text-success"></i>
                         </p>
                         <footer class="blockquote-footer">
-                          {{ $t("courses.testimonialperson2") }}
+                          {{ $t("techsession.testimonialperson2") }}
                         </footer>
                       </blockquote>
                     </div>
@@ -69,11 +69,11 @@
                       <blockquote class="blockquote border-0 p-0">
                         <p class="font-italic lead">
                           <i class="fa fa-quote-left mr-3 text-success"></i
-                          >{{ $t("courses.testimonial5")
+                          >{{ $t("techsession.testimonial2")
                           }}<i class="fa fa-quote-right ml-3 text-success"></i>
                         </p>
                         <footer class="blockquote-footer">
-                          {{ $t("courses.testimonialperson5") }}
+                          {{ $t("techsession.testimonialperson2") }}
                         </footer>
                       </blockquote>
                     </div>
