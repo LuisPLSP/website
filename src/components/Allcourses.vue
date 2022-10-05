@@ -25,10 +25,10 @@
           >
             <div class="overlay-text">
               <h2>{{ $t("courses.forkscourses") }}</h2>
-              <h3>
+              <!-- <h3>
                 {{ $t("courses.forksdate6") }} |
                 {{ $t("courses.forkslocation6") }}
-              </h3>
+              </h3> -->
               <b-button
                 class="btn-sold-out margin-top-20"
                 href="https://share.hsforms.com/1fHT69voLRFGbLxate4I0JAc0oyp"
@@ -42,10 +42,10 @@
                   cardClicked({
                     time: 'zero',
                     price: 'higher',
-                    location: 'one',
+                    location: 'zero',
                   })
                 "
-                class="btn-to-course"
+                class="btn-to-course margin-top-5"
               >
                 {{ $t("courses.watchmore") }}
                 <!-- {{ $t("courses.comingsoon") }} -->
@@ -68,10 +68,10 @@
           >
             <div class="overlay-text">
               <h2>{{ $t("courses.shockcourses") }}</h2>
-              <h3>
+              <!-- <h3>
                 {{ $t("courses.shockdate4") }} |
                 {{ $t("courses.shocklocation4") }}
-              </h3>
+              </h3> -->
               <b-button
                 class="btn-sold-out margin-top-20"
                 href="https://share.hsforms.com/1fHT69voLRFGbLxate4I0JAc0oyp"
@@ -85,10 +85,10 @@
                   cardClicked({
                     time: 'one',
                     price: 'high',
-                    location: 'one',
+                    location: 'zero',
                   })
                 "
-                class="btn-to-course"
+                class="btn-to-course margin-top-5"
               >
                 {{ $t("courses.watchmore") }}
                 <!-- {{ $t("courses.comingsoon") }} -->
@@ -235,6 +235,10 @@ h1 {
 
 .margin-top-20 {
   margin-top: 20px;
+}
+
+.margin-top-5 {
+  margin-top: 8px;
 }
 .overlay-text {
   display: flex;
